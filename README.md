@@ -7,7 +7,7 @@ Five sections, 31 scenes, all in a light theme:
 1. **Roles** – from data to decision: Data Engineer, Retail Analyst, Data Scientist, ML Engineer, Business Analyst
 2. **Data** – the customer journey, digital behaviour, pricing and external signals
 3. **AI/ML** – reporting vs prediction, demand forecasting, recommendations, market basket analysis
-4. **Industry** – a Target case study, then four slides from interview notes: business problems and metrics, the Essential Beauty analytics project, collaboration and tools, machine learning and challenges
+4. **Industry** – a Target company profile with the interviewee, then four slides from interview notes: business problems and metrics, the Essential Beauty analytics project, collaboration and tools, machine learning and challenges
 5. **Careers** – fundamentals, analytics, prediction, big data and business understanding
 
 ## Run it
@@ -49,6 +49,6 @@ Every number marked "illustrative" is an invented teaching example, not company 
 
 The four interview slides in Industry use only the wording of the interview notes; their visuals are schematic and show no data.
 
-The Target case study uses only published facts: Target's fiscal 2023 annual report / 10-K (store fulfilment share, owned brands, Target Circle, Roundel, distribution), Target's press boilerplate (nearly 2,000 stores), the Target Tech blog post "Solving for Product Availability with AI" (October 2023) and Retail Dive's December 2019 report on Target's demand forecasting.
+The Target slide uses figures from Target's fiscal 2025 annual report (year ended 31 January 2026): headquarters at 1000 Nicollet Mall, Minneapolis; 1,995 stores; approximately 415,000 team members; administrative functions in Bengaluru (Bangalore), India. The interviewee profile (Harsha, graduated 2025) comes from the presenters.
 
 Company names and logos are trademarks of their owners, used for identification in an educational presentation. The Target logo comes from Wikimedia Commons, where it is public domain. Photography is from Unsplash (Unsplash License). All assets are stored locally in `public/`.

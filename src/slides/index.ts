@@ -34,7 +34,7 @@ export const slides: SlideDef[] = [
   { id: 'aiml-basket', section: 'aiml', title: 'Market basket analysis', transition: 'rise', steps: ['Where it is used'], Component: AimlBasket },
   { id: 'aiml-closing', section: 'aiml', title: 'Prepare for the future', transition: 'iris', Component: AimlClosing },
 
-  { id: 'industry-target', section: 'industry', title: 'Target: what an analyst learns', transition: 'curtain', steps: ['The challenge', 'Data in action', 'What analysts learn'], Component: IndustryTarget },
+  { id: 'industry-target', section: 'industry', title: 'Target Corporation', transition: 'curtain', Component: IndustryTarget },
   { id: 'industry-problems', section: 'industry', title: 'Business problems and metrics', transition: 'rise', Component: IndustryProblems },
   { id: 'industry-project', section: 'industry', title: 'Essential Beauty: analytics project', transition: 'push', Component: IndustryProject },
   { id: 'industry-collab', section: 'industry', title: 'Collaboration and tools', transition: 'push', Component: IndustryCollab },

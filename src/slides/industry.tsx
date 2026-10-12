@@ -1,165 +1,22 @@
-import { AnimatePresence, motion } from 'motion/react'
-import { Check, Handshake, LayoutDashboard, Search, Sparkles, Store, Tag, type LucideIcon } from 'lucide-react'
+import { motion } from 'motion/react'
+import { Handshake, LayoutDashboard, Search, Sparkles, Store, Tag, type LucideIcon } from 'lucide-react'
 import { useState, type ReactNode } from 'react'
 import { BrandReveal } from '../components/brands'
-import { AnimatedHeadline, FlowDots, Illustrative, Img, Reveal, cx, usePhases } from '../components/motion'
-import { useSlide } from '../presentation/deck'
+import { FlowDots, Illustrative, Img, Reveal, cx, usePhases } from '../components/motion'
 import { EASE } from '../presentation/transitions'
 import { SceneHead } from './shared'
 
-/* ------------------------------------------------------------------ Target case study */
+/* ------------------------------------------------------------------ Target Corporation + interviewee profile */
 
-const TARGET_RED = '#CC0000'
-const STORY = ['The business', 'The challenge', 'Data in action', 'What analysts learn']
-const CHANNELS = ['Shoppers in the aisle', 'Order Pickup', 'Drive Up', 'Same-day delivery (Shipt)']
-const chY = (i: number) => 38 + i * 88
-
-/** Store-as-hub diagram: distribution centres feed the store, the store serves every channel, and (from "Data in action") a ledger closes the loop. */
-function TargetHub({ step }: { step: number }) {
-  const data = step >= 2
-  const problem = step === 1
-  return (
-    <svg viewBox="0 0 648 344" className="h-full w-full overflow-visible" aria-label="Distribution centres feed the store; the store serves shoppers, Order Pickup, Drive Up and same-day delivery">
-      {/* distribution centres → store */}
-      <motion.g initial={{ opacity: 0, x: -12 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.9, duration: 0.5 }}>
-        <rect x={0} y={148} width={150} height={48} rx={12} className="fill-surface stroke-line-2" />
-        <text x={75} y={177} textAnchor="middle" fontSize={15} className="fill-fg">
-          Distribution centres
-        </text>
-      </motion.g>
-      <path d="M150 172 L268 172" className="stroke-line-2" strokeWidth={2.5} />
-      <FlowDots path="M150 172 L268 172" count={2} dur={1.6} begin={1.4} r={4.5} className="fill-fg-3" />
-
-      {/* store → channels */}
-      {CHANNELS.map((c, i) => {
-        const d = `M364 172 C410 172 420 ${chY(i)} 466 ${chY(i)}`
-        return (
-          <g key={c}>
-            <motion.path d={d} fill="none" className="stroke-line-2" strokeWidth={2} initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ delay: 1 + i * 0.08, duration: 0.6 }} />
-            {!problem && <FlowDots path={d} count={2} dur={1.8} begin={1.6 + i * 0.2} r={4} className={data ? 'fill-accent' : 'fill-signal'} />}
-            <motion.g initial={{ opacity: 0, x: 10 }} animate={{ opacity: problem ? 0.45 : 1, x: 0 }} transition={{ delay: problem ? 0 : 1.1 + i * 0.08, duration: 0.4 }}>
-              <rect x={466} y={chY(i) - 21} width={182} height={42} rx={21} className="fill-surface stroke-line-2" />
-              <text x={557} y={chY(i) + 5} textAnchor="middle" fontSize={14} className="fill-fg">
-                {c}
-              </text>
-            </motion.g>
-          </g>
-        )
-      })}
-
-      {/* the store: Target's bullseye */}
-      <motion.g initial={{ scale: 0.6, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: 0.7, duration: 0.6, ease: EASE }}>
-        <circle cx={316} cy={172} r={46} fill={TARGET_RED} />
-        <circle cx={316} cy={172} r={31} className="fill-surface" />
-        <circle cx={316} cy={172} r={16} fill={TARGET_RED} />
-        <text x={316} y={242} textAnchor="middle" fontSize={15} className="fill-fg font-semibold">
-          Store
-        </text>
-      </motion.g>
-
-      {/* the challenge: the system and the shelf disagree */}
-      <motion.g initial={false} animate={{ opacity: problem ? 1 : 0, y: problem ? 0 : 8 }} transition={{ duration: 0.45, delay: problem ? 0.3 : 0 }}>
-        <rect x={216} y={22} width={200} height={72} rx={12} className="fill-signal-wash stroke-signal" strokeWidth={1.5} />
-        <text x={316} y={42} textAnchor="middle" fontSize={11} className="fill-signal-ink font-mono" opacity={0.75}>
-          illustrative
-        </text>
-        <text x={316} y={63} textAnchor="middle" fontSize={14} className="fill-signal-ink font-mono">
-          system: 6 on hand
-        </text>
-        <text x={316} y={82} textAnchor="middle" fontSize={14} className="fill-signal-ink font-mono">
-          shelf: 0
-        </text>
-        <circle cx={316} cy={172} r={52} fill="none" className="stroke-signal" strokeWidth={2} strokeDasharray="5 5" />
-      </motion.g>
-
-      {/* data in action: the ledger closes the loop back to replenishment */}
-      <motion.g initial={false} animate={{ opacity: data ? 1 : 0 }} transition={{ duration: 0.5, delay: data ? 0.3 : 0 }}>
-        <path d="M316 252 L316 286" className="stroke-accent" strokeWidth={2} strokeDasharray="5 5" />
-        <rect x={232} y={286} width={168} height={42} rx={21} className="fill-accent-wash stroke-accent" strokeWidth={1.5} />
-        <text x={316} y={312} textAnchor="middle" fontSize={14} className="fill-accent-ink font-semibold">
-          Inventory Ledger + ML
-        </text>
-        <path d="M232 307 C140 307 75 280 75 200" fill="none" className="stroke-accent" strokeWidth={2} />
-        <path d="M68 210 L75 198 L82 210" fill="none" className="stroke-accent" strokeWidth={2} strokeLinejoin="round" />
-        <text x={150} y={334} textAnchor="middle" fontSize={13} className="fill-accent-ink font-mono">
-          replenish
-        </text>
-        {data && <FlowDots path="M232 307 C140 307 75 280 75 200" count={2} dur={1.8} begin={0.6} r={4} />}
-      </motion.g>
-    </svg>
-  )
-}
-
-function StatRow({ big, text, delay }: { big: string; text: string; delay: number }) {
-  return (
-    <motion.div className="flex items-baseline gap-[1.5rem] border-t border-line py-[0.9rem]" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay, duration: 0.5, ease: EASE }}>
-      <span className="w-[8.5rem] shrink-0 text-[2.75rem] font-[640] leading-none tracking-[-0.045em] text-fg">{big}</span>
-      <span className="text-[1.25rem] leading-[1.35] text-fg-2">{text}</span>
-    </motion.div>
-  )
-}
-
-function TargetStory({ step }: { step: number }) {
-  if (step === 0)
-    return (
-      <div>
-        <StatRow big="~2,000" text="stores across the US, where nearly all of its revenue is earned" delay={0.15} />
-        <StatRow big="96%+" text="of sales fulfilled by stores, including most online orders" delay={0.3} />
-        <StatRow big="≈ ⅓" text="of sales from owned and exclusive brands such as Good & Gather and Cat & Jack" delay={0.45} />
-      </div>
-    )
-  if (step === 1)
-    return (
-      <div className="grid grid-cols-2 gap-[1.25rem]">
-        {[
-          ['One shelf, many channels', 'The same store stock serves shoppers in the aisle, Order Pickup, Drive Up and same-day delivery.'],
-          ['Records drift from reality', 'Physical audits found half of out-of-stocks were unknown to Target’s systems: shrink and receiving errors left on-hand counts wrong, so replenishment never triggered.'],
-        ].map(([t, d], i) => (
-          <motion.div key={t} className="rounded-[1rem] border border-line bg-surface p-[1.2rem]" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 + i * 0.15, duration: 0.5, ease: EASE }}>
-            <div className="text-[1.375rem] font-[600] tracking-[-0.02em] text-fg">{t}</div>
-            <p className="mt-[0.5rem] text-[1.0625rem] leading-[1.45] text-fg-2">{d}</p>
-          </motion.div>
-        ))}
-      </div>
-    )
-  if (step === 2)
-    return (
-      <div>
-        {[
-          ['Demand forecasting', 'Blends traditional data science with neural networks.'],
-          ['Inventory management', 'Inventory Ledger records every stock change, for every item, at every location.'],
-          ['Out-of-stock detection', 'Category-specific ML models flag hidden out-of-stocks; the count is corrected so replenishment restocks.'],
-          ['Fulfilment & supply chain', 'Distribution centres feed stores; stores fulfil same-day orders.'],
-          ['Customer behaviour', 'Target Circle loyalty links offers and rewards to guests; Roundel sells advertising to brands.'],
-        ].map(([t, d], i) => (
-          <motion.div key={t} className="grid grid-cols-[13rem_1fr] gap-[1rem] border-t border-line py-[0.6rem]" initial={{ opacity: 0, x: -12 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 + i * 0.09, duration: 0.45, ease: EASE }}>
-            <span className="text-[1.125rem] font-[580] text-fg">{t}</span>
-            <span className="text-[1.0625rem] leading-[1.4] text-fg-2">{d}</span>
-          </motion.div>
-        ))}
-      </div>
-    )
-  return (
-    <div className="space-y-[0.9rem]">
-      {[
-        'Audit the data before trusting the dashboard: a key availability metric was off by half.',
-        'Tie each prediction to an action: here, a corrected count that triggers replenishment.',
-        'Fit the analytics to the business model: stores that double as hubs change what you forecast.',
-        'Check with people first, automate once the model has earned trust.',
-      ].map((t, i) => (
-        <motion.div key={t} className="flex items-start gap-[1rem]" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 + i * 0.12, duration: 0.5, ease: EASE }}>
-          <span className="mt-[0.35rem] grid h-[1.75rem] w-[1.75rem] shrink-0 place-items-center rounded-full bg-accent text-white">
-            <Check className="h-[1rem] w-[1rem]" strokeWidth={3} />
-          </span>
-          <span className="text-[1.375rem] leading-[1.38] tracking-[-0.01em] text-fg">{t}</span>
-        </motion.div>
-      ))}
-    </div>
-  )
-}
+/** Figures from Target's fiscal 2025 annual report (year ended 31 January 2026). */
+const TARGET_FACTS = [
+  { label: 'Headquarters', value: 'Minneapolis, Minnesota', sub: '1000 Nicollet Mall' },
+  { label: 'Total stores', value: '1,995', sub: 'Across the US · as of 31 Jan 2026' },
+  { label: 'India presence', value: 'Bengaluru', sub: 'Administrative functions supporting Target’s business operations' },
+  { label: 'Total employees', value: '~415,000', sub: 'Full-time, part-time and seasonal · as of 31 Jan 2026' },
+]
 
 export function IndustryTarget() {
-  const { step, setStep } = useSlide()
   return (
     <div className="stage">
       <div className="absolute left-[5.5rem] top-[7.25rem] flex items-center gap-[1.25rem]">
@@ -169,50 +26,67 @@ export function IndustryTarget() {
           <div className="text-[1.375rem] font-[600] tracking-[-0.02em] text-fg">Target Corporation</div>
         </Reveal>
       </div>
-      <AnimatedHeadline as="h2" text={['Every store is also', 'a fulfilment hub.']} delay={0.35} className="t-display-sm absolute left-[5.5rem] top-[13.5rem] !text-[3.5rem] text-fg" />
 
-      <div className="absolute left-[5.5rem] top-[21.6rem] flex gap-[0.5rem]" role="tablist" aria-label="Case study chapters">
-        {STORY.map((s, i) => (
-          <button
-            key={s}
-            type="button"
-            role="tab"
-            aria-selected={step === i}
-            onClick={() => setStep(i)}
-            className={cx('rounded-full border px-[1rem] py-[0.45rem] text-[1rem] transition-colors', step === i ? 'border-fg bg-fg text-bg' : 'border-line-2 text-fg-2 hover:border-fg-3')}
-          >
-            {s}
-          </button>
-        ))}
-      </div>
-
-      <div className="absolute left-[5.5rem] top-[26rem] w-[47rem]">
-        <AnimatePresence mode="wait" initial={false}>
-          <motion.div key={step} exit={{ opacity: 0, y: -8, transition: { duration: 0.2 } }}>
-            <TargetStory step={step} />
-          </motion.div>
-        </AnimatePresence>
-      </div>
-      <div className="t-label absolute bottom-[6.6rem] left-[5.5rem] !text-[0.8125rem]">
-        Sources: Target 10-K, fiscal 2023 · Target Tech blog, Oct 2023 · Retail Dive, Dec 2019
-      </div>
-
+      {/* Target: photo and company facts */}
       <motion.div
-        className="absolute left-[55rem] right-[5.5rem] top-[7.25rem] h-[19.5rem] overflow-hidden rounded-[1.25rem]"
+        className="absolute left-[5.5rem] top-[13.25rem] h-[17rem] w-[54.5rem] overflow-hidden rounded-[1.25rem]"
         initial={{ clipPath: 'inset(0% 0% 100% 0% round 1.25rem)' }}
         animate={{ clipPath: 'inset(0% 0% 0% 0% round 1.25rem)' }}
         transition={{ duration: 1, delay: 0.25, ease: EASE }}
       >
         <motion.div className="h-full w-full" initial={{ scale: 1.1 }} animate={{ scale: 1 }} transition={{ duration: 2.2, ease: EASE }}>
-          <Img src="/images/target-store.webp" alt="Target store exterior with the bullseye sign at dusk" className="h-full w-full object-cover" />
+          <Img src="/images/target-store.webp" alt="Target store exterior with the bullseye sign at dusk" className="h-full w-full object-cover object-[50%_42%]" />
         </motion.div>
-        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent px-[1.1rem] pb-[0.9rem] pt-[3rem] text-[1rem] text-white">
-          One building: a store, a pickup point and a delivery hub
+      </motion.div>
+      <div className="absolute left-[5.5rem] top-[32rem] grid w-[54.5rem] grid-cols-2 gap-x-[2.5rem] gap-y-[1.25rem]">
+        {TARGET_FACTS.map((f, i) => (
+          <motion.div
+            key={f.label}
+            className="border-t border-line-2 pt-[0.85rem]"
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7 + i * 0.1, duration: 0.55, ease: EASE }}
+          >
+            <div className="t-label">{f.label}</div>
+            <div className="mt-[0.3rem] text-[2rem] font-[620] leading-[1.1] tracking-[-0.03em] text-fg">{f.value}</div>
+            <div className="mt-[0.3rem] text-[1rem] leading-[1.35] text-fg-3">{f.sub}</div>
+          </motion.div>
+        ))}
+      </div>
+
+      {/* the industry interviewee */}
+      <motion.div
+        className="absolute bottom-[8.5rem] left-[64rem] right-[5.5rem] top-[13.25rem] flex flex-col rounded-[1.5rem] border border-accent/25 bg-accent-wash p-[2rem]"
+        initial={{ opacity: 0, x: 32 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ delay: 0.45, duration: 0.8, ease: EASE }}
+      >
+        <div className="t-label !text-accent-ink">Industry interview</div>
+        <div className="flex flex-1 flex-col justify-center">
+          <motion.div
+            className="grid h-[6.5rem] w-[6.5rem] place-items-center rounded-full bg-accent text-[3rem] font-[650] text-white shadow-[0_0_0_8px_rgba(29,106,68,0.12)]"
+            initial={{ scale: 0.6, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.75, type: 'spring', stiffness: 260, damping: 20 }}
+            aria-hidden
+          >
+            H
+          </motion.div>
+          <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9, duration: 0.5, ease: EASE }}>
+            <div className="mt-[1.4rem] text-[3.25rem] font-[650] leading-[1] tracking-[-0.045em] text-fg">Harsha</div>
+            <div className="mt-[0.6rem] text-[1.375rem] leading-[1.35] text-fg-2">Industry professional we interviewed</div>
+          </motion.div>
+          <motion.div
+            className="mt-[2rem] border-t border-accent/25 pt-[1rem]"
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.05, duration: 0.5, ease: EASE }}
+          >
+            <div className="t-label">Graduation year</div>
+            <div className="mt-[0.3rem] text-[2.5rem] font-[640] leading-none tracking-[-0.04em] text-accent-ink">2025</div>
+          </motion.div>
         </div>
       </motion.div>
-      <div className="absolute bottom-[6.5rem] left-[55rem] right-[5.5rem] top-[28.25rem]">
-        <TargetHub step={step} />
-      </div>
     </div>
   )
 }
