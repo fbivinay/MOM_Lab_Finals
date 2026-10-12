@@ -49,6 +49,6 @@ Every number marked "illustrative" is an invented teaching example, not company 
 
 The four interview slides in Industry use only the wording of the interview notes; their visuals are schematic and show no data.
 
-The Target slide uses figures from Target's fiscal 2025 annual report (year ended 31 January 2026): headquarters at 1000 Nicollet Mall, Minneapolis; 1,995 stores; approximately 415,000 team members; administrative functions in Bengaluru (Bangalore), India. The interviewee profile (Hariharan, graduated 2026) comes from the presenters.
+The Target slide uses figures from Target's fiscal 2025 annual report (year ended 31 January 2026): headquarters at 1000 Nicollet Mall, Minneapolis; 1,995 stores; approximately 415,000 team members; administrative functions in Bengaluru (Bangalore), India. The interviewee profile (Hariharan, MSc BDA, St Joseph’s University, graduated 2026) comes from the presenters.
 
 Company names and logos are trademarks of their owners, used for identification in an educational presentation. The Target logo comes from Wikimedia Commons, where it is public domain. Photography is from Unsplash (Unsplash License). All assets are stored locally in `public/`.

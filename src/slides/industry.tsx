@@ -84,6 +84,7 @@ export function IndustryTarget() {
           >
             <div className="t-label">Graduation year</div>
             <div className="mt-[0.3rem] text-[2.5rem] font-[640] leading-none tracking-[-0.04em] text-accent-ink">2026</div>
+            <div className="mt-[0.7rem] text-[1.25rem] leading-[1.35] text-fg-2">MSc BDA, St Joseph’s University</div>
           </motion.div>
         </div>
       </motion.div>
