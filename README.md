@@ -9,7 +9,7 @@ Six sections, 33 scenes, all in a light theme:
 3. **AI/ML** – reporting vs prediction, demand forecasting, recommendations, market basket analysis
 4. **Industry** – a Target company profile with the interviewee, then four slides from interview notes: business problems and metrics, the Essential Beauty analytics project, collaboration and tools, machine learning and challenges
 5. **Careers** – fundamentals, analytics, prediction, big data and business understanding
-6. **Jobs** – fresher analyst openings in India, collected every morning from employer career sites, and 16 job sites with ready-made searches
+6. **Jobs** – Retail, Retail Data, Demand Forecasting, Supply Chain and Inventory Analyst openings in India as cards, collected every morning from employer career sites, and 16 job sites with ready-made searches
 
 ## Run it
 
@@ -46,16 +46,16 @@ Reduced-motion preferences are respected: transform animations are disabled and 
 
 ## Jobs board
 
-`scripts/jobs/` collects analyst openings in India that are open to freshers or 0–1 years of experience and writes `public/data/jobs.json`. The Jobs slide reads that file from GitHub, so it stays current without a redeploy, and falls back to the copy bundled at deploy time.
+`scripts/jobs/` collects openings in India for five roles (Retail Analyst, Retail Data Analyst, Demand Forecasting Analyst, Supply Chain Analyst and Inventory Analyst) and writes `public/data/jobs.json`. The Jobs slide shows them as cards: company and logo, title, salary or stipend, experience, posting date, location, application deadline, and the source, with each card linking to the original posting. It reads the file from GitHub, so it stays current without a redeploy, and falls back to the copy bundled at deploy time.
 
 ```bash
 npm run jobs:collect  # fetch listings into public/data/jobs.json (Node 24+, no credentials)
 npm run jobs:check    # type-check the collector and run the pipeline self-check
 ```
 
-- **Sources** (`sources.ts`, one fetcher per platform): the Greenhouse Job Board API, the Lever Postings API, the SmartRecruiters Posting API, and Workday career sites whose robots.txt allows crawling and lists a sitemap; the schema.org `JobPosting` data on each Workday job page supplies the fields. All are public and need no login or key.
-- **Employers** (`employers.json`): Target, TJX, Fractal (campus and main career sites), Swiggy, NielsenIQ, Meesho, dunnhumby, Sigmoid, Coupang and Mintel. To add one, append `{ "company", "platform", "board" }`, where `board` is the slug in the employer's job-board URL, or the career-site URL for Workday. Check a Workday site's robots.txt before adding it.
-- **Rules** (`pipeline.ts`): India locations and analyst titles only (data, business, BI, pricing, merchandising, demand, supply chain, inventory, customer insights, analytics internships). Senior titles and postings that ask for two or more years are left out. A posting that states no experience stays in and is flagged "Check experience". Anything a source does not publish (salary, deadline, posting date, employment type) is stored as `null` and shown as not stated.
+- **Sources** (`sources.ts`, one fetcher per platform): the Greenhouse Job Board API, the Lever Postings API, the SmartRecruiters Posting API, and employer career sites on Workday and Phenom that name a sitemap in robots.txt and embed schema.org `JobPosting` data in each job page. All are public and need no login or key.
+- **Employers** (`employers.json`): retailers Target, Lowe's (India), TJX, Dollar Tree, PVH, H&M Group, Swiggy, Meesho and Coupang; retail-data firms NielsenIQ and dunnhumby; and Unilever, AB InBev, Kimberly-Clark, Maersk, C.H. Robinson, Fractal and Sigmoid for supply-chain and forecasting roles. To add one, append `{ "company", "platform", "board", "logo", "retail" }`. `board` is the slug in the job-board URL, the career-site URL for Workday, or the sitemap URL for Phenom. Set `retail` for retailers, where pricing, category or plain data analyst titles count as retail roles. Check a career site's robots.txt before adding it.
+- **Rules** (`pipeline.ts`): India locations and analyst, planner or intern titles in the five families; manager-level and finance, risk or HR roles are left out. Every experience level is kept and read from the posting: the slide shows roles open to freshers or 0–1 years first, plus any that state no requirement ("Exp not listed"), and **Include 2+ years** adds the rest. Anything a source does not publish (salary, deadline, posting date) is stored as `null` and shown as not disclosed or not listed.
 - **Status**: `active` when seen at the last check; `expired` when gone from a board that loaded or past its deadline (removed 14 days later); `unverified` when its board could not be reached for more than three days.
 - **Schedule**: `.github/workflows/collect-jobs.yml` runs every day at about 06:00 IST, or on demand from the Actions tab, and commits `jobs.json` when it changes. Pull before pushing, because the workflow commits to `main`. GitHub pauses scheduled workflows in a repository with no activity for 60 days; re-enable it from the Actions tab.
 - **Job sites** (LinkedIn, Indeed, Naukri and 13 more) appear only as links to pre-filtered searches. None of them offers a public jobs API we can use, and several prohibit automated collection.
@@ -68,4 +68,4 @@ The four interview slides in Industry use only the wording of the interview note
 
 The Target slide uses figures from Target's fiscal 2025 annual report (year ended 31 January 2026): headquarters at 1000 Nicollet Mall, Minneapolis; 1,995 stores; approximately 415,000 team members; administrative functions in Bengaluru (Bangalore), India. The interviewee profile (Hariharan, MSc BDA, St Joseph’s University, graduated 2026) comes from the presenters.
 
-Company names and logos are trademarks of their owners, used for identification in an educational presentation. The Target logo comes from Wikimedia Commons, where it is public domain. Photography is from Unsplash (Unsplash License). All assets are stored locally in `public/`.
+Company names and logos are trademarks of their owners, used for identification in an educational presentation. The Target, Lowe's, TJX, PVH, H&M, Meesho and Fractal logos come from Wikimedia Commons, where they are public domain; the other employer logos are the companies' own site icons. Photography is from Unsplash (Unsplash License). All assets are stored locally in `public/`.

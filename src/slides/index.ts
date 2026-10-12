@@ -49,7 +49,7 @@ export const slides: SlideDef[] = [
   { id: 'careers-business', section: 'careers', title: 'Understand the business', transition: 'rise', steps: ['Why are sales falling?', 'How much inventory?', 'Which customers might leave?', 'What should we recommend?'], Component: CareersBusiness },
   { id: 'careers-closing', section: 'careers', title: 'Connect data to decisions', transition: 'iris', Component: CareersClosing },
 
-  { id: 'jobs-board', section: 'jobs', title: 'Fresher analyst jobs', transition: 'curtain', Component: JobsBoard },
+  { id: 'jobs-board', section: 'jobs', title: 'Retail analyst jobs', transition: 'curtain', Component: JobsBoard },
   { id: 'jobs-sites', section: 'jobs', title: 'Where else to look', transition: 'push', Component: JobsSites },
 ]
 

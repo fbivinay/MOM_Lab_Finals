@@ -1,7 +1,7 @@
 /** Self-check for the common pipeline: node scripts/jobs/pipeline.check.ts */
 import assert from 'node:assert/strict'
 import type { Job } from '../../src/jobs/types.ts'
-import { merge, relevant, statedYears, toJob } from './pipeline.ts'
+import { family, fresherFit, merge, relevantFor, statedYears, toJob } from './pipeline.ts'
 import { text, type Employer, type RawJob } from './sources.ts'
 
 // experience statements
@@ -10,43 +10,60 @@ assert.deepEqual(statedYears('Experience: 3+ yrs in analytics'), { min: 3, text:
 assert.equal(statedYears('Serving shoppers for over 25 years.'), null)
 assert.equal(statedYears('Our 2026 years plan; experience preferred')?.min, undefined)
 
-// titles and locations
-const blr = 'Bengaluru, Karnataka, India'
-assert.ok(relevant('Business Analyst', blr))
-assert.ok(relevant('Category Associate - Grocery', 'GURUGRAM INDIA'))
-assert.ok(relevant('Data Analyst', 'Hyderabad TS 500081'))
-assert.ok(!relevant('Data Analyst', 'Indianapolis IN 46250'))
-assert.ok(!relevant('Senior Business Analyst', blr))
-assert.ok(!relevant('Assistant Manager - Category', blr))
-assert.ok(!relevant('Data Engineer', blr))
-assert.ok(!relevant('Analyst II', blr))
+// the five role families
+assert.equal(family('Demand Planning Analyst', false), 'Demand Forecasting Analyst')
+assert.equal(family('Forecasting Analyst - Fresh Foods', false), 'Demand Forecasting Analyst')
+assert.equal(family('Inventory Analyst', false), 'Inventory Analyst')
+assert.equal(family('Analyst, Replenishment', false), 'Inventory Analyst')
+assert.equal(family('Supply Chain Analyst', false), 'Supply Chain Analyst')
+assert.equal(family('Supply Planner', false), 'Supply Chain Analyst')
+assert.equal(family('Retail Data Analyst', false), 'Retail Data Analyst')
+assert.equal(family('Data Analyst', true), 'Retail Data Analyst', 'plain data analyst at a retailer')
+assert.equal(family('Data Analyst', false), null, 'plain data analyst elsewhere')
+assert.equal(family('Merchandise Planning Analyst', true), 'Retail Analyst')
+assert.equal(family('Pricing Analyst', true), 'Retail Analyst')
+assert.equal(family('Pricing and Solutions Analyst', false), null, 'freight pricing at a shipping line is not retail')
+assert.equal(family('Retail Analyst', false), 'Retail Analyst')
+assert.equal(family('Senior Manager - Demand Planning', true), null, 'managers are not analyst roles')
+assert.equal(family('Analyst Merch Payable', true), null, 'accounting roles are out')
+assert.equal(family('Demand Generation Executive', true), null)
+assert.equal(family('Business Analyst', true), null)
+assert.equal(family('AM/M - Risk Analytics - User Lending', true), null, 'lending risk is not retail analytics')
+assert.ok(relevantFor(false)('Inventory Analyst', 'Hyderabad TS 500081'))
+assert.ok(relevantFor(true)('IND Demand Planner', null), 'no location in the listing: decided on the job page')
+assert.ok(!relevantFor(false)('Inventory Analyst', 'Indianapolis IN 46250'))
 
-// filtering and classification
-const employer: Employer = { company: 'Acme Retail', platform: 'greenhouse', board: 'acme' }
+// fresher fit, from what the posting states
+assert.equal(fresherFit('Inventory Analyst', null, null, 0, null), 'yes')
+assert.equal(fresherFit('Inventory Analyst', null, null, 1, null), 'yes')
+assert.equal(fresherFit('Inventory Analyst', null, null, 2, null), 'no')
+assert.equal(fresherFit('Senior Inventory Analyst', null, null, null, null), 'no')
+assert.equal(fresherFit('Inventory Analyst', 'Mid-Senior Level', null, null, null), 'no')
+assert.equal(fresherFit('Inventory Analyst', 'Entry Level', null, null, null), 'yes')
+assert.equal(fresherFit('Supply Chain Analytics Intern', null, null, null, null), 'yes')
+assert.equal(fresherFit('Inventory Analyst', null, null, null, 'Freshers can apply.'), 'yes')
+assert.equal(fresherFit('Inventory Analyst', null, null, null, null), 'unknown', 'a missing requirement is flagged, not excluded')
+
+// building a job
+const employer: Employer = { company: 'Acme Retail', platform: 'greenhouse', board: 'acme', retail: true }
 const raw = (over: Partial<RawJob>): RawJob => ({
-  sourceId: '1', title: 'Data Analyst', location: 'Bengaluru, Karnataka, India', description: null, experience: null, minYears: null,
+  sourceId: '1', title: 'Inventory Analyst', location: 'Bengaluru, Karnataka, India', description: null, experience: null, minYears: null,
   employmentType: null, salary: null, postedAt: null, deadline: null, url: 'https://example.com/1', ...over,
 })
 const job = (over: Partial<RawJob>) => toJob(raw(over), employer, 'greenhouse:acme', 'Greenhouse', '2026-10-13T00:00:00.000Z')
 
 const fresher = job({ description: 'Requires 0-1 years of experience in Excel.' })!
-assert.equal(fresher.fresher, true)
+assert.equal(fresher.forFreshers, 'yes')
 assert.equal(fresher.experience, '0–1 years')
-assert.equal(fresher.category, 'Data & BI')
+assert.equal(fresher.category, 'Inventory Analyst')
 assert.equal(fresher.id, 'greenhouse:acme:1')
+assert.equal(fresher.salary, null, 'nothing is filled in')
 
-const unstated = job({ title: 'Pricing Analyst' })!
-assert.equal(unstated.experience, null, 'a missing requirement stays null')
-assert.equal(unstated.fresher, false)
-assert.equal(unstated.category, 'Pricing & merch')
-
-assert.equal(job({ description: '3-5 years of relevant experience' }), null)
-assert.equal(job({ minYears: 5, experience: '5–8 years' }), null)
+assert.equal(job({ description: '3-5 years of relevant experience' })!.forFreshers, 'no', 'kept, and marked for the 2+ years view')
+assert.equal(job({ minYears: 5, experience: '5–8 years' })!.experience, '5–8 years')
 assert.equal(job({ location: 'Indianapolis, IN' }), null)
 assert.equal(job({ location: null }), null)
-assert.equal(job({ experience: 'Mid-Senior Level' }), null)
-assert.equal(job({ experience: 'Entry Level' })!.fresher, true)
-assert.equal(job({ title: 'Analytics Intern' })!.fresher, true)
+assert.equal(job({ title: 'Data Engineer' }), null)
 
 // merge and status
 const now = new Date('2026-10-20T00:00:00.000Z')
@@ -70,7 +87,10 @@ assert.equal(failed.find((j) => j.id.endsWith(':5'))?.status, 'unverified', 'unv
 const lapsed = merge([], [{ key: 'greenhouse:acme', ok: true, jobs: [{ ...seenAgain, deadline: '2026-10-19' }] }], now)
 assert.equal(lapsed[0].status, 'expired', 'past its deadline')
 
-assert.equal(merge([prev('6')], [], now).length, 0, 'employer removed from employers.json')
+const order = merge([], [{ key: 'greenhouse:acme', ok: true, jobs: [prev('6', { forFreshers: 'no' }), prev('7', { forFreshers: 'unknown' }), prev('8')] }], now)
+assert.deepEqual(order.map((j) => j.forFreshers), ['yes', 'unknown', 'no'], 'fresher roles first')
+
+assert.equal(merge([prev('9')], [], now).length, 0, 'employer removed from employers.json')
 
 // html to text
 assert.equal(text('<p>Use&nbsp;SQL &amp; Excel</p><ul><li>0&#8211;1 years</li></ul>'), 'Use SQL & Excel\n0–1 years')
