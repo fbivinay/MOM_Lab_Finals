@@ -3,8 +3,8 @@ import type { SlideDef } from '../presentation/deck'
 import { AimlBasket, AimlClosing, AimlForecast, AimlIntro, AimlRecommend, AimlReportVsPredict } from './aiml'
 import { CareersAdvanced, CareersAnalytics, CareersBigData, CareersBusiness, CareersClosing, CareersFoundation, CareersIntro } from './careers'
 import { Cover } from './cover'
-import { DataClosing, DataDigital, DataInventory, DataJourney, DataPricing, DataRain } from './data'
-import { IndustryClosing, IndustryCompare, IndustryEcom, IndustryIntro, IndustryQuick, IndustryStore, IndustryTarget } from './industry'
+import { DataClosing, DataDigital, DataJourney, DataPricing } from './data'
+import { IndustryCollab, IndustryML, IndustryProblems, IndustryProject, IndustryTarget } from './industry'
 import { RoleAnalyst, RoleBA, RoleEngineer, RoleMLE, RoleScientist, RolesClosing, RolesIntro, RolesJourney } from './roles'
 
 export { sections } from './sections'
@@ -24,9 +24,7 @@ export const slides: SlideDef[] = [
 
   { id: 'data-journey', section: 'data', title: 'The customer journey', transition: 'curtain', steps: ['View', 'Compare', 'Add to cart', 'Abandon', 'Return', 'Purchase', 'Review'], Component: DataJourney },
   { id: 'data-digital', section: 'data', title: 'Digital behaviour', transition: 'push', Component: DataDigital },
-  { id: 'data-inventory', section: 'data', title: 'Inventory & supply chain', transition: 'push', Component: DataInventory },
   { id: 'data-pricing', section: 'data', title: 'Pricing & external signals', transition: 'rise', steps: ['Signals outside the store'], Component: DataPricing },
-  { id: 'data-rain', section: 'data', title: 'Rain and umbrellas', transition: 'wipe', steps: ['Searches increase', 'Sales increase', 'Move the stock'], Component: DataRain },
   { id: 'data-closing', section: 'data', title: 'Connect the signals', transition: 'iris', Component: DataClosing },
 
   { id: 'aiml-intro', section: 'aiml', title: 'What happens next?', transition: 'curtain', steps: ['Machine learning asks…'], Component: AimlIntro },
@@ -36,13 +34,11 @@ export const slides: SlideDef[] = [
   { id: 'aiml-basket', section: 'aiml', title: 'Market basket analysis', transition: 'rise', steps: ['Where it is used'], Component: AimlBasket },
   { id: 'aiml-closing', section: 'aiml', title: 'Prepare for the future', transition: 'iris', Component: AimlClosing },
 
-  { id: 'industry-target', section: 'industry', title: 'Case study: Target', transition: 'curtain', steps: ['The challenge', 'Data in action', 'What analysts learn'], Component: IndustryTarget },
-  { id: 'industry-intro', section: 'industry', title: 'Different problems', transition: 'rise', steps: ['But they solve…'], Component: IndustryIntro },
-  { id: 'industry-ecom', section: 'industry', title: 'E-commerce', transition: 'wipe', steps: ['The recommendation', 'Fulfilment'], Component: IndustryEcom },
-  { id: 'industry-store', section: 'industry', title: 'Physical retail', transition: 'wipe', steps: ['Stockout', 'Replenishment'], Component: IndustryStore },
-  { id: 'industry-quick', section: 'industry', title: 'Quick commerce', transition: 'wipe', steps: ['Heavy rain', 'Behaviour changes', 'Demand rises', 'Stock falls', 'Operations respond'], Component: IndustryQuick },
-  { id: 'industry-compare', section: 'industry', title: 'Side by side', transition: 'zoom', Component: IndustryCompare },
-  { id: 'industry-closing', section: 'industry', title: 'Real-time problem', transition: 'iris', Component: IndustryClosing },
+  { id: 'industry-target', section: 'industry', title: 'Target: what an analyst learns', transition: 'curtain', steps: ['The challenge', 'Data in action', 'What analysts learn'], Component: IndustryTarget },
+  { id: 'industry-problems', section: 'industry', title: 'Business problems and metrics', transition: 'rise', Component: IndustryProblems },
+  { id: 'industry-project', section: 'industry', title: 'Essential Beauty: analytics project', transition: 'push', Component: IndustryProject },
+  { id: 'industry-collab', section: 'industry', title: 'Collaboration and tools', transition: 'push', Component: IndustryCollab },
+  { id: 'industry-ml', section: 'industry', title: 'Machine learning and challenges', transition: 'rise', Component: IndustryML },
 
   { id: 'careers-intro', section: 'careers', title: 'What should we learn?', transition: 'curtain', steps: ['The question for us'], Component: CareersIntro },
   { id: 'careers-foundation', section: 'careers', title: 'Fundamentals', transition: 'rise', Component: CareersFoundation },
@@ -55,5 +51,5 @@ export const slides: SlideDef[] = [
 
 export const preload = [
   ...BRAND_URLS,
-  ...['shoe-runner', 'shoe-airmax', 'shoe-red', 'shoe-neon', 'socks', 'tee', 'watch', 'bottle', 'headphones', 'fulfilment', 'store-aisle', 'sale', 'target-store'].map((n) => `/images/${n}.webp`),
+  ...['shoe-runner', 'shoe-airmax', 'shoe-red', 'socks', 'tee', 'watch', 'bottle', 'sale', 'target-store'].map((n) => `/images/${n}.webp`),
 ]

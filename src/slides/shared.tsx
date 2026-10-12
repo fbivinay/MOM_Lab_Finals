@@ -1,6 +1,6 @@
 import { motion } from 'motion/react'
 import type { ReactNode } from 'react'
-import { AnimatedHeadline, Reveal, cx } from '../components/motion'
+import { AnimatedHeadline, Reveal } from '../components/motion'
 import { useSlide } from '../presentation/deck'
 import { EASE } from '../presentation/transitions'
 
@@ -57,26 +57,6 @@ export function ChapterOpener({
         </div>
       </div>
       <div className="absolute bottom-[6.5rem] left-[55rem] right-[5.5rem] top-[7rem]">{visual}</div>
-    </div>
-  )
-}
-
-/** Row of capability chips; `on` lights the ones the scene is currently showing. */
-export function Capabilities({ items, on = [], delay = 0.9, className }: { items: string[]; on?: string[]; delay?: number; className?: string }) {
-  return (
-    <div className={cx('flex flex-wrap gap-[0.6rem]', className)}>
-      {items.map((it, i) => (
-        <motion.span
-          key={it}
-          className="chip"
-          data-on={on.includes(it)}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: delay + i * 0.07, ease: EASE }}
-        >
-          {it}
-        </motion.span>
-      ))}
     </div>
   )
 }

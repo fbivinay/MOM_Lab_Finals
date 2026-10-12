@@ -2,12 +2,12 @@
 
 An animated, full-screen presentation website for an MSc Big Data Analytics talk. It behaves like a slide deck: one scene fills the screen, Next moves to the next build or scene, and every section flows into the next.
 
-Five sections, 35 scenes, all in a light theme:
+Five sections, 31 scenes, all in a light theme:
 
 1. **Roles** – from data to decision: Data Engineer, Retail Analyst, Data Scientist, ML Engineer, Business Analyst
-2. **Data** – the customer journey, digital behaviour, inventory, pricing and external signals, rain and demand
+2. **Data** – the customer journey, digital behaviour, pricing and external signals
 3. **AI/ML** – reporting vs prediction, demand forecasting, recommendations, market basket analysis
-4. **Industry** – a Target case study, then e-commerce, physical retail and quick commerce compared
+4. **Industry** – a Target case study, then four slides from interview notes: business problems and metrics, the Essential Beauty analytics project, collaboration and tools, machine learning and challenges
 5. **Careers** – fundamentals, analytics, prediction, big data and business understanding
 
 ## Run it
@@ -47,6 +47,8 @@ Reduced-motion preferences are respected: transform animations are disabled and 
 
 Every number marked "illustrative" is an invented teaching example, not company data. The market basket measures are computed live from the twelve baskets shown on screen.
 
+The four interview slides in Industry use only the wording of the interview notes; their visuals are schematic and show no data.
+
 The Target case study uses only published facts: Target's fiscal 2023 annual report / 10-K (store fulfilment share, owned brands, Target Circle, Roundel, distribution), Target's press boilerplate (nearly 2,000 stores), the Target Tech blog post "Solving for Product Availability with AI" (October 2023) and Retail Dive's December 2019 report on Target's demand forecasting.
 
-Company names and logos are trademarks of their owners, used for identification in an educational presentation. Logos come from Wikimedia Commons (the Target bullseye mark is public domain there); the Instamart mark comes from Swiggy's published Instamart brand book. Photography is from Unsplash (Unsplash License). All assets are stored locally in `public/`.
+Company names and logos are trademarks of their owners, used for identification in an educational presentation. The Target logo comes from Wikimedia Commons, where it is public domain. Photography is from Unsplash (Unsplash License). All assets are stored locally in `public/`.

@@ -4,17 +4,10 @@ import { EASE } from '../presentation/transitions'
 import { cx } from './motion'
 
 /**
- * Official marks (Wikimedia Commons; Instamart from its published brand book), stored locally.
+ * Official mark (Wikimedia Commons), stored locally.
  * `scale` evens out optical size: wide wordmarks read larger than square icons at the same height.
  */
 export const BRANDS = {
-  amazon: { name: 'Amazon', src: '/brands/amazon.svg', ratio: 603 / 182, scale: 1, color: '#FF9900', note: 'Global online marketplace' },
-  flipkart: { name: 'Flipkart', src: '/brands/flipkart.svg', ratio: 19.15 / 5.15, scale: 1.08, color: '#2874F0', note: 'Indian online marketplace, majority-owned by Walmart' },
-  dmart: { name: 'DMart', src: '/brands/dmart.svg', ratio: 190 / 47.8, scale: 1, color: '#11703B', note: 'Indian supermarket chain run by Avenue Supermarts' },
-  walmart: { name: 'Walmart', src: '/brands/walmart.svg', ratio: 253 / 59.874, scale: 1, color: '#0053E2', note: 'US-based multinational retailer' },
-  blinkit: { name: 'Blinkit', src: '/brands/blinkit.svg', ratio: 1, scale: 1.55, color: '#F8CB46', note: 'Quick commerce, part of the Eternal (Zomato) group' },
-  zepto: { name: 'Zepto', src: '/brands/zepto.svg', ratio: 3, scale: 1.05, color: '#950EDB', note: 'Indian quick-commerce company' },
-  instamart: { name: 'Swiggy Instamart', src: '/brands/instamart.svg', ratio: 704 / 286, scale: 1.3, color: '#FF5200', note: "Swiggy's quick-commerce service" },
   target: { name: 'Target', src: '/brands/target.svg', ratio: 432 / 574, scale: 1.7, color: '#CC0000', note: 'US general-merchandise retailer based in Minneapolis' },
 } as const
 
