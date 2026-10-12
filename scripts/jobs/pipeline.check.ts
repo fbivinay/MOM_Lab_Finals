@@ -1,8 +1,8 @@
 /** Self-check for the common pipeline: node scripts/jobs/pipeline.check.ts */
 import assert from 'node:assert/strict'
 import type { Job } from '../../src/jobs/types.ts'
-import { family, fresherFit, merge, relevantFor, statedYears, toJob } from './pipeline.ts'
-import { text, type Employer, type RawJob } from './sources.ts'
+import { family, fresherFit, merge, relevantFor, spread, statedYears, toJob } from './pipeline.ts'
+import { robotsVerdict, text, type Employer, type RawJob } from './sources.ts'
 
 // experience statements
 assert.deepEqual(statedYears('You bring 0-2 years of experience with SQL.'), { min: 0, text: '0–2 years' })
@@ -24,6 +24,9 @@ assert.equal(family('Merchandise Planning Analyst', true), 'Retail Analyst')
 assert.equal(family('Pricing Analyst', true), 'Retail Analyst')
 assert.equal(family('Pricing and Solutions Analyst', false), null, 'freight pricing at a shipping line is not retail')
 assert.equal(family('Retail Analyst', false), 'Retail Analyst')
+assert.equal(family('Associate Planner PIM', true), 'Inventory Analyst')
+assert.equal(family('Associate Planner', true), 'Retail Analyst', 'a planner at a retailer plans merchandise')
+assert.equal(family('Associate Planner', false), null)
 assert.equal(family('Senior Manager - Demand Planning', true), null, 'managers are not analyst roles')
 assert.equal(family('Analyst Merch Payable', true), null, 'accounting roles are out')
 assert.equal(family('Demand Generation Executive', true), null)
@@ -91,6 +94,17 @@ const order = merge([], [{ key: 'greenhouse:acme', ok: true, jobs: [prev('6', { 
 assert.deepEqual(order.map((j) => j.forFreshers), ['yes', 'unknown', 'no'], 'fresher roles first')
 
 assert.equal(merge([prev('9')], [], now).length, 0, 'employer removed from employers.json')
+
+const mix = spread([prev('a', { company: 'A' }), prev('b', { company: 'A' }), prev('c', { company: 'B' }), prev('d', { company: 'A', forFreshers: 'no' }), prev('e', { company: 'B', forFreshers: 'no' })])
+assert.deepEqual(mix.map((j) => j.company + j.forFreshers), ['Ayes', 'Byes', 'Ayes', 'Ano', 'Bno'], 'companies take turns within each group')
+
+// robots.txt matching
+assert.equal(robotsVerdict([[false, '/LWS_External_CS/']], '/LWS_External_CS/job/x'), false)
+assert.equal(robotsVerdict([[false, '/refreshFacet/']], '/wday/cxs/t/site/jobs'), true)
+assert.equal(robotsVerdict([[false, '/'], [true, '/careers/']], '/careers/job/1'), true, 'longest rule wins')
+assert.equal(robotsVerdict([[false, '*/apply']], '/in/en/job/1/apply'), false)
+assert.equal(robotsVerdict([[false, '*/apply']], '/in/en/job/1/Analyst'), true)
+assert.equal(robotsVerdict([[false, '/a$']], '/ab'), true, '$ anchors the end')
 
 // html to text
 assert.equal(text('<p>Use&nbsp;SQL &amp; Excel</p><ul><li>0&#8211;1 years</li></ul>'), 'Use SQL & Excel\n0–1 years')

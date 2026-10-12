@@ -20,11 +20,11 @@ const ROLE_START = /about (the|this) (role|career|job)|role overview|job descrip
  *  retailer, where "pricing", "category" or a plain data analyst title means retail work. */
 const FAMILIES: [JobCategory, RegExp, boolean][] = [
   ['Demand Forecasting Analyst', /forecast|demand.?plan|demand analy|demand sensing/i, false],
-  ['Inventory Analyst', /inventory|replenish/i, false],
+  ['Inventory Analyst', /inventory|replenish|\bpim\b/i, false], // PIM: Target's Planning & Inventory Management
   ['Supply Chain Analyst', /supply.?chain|supply plan|logistic|procurement|sourcing|fulfil|warehouse|distribution|transport/i, false],
   ['Retail Data Analyst', /retail.*\b(data|analytics|bi|insights?|reporting)\b|\b(data|analytics|bi|insights?|reporting)\b.*retail/i, false],
   ['Retail Analyst', /retail/i, false],
-  ['Retail Analyst', /merchandis|\bmerch\b|category|assortment|pricing|\bstores?\b|planogram|e-?commerce/i, true],
+  ['Retail Analyst', /merchandis|\bmerch\b|category|assortment|pricing|\bstores?\b|planogram|e-?commerce|marketplace|planner|planning/i, true],
   ['Retail Data Analyst', DATA, true],
 ]
 
@@ -116,10 +116,32 @@ export function merge(prev: Job[], runs: Run[], now: Date): Job[] {
 
   out.sort((a, b) => RANK[a.status] - RANK[b.status] || FIT[a.forFreshers] - FIT[b.forFreshers] || (b.postedAt ?? '').localeCompare(a.postedAt ?? ''))
   const seen = new Set<string>()
-  return out.filter((j) => {
-    const k = `${j.company}|${j.title}|${j.location}`.toLowerCase()
-    if (seen.has(k)) return false
-    seen.add(k)
-    return true
-  })
+  return spread(
+    out.filter((j) => {
+      const k = `${j.company}|${j.title}|${j.location}`.toLowerCase()
+      if (seen.has(k)) return false
+      seen.add(k)
+      return true
+    }),
+  )
+}
+
+/** Keeps the status and fresher-fit groups in order, but deals each group out one company at a time,
+ *  newest first within a company, so one employer cannot fill the first page. */
+export function spread(jobs: Job[]): Job[] {
+  const groups = new Map<string, Map<string, Job[]>>()
+  for (const j of jobs) {
+    const group = groups.get(`${j.status}|${j.forFreshers}`) ?? new Map<string, Job[]>()
+    groups.set(`${j.status}|${j.forFreshers}`, group.set(j.company, [...(group.get(j.company) ?? []), j]))
+  }
+  const out: Job[] = []
+  for (const companies of groups.values()) {
+    while (companies.size) {
+      for (const [company, queue] of companies) {
+        out.push(queue.shift()!)
+        if (!queue.length) companies.delete(company)
+      }
+    }
+  }
+  return out
 }

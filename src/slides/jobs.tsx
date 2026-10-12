@@ -143,12 +143,14 @@ const PAGE = 6
 export function JobsBoard() {
   const { data, failed } = useJobs()
   const [category, setCategory] = useState<JobCategory | null>(null)
-  const [withExperienced, setWithExperienced] = useState(false)
+  const [fresherOnly, setFresherOnly] = useState(false)
   const [page, setPage] = useState(0)
 
+  // Listings arrive sorted with roles open to freshers first.
   const open = data?.jobs.filter((j) => j.status !== 'expired') ?? []
   const inCategory = open.filter((j) => !category || j.category === category)
-  const shown = inCategory.filter((j) => withExperienced || j.forFreshers !== 'no')
+  const fresherFit = inCategory.filter((j) => j.forFreshers !== 'no')
+  const shown = fresherOnly ? fresherFit : inCategory
   const hidden = inCategory.length - shown.length
   const pages = Math.max(1, Math.ceil(shown.length / PAGE))
   const cards = shown.slice(page * PAGE, (page + 1) * PAGE)
@@ -157,8 +159,8 @@ export function JobsBoard() {
     setCategory(c)
     setPage(0)
   }
-  const showExperienced = (on: boolean) => {
-    setWithExperienced(on)
+  const showFreshersOnly = (on: boolean) => {
+    setFresherOnly(on)
     setPage(0)
   }
 
@@ -190,8 +192,11 @@ export function JobsBoard() {
           ))}
         </div>
         <div className="flex shrink-0 items-center gap-[1rem]">
-          <button type="button" className="chip h-[2.25rem] px-[0.8rem] text-[0.875rem]" data-on={withExperienced} aria-pressed={withExperienced} onClick={() => showExperienced(!withExperienced)}>
-            Include 2+ years{!withExperienced && hidden > 0 && <span className="tnum text-fg-3">({hidden})</span>}
+          <span className="tnum text-[0.9375rem] text-fg-3">
+            {shown.length} {shown.length === 1 ? 'role' : 'roles'}
+          </span>
+          <button type="button" className="chip h-[2.25rem] px-[0.8rem] text-[0.875rem]" data-on={fresherOnly} aria-pressed={fresherOnly} onClick={() => showFreshersOnly(!fresherOnly)}>
+            Freshers only (0–1 yrs)
           </button>
           <div className="flex items-center gap-[0.4rem] text-[0.9375rem] text-fg-3">
             {[-1, 1].map((d) => (
@@ -214,7 +219,7 @@ export function JobsBoard() {
       </Reveal>
 
       {cards.length > 0 ? (
-        <div key={`${category}-${withExperienced}-${page}`} className="absolute left-[5.5rem] right-[5.5rem] top-[17.75rem] grid grid-cols-3 gap-[1.25rem]">
+        <div key={`${category}-${fresherOnly}-${page}`} className="absolute left-[5.5rem] right-[5.5rem] top-[17.75rem] grid grid-cols-3 gap-[1.25rem]">
           {cards.map((j, i) => (
             <JobCard key={j.id} job={j} index={i} />
           ))}
@@ -228,7 +233,7 @@ export function JobsBoard() {
           ) : hidden > 0 ? (
             <EmptyNote title={`No fresher-level ${category ?? 'retail analyst'} openings today`}>
               {hidden} {hidden === 1 ? 'opening asks' : 'openings ask'} for two or more years of experience.
-              <ActionChip onClick={() => showExperienced(true)}>Show {hidden === 1 ? 'it' : 'them'}</ActionChip>
+              <ActionChip onClick={() => showFreshersOnly(false)}>Show {hidden === 1 ? 'it' : 'them'}</ActionChip>
             </EmptyNote>
           ) : open.length > 0 ? (
             <EmptyNote title={`No ${category} openings today`}>
@@ -276,34 +281,34 @@ function ActionChip({ onClick, children }: { onClick: () => void; children: Reac
 /** Pre-filtered searches on sites that offer no public jobs API we can use; linked, never collected. */
 const SITE_GROUPS: { label: string; sites: { name: string; search: string; href: string }[] }[] = [
   {
-    label: 'Job boards',
+    label: 'Large job boards',
     sites: [
-      { name: 'LinkedIn', search: 'Retail data analyst, India, internship and entry level', href: 'https://www.linkedin.com/jobs/search/?keywords=retail%20data%20analyst&location=India&f_E=1%2C2' },
-      { name: 'Indeed India', search: 'Data analyst fresher, India', href: 'https://in.indeed.com/jobs?q=data+analyst+fresher&l=India' },
-      { name: 'Naukri', search: 'Data analyst, 0 years of experience', href: 'https://www.naukri.com/data-analyst-jobs?experience=0' },
-      { name: 'Foundit', search: 'Data analyst, 0–1 years of experience', href: 'https://www.foundit.in/search/data-analyst-jobs?experienceRanges=0~1' },
-      { name: 'Glassdoor', search: 'Data analyst, India', href: 'https://www.glassdoor.co.in/Job/india-data-analyst-jobs-SRCH_IL.0,5_IN115_KO6,18.htm' },
-      { name: 'TimesJobs', search: 'Data analyst, India, 0 years of experience', href: 'https://www.timesjobs.com/candidate/job-search.html?searchType=personalizedSearch&from=submit&txtKeywords=data+analyst&txtLocation=India&cboWorkExp1=0' },
-      { name: 'Shine', search: 'Data analyst jobs for freshers', href: 'https://www.shine.com/job-search/data-analyst-jobs-for-freshers' },
+      { name: 'LinkedIn', search: 'Retail analyst, India, internship and entry level', href: 'https://www.linkedin.com/jobs/search/?keywords=retail%20analyst&location=India&f_E=1%2C2' },
+      { name: 'Indeed India', search: 'Retail analyst fresher, India', href: 'https://in.indeed.com/jobs?q=retail+analyst+fresher&l=India' },
+      { name: 'Naukri', search: 'Retail analyst, 0 years of experience', href: 'https://www.naukri.com/retail-analyst-jobs?experience=0' },
+      { name: 'Foundit', search: 'Retail analyst, 0–1 years of experience', href: 'https://www.foundit.in/search/retail-analyst-jobs?experienceRanges=0~1' },
+      { name: 'Glassdoor', search: 'Retail analyst, India, entry level', href: 'https://www.glassdoor.co.in/Job/india-retail-analyst-jobs-SRCH_IL.0,5_IN115_KO6,20.htm?seniorityType=entrylevel' },
+      { name: 'Careerjet', search: 'Retail analyst fresher, India', href: 'https://www.careerjet.co.in/jobs?s=retail+analyst+fresher&l=India' },
     ],
   },
   {
-    label: 'Fresher and internship platforms',
+    label: 'Fresher job sites',
     sites: [
-      { name: 'Internshala', search: 'Data analytics internships', href: 'https://internshala.com/internships/data-analytics-internship/' },
-      { name: 'Internshala', search: 'Fresher data analyst jobs', href: 'https://internshala.com/fresher-jobs/data-analyst-jobs/' },
-      { name: 'Freshersworld', search: 'Data analyst jobs for engineering graduates', href: 'https://www.freshersworld.com/jobs/jobsearch/data-analyst-jobs-for-be-btech' },
-      { name: 'apna', search: 'Data analyst jobs', href: 'https://apna.co/jobs/data-analyst-jobs' },
-      { name: 'Unstop', search: 'Open data analyst jobs', href: 'https://unstop.com/job?oppstatus=open&searchTerm=data%20analyst' },
+      { name: 'Shine', search: 'Retail analyst jobs for freshers', href: 'https://www.shine.com/job-search/retail-analyst-jobs-for-freshers' },
+      { name: 'TimesJobs', search: 'Retail analyst, India, freshers', href: 'https://www.timesjobs.com/candidate/job-search.html?searchType=personalizedSearch&from=submit&txtKeywords=retail+analyst&txtLocation=India&cboWorkExp1=0' },
+      { name: 'Freshersworld', search: 'Retail analyst fresher jobs', href: 'https://www.freshersworld.com/jobs/jobsearch/retail-analyst-jobs' },
+      { name: 'apna', search: 'Retail analyst fresher', href: 'https://apna.co/jobs?search=true&text=retail%20analyst%20fresher' },
+      { name: 'Jobaaj', search: 'Retail analyst fresher jobs', href: 'https://www.jobaaj.com/jobs/retail-analyst-fresher-jobs' },
     ],
   },
   {
-    label: 'Startup and tech boards',
+    label: 'Internships and specialist boards',
     sites: [
-      { name: 'Wellfound', search: 'Startup data analyst roles, India', href: 'https://wellfound.com/role/l/data-analyst/india' },
-      { name: 'Instahyre', search: 'Data analyst jobs', href: 'https://www.instahyre.com/data-analyst-jobs/' },
-      { name: 'Hirist', search: 'Data analyst jobs', href: 'https://www.hirist.tech/k/data-analyst-jobs' },
-      { name: 'Jobaaj', search: 'Data analyst jobs', href: 'https://www.jobaaj.com/jobs/data-analyst-jobs' },
+      { name: 'Internshala', search: 'Retail analyst internships', href: 'https://internshala.com/internships/keywords-retail%20analyst/' },
+      { name: 'Internshala', search: 'Retail analyst fresher jobs', href: 'https://internshala.com/fresher-jobs/keywords-retail%20analyst/' },
+      { name: 'Unstop', search: 'Open retail analyst jobs', href: 'https://unstop.com/job?oppstatus=open&searchTerm=retail%20analyst' },
+      { name: 'Hirist', search: 'Retail analyst fresher jobs', href: 'https://www.hirist.tech/k/retail-analyst-fresher-jobs' },
+      { name: 'Instahyre', search: 'Retail analyst; set experience to 0 on the site', href: 'https://www.instahyre.com/retail-analyst-jobs/' },
     ],
   },
 ]
@@ -314,7 +319,7 @@ export function JobsSites() {
       <div className="absolute left-[5.5rem] top-[7rem] w-[62rem]">
         <SceneHead eyebrow="Job sites" title="Where else to look" size="title" />
         <Reveal delay={0.35} y={8} className="mt-[0.9rem] text-[1.125rem] leading-[1.45] text-fg-2">
-          Each link opens a ready-made search for data analyst roles in India; the filter it applies is listed under the name. None of these sites offers a public jobs API we can use, so we link to them instead of copying their listings.
+          Each link opens a search for retail analyst roles in India open to freshers; the filter it applies is listed under the name. None of these sites offers a public jobs API we can use, so we link to them instead of copying their listings.
         </Reveal>
       </div>
       <div className="absolute left-[5.5rem] right-[5.5rem] top-[18rem] grid grid-cols-3 gap-x-[2.5rem]">

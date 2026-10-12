@@ -217,15 +217,76 @@ function jobPosting(html: string): JobPostingLd | null {
   return null
 }
 
-/** Career sites that name a sitemap in robots.txt and embed schema.org JobPosting data in each job page.
- *  `slug` reads the title (and the location, when the URL carries one) so only relevant pages are fetched.
- *  Sitemaps may list only the newest postings, so jobs collected earlier are re-checked on their own pages. */
-async function fromSitemap({ wanted, known }: FetchArgs, sitemap: string, slug: (url: string) => { title: string; location: string | null }): Promise<RawJob[]> {
+/* robots.txt rules for all crawlers (User-agent: *), fetched once per site. */
+const robotsCache = new Map<string, Promise<[allow: boolean, rule: string][]>>()
+
+async function robotsRules(origin: string): Promise<[boolean, string][]> {
+  const res = await fetch(`${origin}/robots.txt`, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(30_000) }).catch(() => null)
+  if (!res || res.status >= 500) return [[false, '/']] // unreachable: assume nothing may be crawled
+  if (!res.ok) return [] // no robots.txt: no rules (RFC 9309)
+  const rules: [boolean, string][] = []
+  let applies = false
+  let inAgents = false
+  for (const line of (await res.text()).split(/\r?\n/)) {
+    const m = line.replace(/#.*/, '').match(/^\s*([\w-]+)\s*:\s*(.*?)\s*$/)
+    if (!m) continue
+    const key = m[1].toLowerCase()
+    if (key === 'user-agent') {
+      applies = (inAgents && applies) || m[2] === '*'
+      inAgents = true
+      continue
+    }
+    inAgents = false
+    if (applies && (key === 'allow' || key === 'disallow') && m[2]) rules.push([key === 'allow', m[2]])
+  }
+  return rules
+}
+
+/** RFC 9309 matching: the longest matching rule wins and Allow wins a tie; `*` matches anything, a final `$` anchors. */
+export function robotsVerdict(rules: [boolean, string][], path: string): boolean {
+  let allowed = true
+  let longest = -1
+  for (const [allow, rule] of rules) {
+    const anchored = rule.endsWith('$')
+    const body = (anchored ? rule.slice(0, -1) : rule).replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '.*')
+    if (new RegExp(`^${body}${anchored ? '$' : ''}`).test(path) && (rule.length > longest || (rule.length === longest && allow))) {
+      allowed = allow
+      longest = rule.length
+    }
+  }
+  return allowed
+}
+
+async function allowedByRobots(url: string): Promise<boolean> {
+  const { origin, pathname, search } = new URL(url)
+  if (!robotsCache.has(origin)) robotsCache.set(origin, robotsRules(origin))
+  return robotsVerdict(await robotsCache.get(origin)!, pathname + search)
+}
+
+/** Job URLs listed in a sitemap, following a sitemap index down to its sitemaps. */
+async function sitemapUrls(sitemap: string): Promise<string[]> {
+  if (!(await allowedByRobots(sitemap))) return []
   const xml = await (await get(sitemap)).text()
-  const listed = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => decode(m[1])).filter((u) => u.includes('/job/'))
+  const locs = [...xml.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/g)].map((m) => decode(m[1]))
+  if (!xml.includes('<sitemapindex')) return locs.filter((u) => u.includes('/job/'))
+  const urls: string[] = []
+  for (const child of locs) {
+    await pause()
+    urls.push(...(await sitemapUrls(child)))
+  }
+  return urls
+}
+
+type Slug = (url: string) => { title: string; location: string | null }
+
+/** Career sites that embed schema.org JobPosting data in each job page. `slug` reads the title (and the
+ *  location, when the URL carries one) so only relevant pages are fetched. Jobs collected earlier are
+ *  re-checked on their own pages, because a sitemap or search may list only the newest postings. */
+async function careerSite({ wanted, known }: FetchArgs, listed: string[], slug: Slug): Promise<RawJob[]> {
   const urls = [...new Set([...listed.filter((u) => wanted(slug(u).title, slug(u).location)), ...known])]
   const out: RawJob[] = []
   for (const url of urls) {
+    if (!(await allowedByRobots(url))) continue
     await pause()
     const res = await fetch(url, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(30_000) })
     if (res.status === 404 || res.status === 410) continue
@@ -255,13 +316,63 @@ async function fromSitemap({ wanted, known }: FetchArgs, sitemap: string, slug: 
   return out
 }
 
+type WorkdayFacet = { facetParameter?: string; descriptor?: string; id?: string; values?: WorkdayFacet[] }
+type WorkdaySearch = { facets?: WorkdayFacet[]; jobPostings?: { externalPath?: string }[] }
+
+/** Role keywords for the career-site search; the pipeline still decides which family each title is in. */
+const SEARCH_TERMS = ['retail analyst', 'merchandise', 'pricing', 'category', 'demand planning', 'forecasting', 'inventory', 'replenishment', 'supply chain analyst', 'supply planning', 'planner', 'insights analyst', 'data analyst']
+
+/** The India value of a site's location filter; filters nest, and a nested value may name its own parameter. */
+function indiaFilter(facets: WorkdayFacet[] = []): Record<string, string[]> {
+  const stack = facets.flatMap((f) => (f.values ?? []).map((v) => ({ param: v.facetParameter ?? f.facetParameter, v })))
+  while (stack.length) {
+    const { param, v } = stack.pop()!
+    if (v.descriptor === 'India' && v.id && param) return { [param]: [v.id] }
+    stack.push(...(v.values ?? []).map((x) => ({ param: x.facetParameter ?? param, v: x })))
+  }
+  return {}
+}
+
+/** Workday sites answer the same keyword search as their public job page. Searching each role keyword,
+ *  filtered to India where the site offers that filter, finds postings older than the sitemap's newest. */
+async function workdaySearch(board: string): Promise<string[]> {
+  const { origin, hostname, pathname } = new URL(board)
+  const site = pathname.split('/').filter(Boolean).at(-1)
+  const api = `${origin}/wday/cxs/${hostname.split('.')[0]}/${site}/jobs`
+  if (!(await allowedByRobots(`${board}/`)) || !(await allowedByRobots(api))) return []
+  const search = async (searchText: string, appliedFacets: Record<string, string[]> = {}) => {
+    await pause()
+    const res = await fetch(api, {
+      method: 'POST',
+      headers: { 'User-Agent': UA, 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({ appliedFacets, limit: 20, offset: 0, searchText }),
+      signal: AbortSignal.timeout(30_000),
+    })
+    if (!res.ok) throw new Error(`HTTP ${res.status} for ${api}`)
+    return (await res.json()) as WorkdaySearch
+  }
+  const india = indiaFilter((await search('')).facets)
+  const urls: string[] = []
+  for (const term of SEARCH_TERMS) for (const p of (await search(term, india)).jobPostings ?? []) if (p.externalPath) urls.push(board + p.externalPath)
+  return urls
+}
+
 const words = (segment = '') => segment.replace(/_[A-Z]+-?\d+.*$/, '').replace(/-+/g, ' ')
 
 /** Workday job URLs read .../job/{location}/{Title-Words}_{requisition}; the board is the career-site URL. */
-const workday = (args: FetchArgs) => fromSitemap(args, `${args.board}/siteMap.xml`, (u) => ({ title: words(u.split('/').at(-1)), location: words(u.split('/').at(-2)) }))
+async function workday(args: FetchArgs): Promise<RawJob[]> {
+  const searched = await workdaySearch(args.board).catch((err: Error) => {
+    console.warn(`  search unavailable on ${args.board}: ${err.message}; using the sitemap only`)
+    return []
+  })
+  const listed = [...(await sitemapUrls(`${args.board}/siteMap.xml`)), ...searched]
+  return careerSite(args, listed, (u) => ({ title: words(u.split('/').at(-1)), location: words(u.split('/').at(-2)) }))
+}
 
 /** Phenom job URLs read .../job/{requisition}/{Title-Words}; the board is the sitemap robots.txt names. */
-const phenom = (args: FetchArgs) => fromSitemap(args, args.board, (u) => ({ title: words(u.split('/').at(-1)), location: null }))
+async function phenom(args: FetchArgs): Promise<RawJob[]> {
+  return careerSite(args, await sitemapUrls(args.board), (u) => ({ title: words(u.split('/').at(-1)), location: null }))
+}
 
 /* ---------------------------------------------------------------- registry */
 
