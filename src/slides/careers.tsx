@@ -67,7 +67,7 @@ function SqlDemo() {
   ]
   return (
     <div className="space-y-[0.9rem]">
-      <div className="rounded-[0.8rem] bg-fg p-[0.9rem] font-mono text-[0.875rem] leading-[1.6] text-bg">
+      <div className="rounded-[0.8rem] border border-line-2 bg-bg-2 p-[0.9rem] font-mono text-[0.875rem] leading-[1.6] text-fg">
         {lines.map((l, i) => (
           <motion.div key={l} initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }} animate={{ opacity: 1, clipPath: 'inset(0 0% 0 0)' }} transition={{ delay: 0.9 + i * 0.28, duration: 0.35, ease: 'linear' }}>
             {l}

@@ -15,6 +15,7 @@ export const BRANDS = {
   blinkit: { name: 'Blinkit', src: '/brands/blinkit.svg', ratio: 1, scale: 1.55, color: '#F8CB46', note: 'Quick commerce, part of the Eternal (Zomato) group' },
   zepto: { name: 'Zepto', src: '/brands/zepto.svg', ratio: 3, scale: 1.05, color: '#950EDB', note: 'Indian quick-commerce company' },
   instamart: { name: 'Swiggy Instamart', src: '/brands/instamart.svg', ratio: 704 / 286, scale: 1.3, color: '#FF5200', note: "Swiggy's quick-commerce service" },
+  target: { name: 'Target', src: '/brands/target.svg', ratio: 432 / 574, scale: 1.7, color: '#CC0000', note: 'US general-merchandise retailer based in Minneapolis' },
 } as const
 
 export type BrandId = keyof typeof BRANDS
@@ -41,19 +42,17 @@ export function BrandLogo({ id, height = 2.5, className }: { id: BrandId; height
 
 /**
  * Logos enter on a mask and answer the pointer: lift, a rule in the brand's own colour,
- * and a one-line note about the company. `chip` puts the mark on a light plate for dark scenes.
+ * and a one-line note about the company.
  */
 export function BrandReveal({
   id,
   height = 2.5,
   delay = 0,
-  chip = false,
   className,
 }: {
   id: BrandId
   height?: number
   delay?: number
-  chip?: boolean
   className?: string
 }) {
   const b = BRANDS[id]
@@ -67,7 +66,7 @@ export function BrandReveal({
       <motion.div
         tabIndex={0}
         aria-label={`${b.name}: ${b.note}`}
-        className={cx('relative rounded-[0.9rem] outline-none', chip && 'bg-[#fbfaf7] px-[1.1rem] py-[0.8rem] shadow-[0_1px_0_rgba(0,0,0,0.04)]')}
+        className="relative rounded-[0.9rem] outline-none"
         whileHover={{ y: -4 }}
         whileFocus={{ y: -4 }}
         transition={{ duration: 0.35, ease: EASE }}

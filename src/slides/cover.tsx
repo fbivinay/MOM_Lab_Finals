@@ -1,5 +1,4 @@
 import { motion } from 'motion/react'
-import { RotateCcw } from 'lucide-react'
 import { AnimatedHeadline, Reveal, usePhases } from '../components/motion'
 import { useSlide } from '../presentation/deck'
 import { EASE } from '../presentation/transitions'
@@ -128,7 +127,7 @@ function BarcodeToChart() {
 }
 
 export function Cover() {
-  const { goTo } = useSlide()
+  const { goToSection } = useSlide()
   return (
     <div className="stage">
       <div className="absolute left-[5.5rem] top-[9.5rem]">
@@ -156,7 +155,7 @@ export function Cover() {
           <motion.button
             key={s.id}
             type="button"
-            onClick={() => goTo(`${s.id}-intro`)}
+            onClick={() => goToSection(s.id)}
             className="group flex flex-col items-start gap-[0.4rem] pr-[1.5rem] pt-[1.1rem] text-left"
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
@@ -168,58 +167,6 @@ export function Cover() {
           </motion.button>
         ))}
       </nav>
-    </div>
-  )
-}
-
-const recap = [
-  'Data + analysis + models + business context = decision.',
-  "Don't just record what happened. Connect the signals.",
-  "AI doesn't just explain the past. It helps prepare for the future.",
-  'Quick commerce is a real-time prediction and optimisation problem.',
-  'The best analyst connects data to decisions.',
-]
-
-export function ThankYou() {
-  const { goTo } = useSlide()
-  return (
-    <div className="stage">
-      <div className="absolute left-[5.5rem] top-[9rem]">
-        <AnimatedHeadline as="h2" text="Thank you." delay={0.25} className="text-[9rem] font-[650] leading-[0.9] tracking-[-0.06em] text-fg" />
-        <Reveal delay={0.8} className="mt-[1.5rem] text-[2.25rem] tracking-[-0.03em] text-fg-2">
-          Questions?
-        </Reveal>
-      </div>
-      <div className="absolute left-[4.5rem] top-[24rem] h-[17rem] w-[38rem] opacity-90">
-        <BarcodeToChart />
-      </div>
-      <ol className="absolute right-[5.5rem] top-[9.5rem] w-[38rem] space-y-[0.2rem]">
-        {recap.map((r, i) => (
-          <motion.li
-            key={r}
-            className="flex gap-[1.25rem] border-b border-line py-[0.95rem]"
-            initial={{ opacity: 0, x: 24 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.9 + i * 0.12, ease: EASE }}
-          >
-            <span className="w-[2rem] shrink-0 font-mono text-[0.9375rem] text-accent">{sections[i].number}</span>
-            <span className="text-[1.1875rem] leading-[1.35] text-fg-2">{r}</span>
-          </motion.li>
-        ))}
-      </ol>
-      <Reveal delay={1.8} className="absolute bottom-[7.5rem] left-[5.5rem] right-[5.5rem] flex items-end justify-between gap-[2rem]">
-        <p className="max-w-[52rem] text-[0.9375rem] leading-[1.5] text-fg-3">
-          Company names and logos are trademarks of their owners, shown for educational identification only. Photography: Unsplash. Every number marked
-          “illustrative” is an invented teaching example, not company data.
-        </p>
-        <button
-          type="button"
-          onClick={() => goTo('cover')}
-          className="flex shrink-0 items-center gap-[0.6rem] rounded-full border border-line-2 px-[1.2rem] py-[0.65rem] text-[1rem] text-fg-2 transition-colors hover:border-fg-3 hover:text-fg"
-        >
-          <RotateCcw className="h-[1rem] w-[1rem]" /> Back to the start
-        </button>
-      </Reveal>
     </div>
   )
 }

@@ -2,12 +2,12 @@
 
 An animated, full-screen presentation website for an MSc Big Data Analytics talk. It behaves like a slide deck: one scene fills the screen, Next moves to the next build or scene, and every section flows into the next.
 
-Five sections, 37 scenes:
+Five sections, 35 scenes, all in a light theme:
 
 1. **Roles** – from data to decision: Data Engineer, Retail Analyst, Data Scientist, ML Engineer, Business Analyst
-2. **Data** – the customer journey, transactions, digital behaviour, inventory, pricing and external signals
+2. **Data** – the customer journey, digital behaviour, inventory, pricing and external signals, rain and demand
 3. **AI/ML** – reporting vs prediction, demand forecasting, recommendations, market basket analysis
-4. **Industry** – e-commerce, physical retail and quick commerce compared
+4. **Industry** – a Target case study, then e-commerce, physical retail and quick commerce compared
 5. **Careers** – fundamentals, analytics, prediction, big data and business understanding
 
 ## Run it
@@ -37,7 +37,7 @@ Presenter clickers that send Page Up / Page Down work out of the box. The URL ke
 
 - React 19, TypeScript, Vite, Tailwind CSS 4, Motion for React, Lucide icons, Geist fonts (bundled, so it works offline).
 - `src/presentation/` – the deck engine: `PresentationShell` (state, keyboard, fullscreen, URL sync), `SlideRenderer` and `transitions.ts` (rise, push, zoom, wipe, curtain, iris and fade transitions), and `Navigation` (section tabs with in-section progress, footer dots, build counter, progress bar).
-- `src/slides/index.ts` – the running order. Each slide declares its section, theme, transition and optional build `steps`; adding a scene means adding one line here and one component.
+- `src/slides/index.ts` – the running order. Each slide declares its section, transition and optional build `steps`; adding a scene means adding one line here and one component.
 - `src/slides/*.tsx` – one file per section, plus `shared.tsx` for chapter openers and closing statements.
 - `src/components/` – animation primitives (`AnimatedHeadline`, `AnimatedCounter`, `FlowDots`, `Highlight`) and brand logos (`BrandLogo`, `BrandReveal`).
 
@@ -47,4 +47,6 @@ Reduced-motion preferences are respected: transform animations are disabled and 
 
 Every number marked "illustrative" is an invented teaching example, not company data. The market basket measures are computed live from the twelve baskets shown on screen.
 
-Company names and logos are trademarks of their owners, used for identification in an educational presentation. Logos come from Wikimedia Commons; the Instamart mark comes from Swiggy's published Instamart brand book. Photography is from Unsplash (Unsplash License). All assets are stored locally in `public/`.
+The Target case study uses only published facts: Target's fiscal 2023 annual report / 10-K (store fulfilment share, owned brands, Target Circle, Roundel, distribution), Target's press boilerplate (nearly 2,000 stores), the Target Tech blog post "Solving for Product Availability with AI" (October 2023) and Retail Dive's December 2019 report on Target's demand forecasting.
+
+Company names and logos are trademarks of their owners, used for identification in an educational presentation. Logos come from Wikimedia Commons (the Target bullseye mark is public domain there); the Instamart mark comes from Swiggy's published Instamart brand book. Photography is from Unsplash (Unsplash License). All assets are stored locally in `public/`.

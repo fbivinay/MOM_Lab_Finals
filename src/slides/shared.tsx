@@ -4,7 +4,8 @@ import { AnimatedHeadline, Reveal, cx } from '../components/motion'
 import { useSlide } from '../presentation/deck'
 import { EASE } from '../presentation/transitions'
 
-/** Dark chapter card: number, title, the opening hook in two beats (second beat on Next), and a section-specific visual. */
+/** Chapter card: number, title, the opening hook in two beats, and a section-specific visual.
+ *  The second beat waits for Next unless `together` reveals it with the first. */
 export function ChapterOpener({
   number,
   label,
@@ -13,6 +14,7 @@ export function ChapterOpener({
   second,
   visual,
   titleSize = 4.5,
+  together = false,
   children,
 }: {
   number: string
@@ -22,10 +24,12 @@ export function ChapterOpener({
   second: ReactNode
   visual: ReactNode
   titleSize?: number
+  together?: boolean
   /** Extra full-stage layers, e.g. signals carried over from the previous chapter. */
   children?: ReactNode
 }) {
   const { step } = useSlide()
+  const showSecond = together || step >= 1
   return (
     <div className="stage">
       {children}
@@ -44,47 +48,15 @@ export function ChapterOpener({
         <div className="mt-[2.25rem] space-y-[1rem] text-[1.625rem] leading-[1.42] tracking-[-0.012em] text-fg-2">
           <Reveal delay={0.8}>{first}</Reveal>
           <motion.div
-            initial={false}
-            animate={{ opacity: step >= 1 ? 1 : 0, y: step >= 1 ? 0 : 14 }}
-            transition={{ duration: 0.7, ease: EASE }}
+            initial={together ? { opacity: 0, y: 14 } : false}
+            animate={{ opacity: showSecond ? 1 : 0, y: showSecond ? 0 : 14 }}
+            transition={{ duration: 0.7, ease: EASE, delay: together ? 1.1 : 0 }}
           >
             {second}
           </motion.div>
         </div>
       </div>
       <div className="absolute bottom-[6.5rem] left-[55rem] right-[5.5rem] top-[7rem]">{visual}</div>
-    </div>
-  )
-}
-
-/** Closing statement: the section's one idea, set large, with the spoken line beneath. */
-export function Closing({
-  statement,
-  quote,
-  children,
-  size = 6,
-}: {
-  statement: string[]
-  quote: string
-  children?: ReactNode
-  size?: number
-}) {
-  return (
-    <div className="stage">
-      {children}
-      <div className="absolute left-[5.5rem] right-[5.5rem] top-[8.5rem]">
-        <AnimatedHeadline
-          as="h2"
-          text={statement}
-          delay={0.35}
-          stagger={0.075}
-          style={{ fontSize: `${size}rem` }}
-          className="font-[640] uppercase leading-[0.9] tracking-[-0.05em] text-fg"
-        />
-        <Reveal delay={1.3} className="mt-[2.75rem] max-w-[58rem] text-[1.625rem] leading-[1.45] tracking-[-0.01em] text-fg-2">
-          “{quote}”
-        </Reveal>
-      </div>
     </div>
   )
 }

@@ -31,62 +31,12 @@ export const ROLES = [
 
 /* ------------------------------------------------------------------ 01 · opener */
 
-function OneBecomesChain() {
-  const { step } = useSlide()
-  const chain = step >= 1
-  const nodes = [...ROLES.map((r) => r.name), 'Decision']
+/** The opener's single "Retail Analyst" — the idea the next scene breaks into a chain of five roles. */
+function OneAnalyst() {
   return (
-    <svg viewBox="0 0 632 684" className="h-full w-full overflow-visible" aria-label="One analyst splits into a chain of five roles ending in a decision">
-      {/* links */}
-      {nodes.slice(1).map((_, i) => (
-        <motion.line
-          key={i}
-          x1={110}
-          x2={110}
-          y1={70 + i * 108}
-          y2={70 + (i + 1) * 108}
-          className="stroke-line-2"
-          strokeWidth={2}
-          initial={false}
-          animate={{ pathLength: chain ? 1 : 0, opacity: chain ? 1 : 0 }}
-          transition={{ duration: 0.5, delay: chain ? 0.5 + i * 0.12 : 0, ease: EASE }}
-        />
-      ))}
-      {chain && <FlowDots path="M110 70 L110 610" count={4} dur={3.2} begin={1.2} r={4.5} className="fill-accent" />}
-      {nodes.map((name, i) => {
-        const isAnalyst = i === 1
-        const decision = i === nodes.length - 1
-        const x = chain ? 110 : 316
-        const y = chain ? 70 + i * 108 : 300
-        return (
-          <motion.g
-            key={name}
-            initial={false}
-            animate={{ x, y, opacity: chain || isAnalyst ? 1 : 0 }}
-            transition={{ duration: 0.9, delay: chain ? i * 0.07 : 0, ease: EASE }}
-          >
-            <motion.circle
-              initial={false}
-              animate={{ r: chain ? (decision ? 20 : 15) : 92 }}
-              transition={{ duration: 0.9, ease: EASE }}
-              className={decision ? 'fill-accent' : isAnalyst && !chain ? 'fill-bg-2 stroke-line-2' : 'fill-bg stroke-fg-2'}
-              strokeWidth={2}
-            />
-            <motion.text
-              x={42}
-              y={7}
-              fontSize={decision ? 24 : 21}
-              className={decision ? 'fill-accent-ink font-semibold' : 'fill-fg'}
-              initial={false}
-              animate={{ opacity: chain ? 1 : 0 }}
-              transition={{ duration: 0.5, delay: chain ? 0.5 + i * 0.1 : 0 }}
-            >
-              {name}
-            </motion.text>
-          </motion.g>
-        )
-      })}
-      <motion.g initial={false} animate={{ opacity: chain ? 0 : 1 }} transition={{ duration: 0.4 }}>
+    <svg viewBox="0 0 632 684" className="h-full w-full overflow-visible" aria-label="A single circle labelled: one Retail Analyst?">
+      <motion.g initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.5, ease: EASE }}>
+        <circle cx={316} cy={300} r={92} className="fill-bg-2 stroke-line-2" strokeWidth={2} />
         <text x={316} y={292} textAnchor="middle" fontSize={24} className="fill-fg">
           One “Retail
         </text>
@@ -99,20 +49,20 @@ function OneBecomesChain() {
 }
 
 export function RolesIntro() {
-  const { step } = useSlide()
   return (
     <ChapterOpener
       number="01"
       label="Roles"
       title="From Data to Decision"
+      together
       first={<>When we think about Retail Analytics, we may think there is one person called a Retail Analyst.</>}
       second={
         <>
-          But in reality, <Highlight on={step >= 1} delay={0.5}>a retail analytics system works like a chain</Highlight>. Different people take the
-          data through different stages until it becomes a business decision.
+          But in reality, <Highlight delay={1.8}>a retail analytics system works like a chain</Highlight>. Different people take the data through different stages
+          until it becomes a business decision.
         </>
       }
-      visual={<OneBecomesChain />}
+      visual={<OneAnalyst />}
     />
   )
 }
@@ -410,13 +360,13 @@ function MiniLine({ data, max, hot, tone = 'fg', marker }: { data: number[]; max
   )
 }
 
-function AnalystPanel({ title, Icon, children, lit, className, delay }: { title: string; Icon: LucideIcon; children: ReactNode; lit: boolean; className?: string; delay: number }) {
+function AnalystPanel({ title, Icon, children, className }: { title: string; Icon: LucideIcon; children: ReactNode; className?: string }) {
   return (
     <motion.div
       className={cx('panel absolute w-[17rem] p-[1rem] pb-[0.6rem]', className)}
       initial={{ opacity: 0, scale: 0.94 }}
-      animate={{ opacity: lit ? 1 : 0.42, scale: 1, borderColor: lit ? 'var(--fg-3)' : 'var(--line)' }}
-      transition={{ duration: 0.6, delay, ease: EASE }}
+      animate={{ opacity: 1, scale: 1, borderColor: 'var(--fg-3)' }}
+      transition={{ duration: 0.6, delay: PANELS_AT, ease: EASE }}
     >
       <div className="mb-[0.4rem] flex items-center gap-[0.5rem] text-[1rem] font-[560] text-fg">
         <Icon className="h-[1.05rem] w-[1.05rem] text-fg-3" /> {title}
@@ -426,10 +376,11 @@ function AnalystPanel({ title, Icon, children, lit, className, delay }: { title:
   )
 }
 
+/* One coordinated reveal on arrival: all four panels light up together, then the cause is drawn. */
+const PANELS_AT = 0.6
+const CAUSE_AT = 1.3
+
 function AnalystDesk() {
-  const { step } = useSlide()
-  const why = step >= 1
-  const questions = ['What happened?', 'Why did it happen?']
   return (
     <div className="relative h-full w-full">
       <svg viewBox="0 0 856 612" className="pointer-events-none absolute inset-0 h-full w-full" aria-hidden>
@@ -450,9 +401,9 @@ function AnalystDesk() {
           className="stroke-signal"
           strokeWidth={3}
           strokeLinecap="round"
-          initial={false}
-          animate={{ pathLength: why ? 1 : 0, opacity: why ? 1 : 0 }}
-          transition={{ duration: 0.8, delay: why ? 0.4 : 0, ease: EASE }}
+          initial={{ pathLength: 0, opacity: 0 }}
+          animate={{ pathLength: 1, opacity: 1 }}
+          transition={{ duration: 0.8, delay: CAUSE_AT, ease: EASE }}
         />
         <motion.path
           d="M16 172 L26 158 L36 172"
@@ -461,9 +412,9 @@ function AnalystDesk() {
           strokeWidth={3}
           strokeLinecap="round"
           strokeLinejoin="round"
-          initial={false}
-          animate={{ opacity: why ? 1 : 0 }}
-          transition={{ duration: 0.3, delay: why ? 1.1 : 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3, delay: CAUSE_AT + 0.7 }}
         />
       </svg>
 
@@ -473,30 +424,20 @@ function AnalystDesk() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5, ease: EASE }}
       >
-        <div>
+        <div className="px-[1.4rem]">
           <div className="mb-[0.5rem] font-mono text-[0.8125rem] opacity-60">Retail Analyst asks</div>
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={step}
-              className="px-[1.25rem] text-[2rem] font-[600] leading-[1.05] tracking-[-0.03em]"
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -12 }}
-              transition={{ duration: 0.35 }}
-            >
-              {questions[Math.min(step, 1)]}
-            </motion.div>
-          </AnimatePresence>
+          <div className="text-[1.625rem] font-[600] leading-[1.08] tracking-[-0.03em]">What happened?</div>
+          <div className="mt-[0.45rem] text-[1.625rem] font-[600] leading-[1.08] tracking-[-0.03em]">Why did it happen?</div>
         </div>
       </motion.div>
 
-      <AnalystPanel title="Sales" Icon={TrendingDown} lit className="left-0 top-0" delay={0.6}>
+      <AnalystPanel title="Sales" Icon={TrendingDown} className="left-0 top-0">
         <MiniLine data={salesSeries} max={80} hot={6} marker="−30% · wk 7" />
       </AnalystPanel>
-      <AnalystPanel title="Inventory · running shoes" Icon={Boxes} lit={why} className="bottom-0 left-0" delay={0.7}>
+      <AnalystPanel title="Inventory · running shoes" Icon={Boxes} className="bottom-0 left-0">
         <MiniLine data={stockSeries} max={80} hot={6} tone="neg" marker="stockout" />
       </AnalystPanel>
-      <AnalystPanel title="Products" Icon={ShoppingCart} lit={!why} className="right-0 top-0" delay={0.8}>
+      <AnalystPanel title="Products" Icon={ShoppingCart} className="right-0 top-0">
         <div className="space-y-[0.35rem] pt-[0.2rem]">
           {[
             ['Running shoes', 92],
@@ -516,15 +457,15 @@ function AnalystDesk() {
           ))}
         </div>
       </AnalystPanel>
-      <AnalystPanel title="Customers · searches" Icon={Users} lit={why} className="bottom-0 right-0" delay={0.9}>
+      <AnalystPanel title="Customers · searches" Icon={Users} className="bottom-0 right-0">
         <MiniLine data={[60, 61, 63, 62, 64, 66, 67, 66, 65, 66]} max={80} hot={6} marker="still searching" />
       </AnalystPanel>
 
       <motion.div
         className="absolute left-[3rem] top-[13.25rem] w-[13rem] text-[1.0625rem] leading-[1.35] text-signal-ink"
-        initial={false}
-        animate={{ opacity: why ? 1 : 0, x: why ? 0 : -10 }}
-        transition={{ duration: 0.5, delay: why ? 0.9 : 0 }}
+        initial={{ opacity: 0, x: -10 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: CAUSE_AT + 0.3 }}
       >
         Cause: in week 7 the top product ran out while customers were still searching for it.
       </motion.div>
@@ -972,24 +913,6 @@ export function RolesClosing() {
         </Reveal>
       </div>
       <SignalStream />
-    </div>
-  )
-}
-
-/** Opener visuals of the next chapter pick the stream up from the left edge. */
-export function IncomingSignals({ y = 46, count = 16 }: { y?: number; count?: number }) {
-  return (
-    <div className="pointer-events-none absolute inset-x-0" style={{ top: `${y}rem` }} aria-hidden>
-      {Array.from({ length: count }, (_, i) => (
-        <motion.span
-          key={i}
-          className={cx('absolute block rounded-full', i % 4 === 0 ? 'bg-signal' : 'bg-accent')}
-          style={{ left: 0, top: `${((i * 53) % 7) * 0.55}rem`, width: i % 3 ? '0.55rem' : '0.8rem', height: i % 3 ? '0.55rem' : '0.8rem' }}
-          initial={{ x: '-4rem', opacity: 0 }}
-          animate={{ x: `${8 + ((i * 29) % 40)}rem`, opacity: [0, 1, 0] }}
-          transition={{ duration: 1.8, delay: 0.2 + (i % 8) * 0.06, ease: [0.16, 1, 0.3, 1] }}
-        />
-      ))}
     </div>
   )
 }

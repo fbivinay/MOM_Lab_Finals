@@ -7,7 +7,7 @@
   --font-mono: "Geist Mono Variable", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
-/* Semantic tokens switch per slide theme; utilities read them at the use site. */
+/* Semantic tokens; utilities read them at the use site. */
 @theme inline {
   --color-bg: var(--bg);
   --color-bg-2: var(--bg-2);
@@ -27,8 +27,7 @@
   --color-mute: var(--mute);
 }
 
-:root,
-[data-theme="light"] {
+:root {
   color-scheme: light;
   --bg: #f5f4f0;
   --bg-2: #eceae4;
@@ -47,27 +46,6 @@
   --neg: #b8432b;
   --mute: #b3afa6;
   --shell: #e4e2dc;
-}
-
-[data-theme="dark"] {
-  color-scheme: dark;
-  --bg: #121512;
-  --bg-2: #1a1e1a;
-  --surface: #1c201c;
-  --fg: #efeee9;
-  --fg-2: #b8bcb5;
-  --fg-3: #8b9089;
-  --line: #2a2f2a;
-  --line-2: #3b413b;
-  --accent: #5db386;
-  --accent-ink: #84cba3;
-  --accent-wash: #1d3127;
-  --signal: #f08a55;
-  --signal-ink: #f4a477;
-  --signal-wash: #3a2519;
-  --neg: #e07055;
-  --mute: #545a53;
-  --shell: #0a0c0a;
 }
 
 /* 1rem = 16px on a 1600×900 viewport; the whole deck scales with the screen. */

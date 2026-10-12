@@ -1,7 +1,5 @@
 import { createContext, useContext, type ComponentType } from 'react'
 
-export type Theme = 'light' | 'dark'
-
 /** How a slide arrives. The later slide of a pair owns the transition, so going back plays it in reverse. */
 export type TransitionKind = 'rise' | 'push' | 'zoom' | 'wipe' | 'curtain' | 'iris' | 'fade'
 
@@ -18,7 +16,6 @@ export interface SlideDef {
   section?: string
   /** Short name shown in the footer and used as the slide's accessible label. */
   title: string
-  theme?: Theme
   transition?: TransitionKind
   /** In-slide builds after the initial state; Next walks through them before leaving the slide. */
   steps?: string[]
@@ -30,6 +27,8 @@ export interface SlideState {
   dir: 1 | -1
   setStep: (step: number) => void
   goTo: (slideId: string) => void
+  /** Opens the first slide of a section, whatever that slide currently is. */
+  goToSection: (sectionId: string) => void
 }
 
 export const SlideContext = createContext<SlideState>({
@@ -37,6 +36,7 @@ export const SlideContext = createContext<SlideState>({
   dir: 1,
   setStep: () => {},
   goTo: () => {},
+  goToSection: () => {},
 })
 
 export const useSlide = () => useContext(SlideContext)

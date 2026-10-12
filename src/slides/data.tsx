@@ -8,7 +8,6 @@ import {
   Heart,
   IndianRupee,
   Landmark,
-  Lock,
   Mail,
   MapPin,
   MousePointer2,
@@ -27,127 +26,6 @@ import { useEffect, useState, type ReactNode } from 'react'
 import { AnimatedCounter, AnimatedHeadline, FlowDots, Highlight, Illustrative, Img, Reveal, cx, usePhases } from '../components/motion'
 import { useSlide } from '../presentation/deck'
 import { EASE, type TransitionCustom } from '../presentation/transitions'
-import { IncomingSignals } from './roles'
-import { ChapterOpener } from './shared'
-
-const zigzag = (teeth = 16, depth = 0.55) =>
-  `polygon(0 0, 100% 0, 100% calc(100% - ${depth}rem), ${Array.from({ length: teeth }, (_, i) => {
-    const x1 = 100 - ((i + 0.5) * 100) / teeth
-    const x2 = 100 - ((i + 1) * 100) / teeth
-    return `${x1}% 100%, ${x2}% calc(100% - ${depth}rem)`
-  }).join(', ')})`
-
-/** Thermal receipt: always paper-coloured, whatever the slide theme. */
-function Receipt({ children, className }: { children: ReactNode; className?: string }) {
-  return (
-    <div
-      className={cx('bg-[#fbfaf7] px-[1.25rem] pb-[1.9rem] pt-[1.2rem] font-mono text-[0.875rem] leading-[1.55] text-[#1c1e1b] shadow-[0_20px_50px_-24px_rgba(0,0,0,0.45)]', className)}
-      style={{ clipPath: zigzag() }}
-    >
-      {children}
-    </div>
-  )
-}
-
-const Rule = () => <div className="my-[0.45rem] border-t border-dashed border-[#1c1e1b]/40" />
-
-/* ------------------------------------------------------------------ 02 · opener */
-
-const BEFORE = ['Searched “running shoes”', 'Viewed 6 products', 'Compared 2 pairs', 'Left the cart for 2 days']
-const AFTER = ['Came back from an email', 'Applied a coupon', 'Rated the shoes 4 / 5', 'Tracked the delivery']
-
-function ReceiptToJourney() {
-  const { step } = useSlide()
-  const open = step >= 1
-  const rowY = (i: number) => 132 + i * 74
-  return (
-    <div className="relative mt-[5rem] h-[36rem] w-full">
-      <svg viewBox="0 0 632 576" className="pointer-events-none absolute inset-0 h-full w-full" aria-hidden>
-        {[0, 1, 2, 3].map((i) => (
-          <g key={i}>
-            <motion.line x1={186} x2={226} y1={rowY(i)} y2={rowY(i)} className="stroke-line-2" initial={false} animate={{ pathLength: open ? 1 : 0 }} transition={{ delay: open ? 0.35 + i * 0.12 : 0, duration: 0.4 }} />
-            <motion.line x1={406} x2={446} y1={rowY(i)} y2={rowY(i)} className="stroke-line-2" initial={false} animate={{ pathLength: open ? 1 : 0 }} transition={{ delay: open ? 0.85 + i * 0.12 : 0, duration: 0.4 }} />
-          </g>
-        ))}
-      </svg>
-      <div className="absolute left-1/2 top-[3.3rem] h-[0.45rem] w-[13.5rem] -translate-x-1/2 rounded-full bg-fg/25" />
-      <div className="absolute left-1/2 top-[3.55rem] w-[11.25rem] -translate-x-1/2 overflow-hidden pb-[1rem]">
-        <motion.div initial={{ y: '-102%' }} animate={{ y: '0%' }} transition={{ duration: 1.8, delay: 0.9, ease: [0.25, 0.7, 0.3, 1] }}>
-          <Receipt className="!px-[1rem] !text-[0.8125rem]">
-            <div className="text-center font-semibold">STORE 214</div>
-            <div className="text-center opacity-70">12 OCT · 18:42</div>
-            <Rule />
-            <div>1 × Running shoes</div>
-            <div className="text-right">₹4,999</div>
-            <Rule />
-            <div className="flex justify-between font-semibold">
-              <span>TOTAL</span>
-              <span>₹4,999</span>
-            </div>
-            <div className="opacity-70">PAID · UPI</div>
-            <div className="mt-[0.6rem] flex h-[2rem] items-end gap-[2px]" aria-hidden>
-              {[2, 1, 3, 1, 1, 2, 1, 3, 2, 1, 1, 2, 3, 1, 2, 1, 1, 3, 1, 2, 2, 1].map((w, i) => (
-                <span key={i} className="h-full bg-[#1c1e1b]" style={{ width: `${w * 1.5}px` }} />
-              ))}
-            </div>
-          </Receipt>
-        </motion.div>
-      </div>
-      <AnimatePresence mode="wait" initial={false}>
-        <motion.div
-          key={open ? 'all' : 'one'}
-          className="absolute left-0 right-0 top-[26.5rem] text-center font-mono text-[0.9375rem] text-fg-3"
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0, transition: { duration: 0.35, delay: open ? 0.3 : 2.4 } }}
-          exit={{ opacity: 0, y: -8, transition: { duration: 0.25 } }}
-        >
-          {open ? 'What the retailer can actually observe' : 'What we think the retailer knows'}
-        </motion.div>
-      </AnimatePresence>
-      {[BEFORE, AFTER].map((list, side) => (
-        <div key={side} className={cx('absolute top-0 w-[11.5rem]', side ? 'right-0 text-left' : 'left-0 text-right')}>
-          <motion.div className="t-label mt-[4.4rem]" initial={false} animate={{ opacity: open ? 1 : 0 }} transition={{ delay: open ? 0.2 + side * 0.5 : 0 }}>
-            {side ? 'during & after' : 'before the purchase'}
-          </motion.div>
-          {list.map((t, i) => (
-            <motion.div
-              key={t}
-              className="absolute w-full text-[1rem] leading-[1.25] text-fg"
-              style={{ top: `${(rowY(i) - 11) / 16}rem` }}
-              initial={false}
-              animate={{ opacity: open ? 1 : 0, x: open ? 0 : side ? -12 : 12 }}
-              transition={{ duration: 0.5, delay: open ? 0.4 + side * 0.5 + i * 0.12 : 0, ease: EASE }}
-            >
-              <span className={cx('mx-[0.45rem] inline-block h-[0.5rem] w-[0.5rem] rounded-full align-middle', side ? 'bg-accent' : 'bg-signal')} />
-              {t}
-            </motion.div>
-          ))}
-        </div>
-      ))}
-    </div>
-  )
-}
-
-export function DataIntro() {
-  const { step } = useSlide()
-  return (
-    <ChapterOpener
-      number="02"
-      label="Data"
-      title="The Data a Retailer Never Stops Collecting"
-      titleSize={4.25}
-      first={<>When we buy a product, we usually think the retailer knows only one thing: what we bought.</>}
-      second={
-        <>
-          But a modern retailer can observe <Highlight on={step >= 1} delay={0.5}>an entire journey before, during and after</Highlight> that purchase.
-        </>
-      }
-      visual={<ReceiptToJourney />}
-    >
-      <IncomingSignals />
-    </ChapterOpener>
-  )
-}
 
 /* ------------------------------------------------------------------ customer journey */
 
@@ -384,170 +262,6 @@ export function DataJourney() {
           </button>
         ))}
       </div>
-    </div>
-  )
-}
-
-/* ------------------------------------------------------------------ transaction + customer */
-
-const RECEIPT_FIELDS = [
-  { label: 'Store', top: 1.18 },
-  { label: 'Time', top: 2.63 },
-  { label: 'Product', top: 5.04 },
-  { label: 'Quantity · price', top: 6.5 },
-  { label: 'Discount', top: 10.86 },
-  { label: 'Payment', top: 14.72 },
-]
-
-function ProfileField({ label, children, delay }: { label: string; children: ReactNode; delay: number }) {
-  return (
-    <motion.div className="border-t border-line pt-[0.7rem]" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay, duration: 0.5, ease: EASE }}>
-      <div className="t-label !text-[0.8125rem]">{label}</div>
-      <div className="mt-[0.3rem] text-[1.1875rem] text-fg">{children}</div>
-    </motion.div>
-  )
-}
-
-export function DataTransaction() {
-  const phase = usePhases([2.6])
-  const done = phase >= 1
-  const history = [1800, 2400, 1200, 3100, 2200, 1500, 2900]
-  return (
-    <div className="stage">
-      <AnimatedHeadline
-        as="h2"
-        text={['Transaction data tells you what sold.', 'Customer data tells you who bought it.']}
-        className="t-title absolute left-[5.5rem] top-[7.25rem] !text-[2.75rem] text-fg"
-        delay={0.15}
-        stagger={0.035}
-      />
-
-      {/* receipt with its fields called out */}
-      <div className="absolute left-[14rem] top-[17rem] w-[23rem]">
-        <div className="overflow-hidden">
-          <motion.div initial={{ y: '-100%' }} animate={{ y: '0%' }} transition={{ duration: 1.3, delay: 0.5, ease: [0.25, 0.7, 0.3, 1] }}>
-            <Receipt className="!text-[0.9375rem]">
-              <div>STORE 214 · ANDHERI W</div>
-              <div className="opacity-70">12 OCT 2026 · 18:42</div>
-              <Rule />
-              <div>Trail runner shoes</div>
-              <div className="flex justify-between">
-                <span>1 × ₹4,999</span>
-                <span>₹4,999</span>
-              </div>
-              <div>Running socks</div>
-              <div className="flex justify-between">
-                <span>2 × ₹299</span>
-                <span>₹598</span>
-              </div>
-              <div className="flex justify-between">
-                <span>Coupon RUN10</span>
-                <span>−₹560</span>
-              </div>
-              <Rule />
-              <div className="flex justify-between font-semibold">
-                <span>TOTAL</span>
-                <span>₹5,037</span>
-              </div>
-              <div>Paid by UPI</div>
-              <motion.div
-                className="-mx-[0.4rem] mt-[0.3rem] rounded-[0.3rem] px-[0.4rem]"
-                animate={{ backgroundColor: done ? 'rgba(29,106,68,0.16)' : 'rgba(29,106,68,0)' }}
-                transition={{ duration: 0.5, delay: 1.8 }}
-              >
-                Loyalty ID  C-48213
-              </motion.div>
-            </Receipt>
-          </motion.div>
-        </div>
-        {RECEIPT_FIELDS.map((f, i) => (
-          <motion.div
-            key={f.label}
-            className="absolute right-[calc(100%+1rem)] flex items-center gap-[0.5rem] whitespace-nowrap text-[1rem] text-fg-2"
-            style={{ top: `${f.top}rem` }}
-            initial={{ opacity: 0, x: 10 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1.2 + i * 0.12, duration: 0.45 }}
-          >
-            {f.label}
-            <span className="h-px w-[1.5rem] bg-line-2" />
-          </motion.div>
-        ))}
-      </div>
-
-      {/* the link */}
-      <svg viewBox="0 0 1600 900" className="pointer-events-none absolute inset-0 h-full w-full" aria-hidden>
-        <motion.path
-          d="M596 548 C730 548 740 330 870 330"
-          fill="none"
-          className="stroke-accent"
-          strokeWidth={2.5}
-          initial={{ pathLength: 0 }}
-          animate={{ pathLength: 1 }}
-          transition={{ duration: 0.9, delay: 1.7, ease: EASE }}
-        />
-        <FlowDots path="M596 548 C730 548 740 330 870 330" count={2} dur={1.8} begin={2.3} r={5} />
-        <motion.text x={606} y={584} fontSize={15} className="fill-accent-ink font-mono" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2.4 }}>
-          joined on loyalty ID
-        </motion.text>
-      </svg>
-
-      {/* the customer */}
-      <motion.div
-        className="panel absolute left-[54.5rem] right-[5.5rem] top-[17rem] p-[1.5rem]"
-        initial={{ opacity: 0, x: 30 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, delay: 0.9, ease: EASE }}
-      >
-        <div className="flex items-center justify-between">
-          <div>
-            <div className="text-[1.5rem] font-[600] tracking-[-0.02em] text-fg">Customer C-48213</div>
-            <div className="mt-[0.2rem] flex items-center gap-[0.4rem] text-[0.9375rem] text-fg-3">
-              <Lock className="h-[0.9rem] w-[0.9rem]" /> Pseudonymised ID: no name or phone number needed
-            </div>
-          </div>
-        </div>
-        <div className="mt-[1.1rem] grid grid-cols-2 gap-x-[1.5rem] gap-y-[0.9rem]">
-          <ProfileField label="Purchase history" delay={1.2}>
-            <div className="flex h-[2.4rem] items-end gap-[0.3rem]">
-              {[...history, done ? 5037 : 0].map((v, i) => (
-                <motion.span
-                  key={i}
-                  className={cx('w-[0.75rem] rounded-t-[3px]', i === history.length ? 'bg-accent' : 'bg-mute')}
-                  initial={{ height: 0 }}
-                  animate={{ height: `${(v / 5037) * 2.4}rem` }}
-                  transition={{ duration: 0.6, delay: i === history.length ? 0.2 : 1.3 + i * 0.05, ease: EASE }}
-                />
-              ))}
-            </div>
-          </ProfileField>
-          <ProfileField label="Frequency" delay={1.3}>
-            About every 3 weeks
-          </ProfileField>
-          <ProfileField label="Spending this year" delay={1.4}>
-            ₹<AnimatedCounter value={done ? 20137 : 15100} from={15100} duration={1.2} />
-          </ProfileField>
-          <ProfileField label="Preferences" delay={1.5}>
-            <span className="flex flex-wrap gap-[0.35rem]">
-              {['Running', 'Outdoor', 'UK 9'].map((t) => (
-                <span key={t} className="rounded-full bg-bg-2 px-[0.6rem] py-[0.1rem] text-[0.9375rem] text-fg-2">
-                  {t}
-                </span>
-              ))}
-            </span>
-          </ProfileField>
-          <ProfileField label="Loyalty" delay={1.6}>
-            Gold · <AnimatedCounter value={done ? 2390 : 2340} from={2340} duration={1} /> points
-          </ProfileField>
-          <ProfileField label="Returns" delay={1.7}>
-            1 return in 14 orders
-          </ProfileField>
-        </div>
-      </motion.div>
-      <Illustrative className="absolute left-[54.5rem] top-[41.5rem]">Illustrative records — not a real customer</Illustrative>
-      <Reveal delay={2.8} className="t-lead absolute left-[5.5rem] top-[43.75rem] max-w-[46rem] !text-[1.375rem]">
-        Linked together, they show who buys what, how often, and what they might want next.
-      </Reveal>
     </div>
   )
 }
@@ -1210,20 +924,20 @@ export function DataRain() {
       </div>
 
       <motion.div
-        className="absolute left-[5.5rem] right-[5.5rem] top-[40.5rem] grid h-[9rem] grid-cols-[1fr_auto] items-center gap-[2rem] rounded-[1.25rem] bg-fg px-[2rem] text-bg"
+        className="absolute left-[5.5rem] right-[5.5rem] top-[40.5rem] grid h-[9rem] grid-cols-[1fr_auto] items-center gap-[2rem] rounded-[1.25rem] border border-accent/35 bg-accent-wash px-[2rem] text-fg"
         initial={false}
         animate={{ opacity: step >= 3 ? 1 : 0, y: step >= 3 ? 0 : 20 }}
         transition={{ duration: 0.7, ease: EASE }}
       >
         <div>
           <div className="text-[2.5rem] font-[640] leading-[1] tracking-[-0.04em]">Move stock before demand exceeds availability.</div>
-          <div className="mt-[0.75rem] text-[1.125rem] opacity-75">
+          <div className="mt-[0.75rem] text-[1.125rem] text-fg-2">
             City stores hold {STORE_STOCK.toLocaleString('en-IN')} umbrellas; Thursday to Saturday needs about {demand3.toLocaleString('en-IN')}.
           </div>
         </div>
         <div className="text-right">
-          <div className="font-mono text-[0.875rem] opacity-60">{gap ? 'transfer from regional warehouse' : 'no transfer needed'}</div>
-          <div className="text-[3rem] font-[640] tracking-[-0.04em] text-[#84cba3] tnum">{gap ? `${gap.toLocaleString('en-IN')} units` : 'Monitor'}</div>
+          <div className="font-mono text-[0.875rem] text-fg-3">{gap ? 'transfer from regional warehouse' : 'no transfer needed'}</div>
+          <div className="text-[3rem] font-[640] tracking-[-0.04em] text-accent-ink tnum">{gap ? `${gap.toLocaleString('en-IN')} units` : 'Monitor'}</div>
         </div>
       </motion.div>
       <Illustrative className="absolute left-[33rem] top-[16.1rem]">Illustrative numbers for teaching</Illustrative>

@@ -15,7 +15,6 @@ export function SlideRenderer({ slide, custom, state }: Props) {
     <AnimatePresence custom={custom}>
       <motion.section
         key={slide.id}
-        data-theme={slide.theme ?? 'light'}
         className="absolute inset-0 overflow-hidden bg-bg text-fg will-change-transform"
         custom={custom}
         variants={slideVariants}

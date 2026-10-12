@@ -171,7 +171,6 @@ export function PresentationShell({ sections, slides, preload }: Props) {
   }, [goToIndex, slides])
 
   const slide = slides[nav.index]
-  const theme = slide.theme ?? 'light'
 
   const sectionSlides = useMemo(
     () => slides.map((s, index) => ({ slide: s, index })).filter((x) => x.slide.section && x.slide.section === slide.section),
@@ -189,23 +188,16 @@ export function PresentationShell({ sections, slides, preload }: Props) {
       dir: nav.dir,
       setStep: (step: number) => goToIndex(navRef.current.index, Math.max(0, Math.min(step, stepsOf(slides[navRef.current.index])))),
       goTo: (id: string) => goToIndex(slides.findIndex((s) => s.id === id)),
+      goToSection,
     }),
-    [nav.step, nav.dir, goToIndex, slides],
+    [nav.step, nav.dir, goToIndex, goToSection, slides],
   )
 
   const kind = slides[Math.max(nav.index, nav.from)].transition ?? 'rise'
 
-  // Chrome follows the slide theme, flipping mid-transition rather than before the new slide is visible.
-  const [chromeTheme, setChromeTheme] = useState(theme)
-  useEffect(() => {
-    const id = window.setTimeout(() => setChromeTheme(theme), 320)
-    document.documentElement.dataset.theme = theme
-    return () => window.clearTimeout(id)
-  }, [theme])
-
   return (
     <MotionConfig reducedMotion="user">
-      <div data-theme={chromeTheme} className="relative h-full w-full overflow-hidden text-fg" style={{ background: 'var(--shell)' }}>
+      <div className="relative h-full w-full overflow-hidden text-fg" style={{ background: 'var(--shell)' }}>
         <SlideRenderer slide={slide} custom={{ dir: nav.dir, kind }} state={state} />
         <ProgressIndicator value={progress} />
         <Header

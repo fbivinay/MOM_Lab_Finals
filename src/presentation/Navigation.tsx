@@ -1,6 +1,5 @@
 import { AnimatePresence, motion } from 'motion/react'
 import { ArrowLeft, ArrowRight, Maximize2, Minimize2 } from 'lucide-react'
-import type { ReactNode } from 'react'
 import type { SectionDef, SlideDef } from './deck'
 import { EASE } from './transitions'
 
@@ -118,14 +117,6 @@ interface FooterProps {
   onGo: (index: number) => void
 }
 
-function Kbd({ children }: { children: ReactNode }) {
-  return (
-    <kbd className="mx-[0.15rem] inline-grid h-[1.6rem] min-w-[1.6rem] place-items-center rounded-[0.4rem] border border-line-2 px-[0.35rem] font-mono text-[0.8125rem] text-fg-2">
-      {children}
-    </kbd>
-  )
-}
-
 export function Footer({ slides, index, step, sectionSlides, onPrev, onNext, onGo }: FooterProps) {
   const slide = slides[index]
   const steps = slide.steps ?? []
@@ -148,7 +139,7 @@ export function Footer({ slides, index, step, sectionSlides, onPrev, onNext, onG
             <ArrowLeft className="h-[1.1rem] w-[1.1rem]" />
           </button>
 
-          {slide.section ? (
+          {slide.section && (
             <>
               <div className="flex items-center gap-[0.5rem]" role="group" aria-label="Slides in this section">
                 {sectionSlides.map(({ slide: s, index: i }) => {
@@ -186,10 +177,6 @@ export function Footer({ slides, index, step, sectionSlides, onPrev, onNext, onG
                 </motion.span>
               </AnimatePresence>
             </>
-          ) : (
-            <span className="text-[1rem] text-fg-3">
-              Press <Kbd>→</Kbd> or <Kbd>Space</Kbd> to begin · <Kbd>F</Kbd> fullscreen · <Kbd>1</Kbd>–<Kbd>5</Kbd> jump to a section
-            </span>
           )}
         </div>
 
