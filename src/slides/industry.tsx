@@ -16,6 +16,17 @@ const TARGET_FACTS = [
   { label: 'Total employees', value: '~415,000', sub: 'Full-time, part-time and seasonal · as of 31 Jan 2026' },
 ]
 
+const TARGET_REPORT = 'https://corporate.target.com/getmedia/79214b4b-6331-4b1c-b76f-acff121b40f9/2025-Annual-Report-Target-Corporation.pdf'
+
+/** Where a slide's information comes from; sits just above the footer. */
+function SourceLine({ children }: { children: ReactNode }) {
+  return (
+    <motion.div className="t-label absolute bottom-[6.6rem] left-[5.5rem] !text-[0.8125rem]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2, duration: 0.5 }}>
+      {children}
+    </motion.div>
+  )
+}
+
 export function IndustryTarget() {
   return (
     <div className="stage">
@@ -88,6 +99,12 @@ export function IndustryTarget() {
           </motion.div>
         </div>
       </motion.div>
+      <SourceLine>
+        Source:{' '}
+        <a href={TARGET_REPORT} target="_blank" rel="noreferrer" className="underline decoration-line-2 underline-offset-[0.2em] transition-colors hover:text-fg">
+          Target Corporation 2025 Annual Report (Form 10-K, fiscal year ended 31 January 2026)
+        </a>
+      </SourceLine>
     </div>
   )
 }
@@ -177,6 +194,7 @@ export function IndustryProblems() {
           ))}
         </div>
       </div>
+      <SourceLine>Source: industry interview with Hariharan</SourceLine>
     </div>
   )
 }
@@ -322,6 +340,7 @@ export function IndustryProject() {
         </div>
       </motion.div>
       <Illustrative className="absolute bottom-[6.75rem] left-[47.5rem]">Schematic layout — no real vendor data</Illustrative>
+      <SourceLine>Source: industry interview with Hariharan</SourceLine>
     </div>
   )
 }
@@ -411,6 +430,7 @@ export function IndustryCollab() {
           ))}
         </div>
       </div>
+      <SourceLine>Source: industry interview with Hariharan</SourceLine>
     </div>
   )
 }
@@ -495,6 +515,7 @@ export function IndustryML() {
           </motion.div>
         ))}
       </div>
+      <SourceLine>Source: industry interview with Hariharan</SourceLine>
     </div>
   )
 }
