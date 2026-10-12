@@ -1,0 +1,83 @@
+{
+  "generatedAt": "2026-10-12T19:18:29.717Z",
+  "sources": [
+    {
+      "company": "Target",
+      "platform": "Workday",
+      "url": "https://target.wd5.myworkdayjobs.com/targetcareers",
+      "ok": true,
+      "jobs": 0
+    },
+    {
+      "company": "TJX",
+      "platform": "Workday",
+      "url": "https://tjx.wd1.myworkdayjobs.com/TJX_EXTERNAL",
+      "ok": true,
+      "jobs": 0
+    },
+    {
+      "company": "Fractal (campus hiring)",
+      "platform": "Workday",
+      "url": "https://fractal.wd1.myworkdayjobs.com/campuscareersite",
+      "ok": true,
+      "jobs": 0
+    },
+    {
+      "company": "Fractal",
+      "platform": "Workday",
+      "url": "https://fractal.wd1.myworkdayjobs.com/Careers",
+      "ok": true,
+      "jobs": 0
+    },
+    {
+      "company": "Swiggy",
+      "platform": "SmartRecruiters",
+      "url": "https://careers.smartrecruiters.com/Swiggy",
+      "ok": true,
+      "jobs": 0
+    },
+    {
+      "company": "NielsenIQ",
+      "platform": "SmartRecruiters",
+      "url": "https://careers.smartrecruiters.com/NielsenIQ",
+      "ok": true,
+      "jobs": 0
+    },
+    {
+      "company": "Meesho",
+      "platform": "Lever",
+      "url": "https://jobs.lever.co/meesho",
+      "ok": true,
+      "jobs": 0
+    },
+    {
+      "company": "dunnhumby",
+      "platform": "Greenhouse",
+      "url": "https://job-boards.greenhouse.io/dunnhumby",
+      "ok": true,
+      "jobs": 0
+    },
+    {
+      "company": "Sigmoid",
+      "platform": "Greenhouse",
+      "url": "https://job-boards.greenhouse.io/sigmoid",
+      "ok": true,
+      "jobs": 0
+    },
+    {
+      "company": "Coupang",
+      "platform": "Greenhouse",
+      "url": "https://job-boards.greenhouse.io/coupang",
+      "ok": true,
+      "jobs": 0
+    },
+    {
+      "company": "Mintel",
+      "platform": "Greenhouse",
+      "url": "https://job-boards.greenhouse.io/mintel",
+      "ok": true,
+      "jobs": 0
+    }
+  ],
+  "jobs": []
+}

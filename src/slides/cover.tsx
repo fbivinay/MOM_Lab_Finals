@@ -150,7 +150,7 @@ export function Cover() {
         <BarcodeToChart />
       </div>
 
-      <nav aria-label="Chapters" className="absolute bottom-[8rem] left-[5.5rem] right-[5.5rem] grid grid-cols-5 border-t border-line">
+      <nav aria-label="Chapters" className="absolute bottom-[8rem] left-[5.5rem] right-[5.5rem] grid grid-cols-6 border-t border-line">
         {sections.map((s, i) => (
           <motion.button
             key={s.id}

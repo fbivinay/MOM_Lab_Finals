@@ -2,13 +2,14 @@
 
 An animated, full-screen presentation website for an MSc Big Data Analytics talk. It behaves like a slide deck: one scene fills the screen, Next moves to the next build or scene, and every section flows into the next.
 
-Five sections, 31 scenes, all in a light theme:
+Six sections, 33 scenes, all in a light theme:
 
 1. **Roles** – from data to decision: Data Engineer, Retail Analyst, Data Scientist, ML Engineer, Business Analyst
 2. **Data** – the customer journey, digital behaviour, pricing and external signals
 3. **AI/ML** – reporting vs prediction, demand forecasting, recommendations, market basket analysis
 4. **Industry** – a Target company profile with the interviewee, then four slides from interview notes: business problems and metrics, the Essential Beauty analytics project, collaboration and tools, machine learning and challenges
 5. **Careers** – fundamentals, analytics, prediction, big data and business understanding
+6. **Jobs** – fresher analyst openings in India, collected every morning from employer career sites, and 16 job sites with ready-made searches
 
 ## Run it
 
@@ -27,7 +28,7 @@ Requires Node 20.19+ (built with Node 24).
 | --- | --- |
 | `→` `↓` `Space` `Page Down` | Next build or scene |
 | `←` `↑` `Shift+Space` `Page Up` | Previous |
-| `1`–`5` | Jump to a section |
+| `1`–`6` | Jump to a section |
 | `Home` / `End` | First / last scene |
 | `F` | Toggle fullscreen (`Esc` also exits) |
 
@@ -42,6 +43,22 @@ Presenter clickers that send Page Up / Page Down work out of the box. The URL ke
 - `src/components/` – animation primitives (`AnimatedHeadline`, `AnimatedCounter`, `FlowDots`, `Highlight`) and brand logos (`BrandLogo`, `BrandReveal`).
 
 Reduced-motion preferences are respected: transform animations are disabled and the travelling data dots are removed.
+
+## Jobs board
+
+`scripts/jobs/` collects analyst openings in India that are open to freshers or 0–1 years of experience and writes `public/data/jobs.json`. The Jobs slide reads that file from GitHub, so it stays current without a redeploy, and falls back to the copy bundled at deploy time.
+
+```bash
+npm run jobs:collect  # fetch listings into public/data/jobs.json (Node 24+, no credentials)
+npm run jobs:check    # type-check the collector and run the pipeline self-check
+```
+
+- **Sources** (`sources.ts`, one fetcher per platform): the Greenhouse Job Board API, the Lever Postings API, the SmartRecruiters Posting API, and Workday career sites whose robots.txt allows crawling and lists a sitemap; the schema.org `JobPosting` data on each Workday job page supplies the fields. All are public and need no login or key.
+- **Employers** (`employers.json`): Target, TJX, Fractal (campus and main career sites), Swiggy, NielsenIQ, Meesho, dunnhumby, Sigmoid, Coupang and Mintel. To add one, append `{ "company", "platform", "board" }`, where `board` is the slug in the employer's job-board URL, or the career-site URL for Workday. Check a Workday site's robots.txt before adding it.
+- **Rules** (`pipeline.ts`): India locations and analyst titles only (data, business, BI, pricing, merchandising, demand, supply chain, inventory, customer insights, analytics internships). Senior titles and postings that ask for two or more years are left out. A posting that states no experience stays in and is flagged "Check experience". Anything a source does not publish (salary, deadline, posting date, employment type) is stored as `null` and shown as not stated.
+- **Status**: `active` when seen at the last check; `expired` when gone from a board that loaded or past its deadline (removed 14 days later); `unverified` when its board could not be reached for more than three days.
+- **Schedule**: `.github/workflows/collect-jobs.yml` runs every day at about 06:00 IST, or on demand from the Actions tab, and commits `jobs.json` when it changes. Pull before pushing, because the workflow commits to `main`. GitHub pauses scheduled workflows in a repository with no activity for 60 days; re-enable it from the Actions tab.
+- **Job sites** (LinkedIn, Indeed, Naukri and 13 more) appear only as links to pre-filtered searches. None of them offers a public jobs API we can use, and several prohibit automated collection.
 
 ## Content notes
 

@@ -6,4 +6,5 @@ export const sections: SectionDef[] = [
   { id: 'aiml', number: '03', label: 'AI/ML', title: 'From What Happened? to What Happens Next?' },
   { id: 'industry', number: '04', label: 'Industry', title: 'Target: What an Analyst Learns' },
   { id: 'careers', number: '05', label: 'Careers', title: 'What Should We Actually Learn?' },
+  { id: 'jobs', number: '06', label: 'Jobs', title: 'Fresher Analyst Jobs in India' },
 ]

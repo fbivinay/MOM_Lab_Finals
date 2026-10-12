@@ -1,0 +1,13 @@
+[
+  { "company": "Target", "platform": "workday", "board": "https://target.wd5.myworkdayjobs.com/targetcareers", "logo": "/brands/target.svg" },
+  { "company": "TJX", "platform": "workday", "board": "https://tjx.wd1.myworkdayjobs.com/TJX_EXTERNAL" },
+  { "company": "Fractal (campus hiring)", "platform": "workday", "board": "https://fractal.wd1.myworkdayjobs.com/campuscareersite" },
+  { "company": "Fractal", "platform": "workday", "board": "https://fractal.wd1.myworkdayjobs.com/Careers" },
+  { "company": "Swiggy", "platform": "smartrecruiters", "board": "Swiggy" },
+  { "company": "NielsenIQ", "platform": "smartrecruiters", "board": "NielsenIQ" },
+  { "company": "Meesho", "platform": "lever", "board": "meesho" },
+  { "company": "dunnhumby", "platform": "greenhouse", "board": "dunnhumby" },
+  { "company": "Sigmoid", "platform": "greenhouse", "board": "sigmoid" },
+  { "company": "Coupang", "platform": "greenhouse", "board": "coupang" },
+  { "company": "Mintel", "platform": "greenhouse", "board": "mintel" }
+]

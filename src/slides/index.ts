@@ -5,6 +5,7 @@ import { CareersAdvanced, CareersAnalytics, CareersBigData, CareersBusiness, Car
 import { Cover } from './cover'
 import { DataClosing, DataDigital, DataJourney, DataPricing } from './data'
 import { IndustryCollab, IndustryML, IndustryProblems, IndustryProject, IndustryTarget } from './industry'
+import { JobsBoard, JobsSites } from './jobs'
 import { RoleAnalyst, RoleBA, RoleEngineer, RoleMLE, RoleScientist, RolesClosing, RolesIntro, RolesJourney } from './roles'
 
 export { sections } from './sections'
@@ -47,6 +48,9 @@ export const slides: SlideDef[] = [
   { id: 'careers-bigdata', section: 'careers', title: 'Build for scale', transition: 'rise', Component: CareersBigData },
   { id: 'careers-business', section: 'careers', title: 'Understand the business', transition: 'rise', steps: ['Why are sales falling?', 'How much inventory?', 'Which customers might leave?', 'What should we recommend?'], Component: CareersBusiness },
   { id: 'careers-closing', section: 'careers', title: 'Connect data to decisions', transition: 'iris', Component: CareersClosing },
+
+  { id: 'jobs-board', section: 'jobs', title: 'Fresher analyst jobs', transition: 'curtain', Component: JobsBoard },
+  { id: 'jobs-sites', section: 'jobs', title: 'Where else to look', transition: 'push', Component: JobsSites },
 ]
 
 export const preload = [
