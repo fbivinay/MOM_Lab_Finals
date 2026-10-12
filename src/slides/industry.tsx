@@ -73,7 +73,7 @@ export function IndustryTarget() {
             H
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9, duration: 0.5, ease: EASE }}>
-            <div className="mt-[1.4rem] text-[3.25rem] font-[650] leading-[1] tracking-[-0.045em] text-fg">Harsha</div>
+            <div className="mt-[1.4rem] text-[3.25rem] font-[650] leading-[1] tracking-[-0.045em] text-fg">Hariharan</div>
             <div className="mt-[0.6rem] text-[1.375rem] leading-[1.35] text-fg-2">Industry professional we interviewed</div>
           </motion.div>
           <motion.div
@@ -83,7 +83,7 @@ export function IndustryTarget() {
             transition={{ delay: 1.05, duration: 0.5, ease: EASE }}
           >
             <div className="t-label">Graduation year</div>
-            <div className="mt-[0.3rem] text-[2.5rem] font-[640] leading-none tracking-[-0.04em] text-accent-ink">2025</div>
+            <div className="mt-[0.3rem] text-[2.5rem] font-[640] leading-none tracking-[-0.04em] text-accent-ink">2026</div>
           </motion.div>
         </div>
       </motion.div>
