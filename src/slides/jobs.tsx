@@ -243,7 +243,7 @@ export function JobsBoard() {
           ) : (
             <EmptyNote title="No openings in these roles at the tracked employers today">
               The board lists Retail, Retail Data, Demand Forecasting, Supply Chain and Inventory Analyst roles in India, and checks again every morning. Until
-              something opens, the next slide links to 16 job sites with ready-made searches.
+              something opens, the next slide links to 15 job sites with ready-made searches.
               <span className="mt-[1.5rem] block text-[0.9375rem] text-fg-3">Career sites checked</span>
               <span className="mt-[0.6rem] flex flex-wrap gap-[0.4rem]">
                 {data.sources.map((s) => (
@@ -305,7 +305,6 @@ const SITE_GROUPS: { label: string; sites: { name: string; search: string; href:
   {
     label: 'Internships and specialist boards',
     sites: [
-      { name: 'Internshala', search: 'Retail analyst internships', href: 'https://internshala.com/internships/keywords-retail%20analyst/' },
       { name: 'Internshala', search: 'Retail analyst fresher jobs', href: 'https://internshala.com/fresher-jobs/keywords-retail%20analyst/' },
       { name: 'Unstop', search: 'Open retail analyst jobs', href: 'https://unstop.com/job?oppstatus=open&searchTerm=retail%20analyst' },
       { name: 'Hirist', search: 'Retail analyst fresher jobs', href: 'https://www.hirist.tech/k/retail-analyst-fresher-jobs' },

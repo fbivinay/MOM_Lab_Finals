@@ -9,7 +9,7 @@ Six sections, 33 scenes, all in a light theme:
 3. **AI/ML** – reporting vs prediction, demand forecasting, recommendations, market basket analysis
 4. **Industry** – a Target company profile with the interviewee, then four slides from interview notes: business problems and metrics, the Essential Beauty analytics project, collaboration and tools, machine learning and challenges
 5. **Careers** – fundamentals, analytics, prediction, big data and business understanding
-6. **Jobs** – Retail, Retail Data, Demand Forecasting, Supply Chain and Inventory Analyst openings in India as cards, collected every morning from employer career sites, and 16 job sites with ready-made searches
+6. **Jobs** – Retail, Retail Data, Demand Forecasting, Supply Chain and Inventory Analyst openings in India as cards, collected every morning from employer career sites, and 15 job sites with ready-made retail analyst searches for freshers
 
 ## Run it
 
