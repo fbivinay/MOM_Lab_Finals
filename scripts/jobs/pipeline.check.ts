@@ -1,7 +1,8 @@
 /** Self-check for the common pipeline: node scripts/jobs/pipeline.check.ts */
 import assert from 'node:assert/strict'
 import type { Job } from '../../src/jobs/types.ts'
-import { family, fresherFit, merge, relevantFor, spread, statedYears, toJob } from './pipeline.ts'
+import { spread } from '../../src/jobs/order.ts'
+import { family, fresherFit, merge, relevantFor, statedYears, toJob } from './pipeline.ts'
 import { robotsVerdict, text, type Employer, type RawJob } from './sources.ts'
 
 // experience statements
@@ -96,7 +97,7 @@ assert.deepEqual(order.map((j) => j.forFreshers), ['yes', 'unknown', 'no'], 'fre
 assert.equal(merge([prev('9')], [], now).length, 0, 'employer removed from employers.json')
 
 const mix = spread([prev('a', { company: 'A' }), prev('b', { company: 'A' }), prev('c', { company: 'B' }), prev('d', { company: 'A', forFreshers: 'no' }), prev('e', { company: 'B', forFreshers: 'no' })])
-assert.deepEqual(mix.map((j) => j.company + j.forFreshers), ['Ayes', 'Byes', 'Ayes', 'Ano', 'Bno'], 'companies take turns within each group')
+assert.deepEqual(mix.map((j) => j.company + j.forFreshers), ['Ayes', 'Byes', 'Ayes', 'Bno', 'Ano'], 'companies take turns, each keeping its fresher roles first')
 
 // robots.txt matching
 assert.equal(robotsVerdict([[false, '/LWS_External_CS/']], '/LWS_External_CS/job/x'), false)

@@ -2,6 +2,7 @@ import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react'
 import { motion } from 'motion/react'
 import { useEffect, useState, type ReactNode } from 'react'
 import { Reveal, cx } from '../components/motion'
+import { spread } from '../jobs/order'
 import { CATEGORIES, type Job, type JobCategory, type JobsFile } from '../jobs/types'
 import { EASE } from '../presentation/transitions'
 import { SceneHead } from './shared'
@@ -146,11 +147,11 @@ export function JobsBoard() {
   const [fresherOnly, setFresherOnly] = useState(false)
   const [page, setPage] = useState(0)
 
-  // Listings arrive sorted with roles open to freshers first.
+  // Listings arrive sorted with roles open to freshers first; companies then take turns on each page.
   const open = data?.jobs.filter((j) => j.status !== 'expired') ?? []
   const inCategory = open.filter((j) => !category || j.category === category)
   const fresherFit = inCategory.filter((j) => j.forFreshers !== 'no')
-  const shown = fresherOnly ? fresherFit : inCategory
+  const shown = spread(fresherOnly ? fresherFit : inCategory)
   const hidden = inCategory.length - shown.length
   const pages = Math.max(1, Math.ceil(shown.length / PAGE))
   const cards = shown.slice(page * PAGE, (page + 1) * PAGE)

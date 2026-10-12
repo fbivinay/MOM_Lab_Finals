@@ -116,32 +116,10 @@ export function merge(prev: Job[], runs: Run[], now: Date): Job[] {
 
   out.sort((a, b) => RANK[a.status] - RANK[b.status] || FIT[a.forFreshers] - FIT[b.forFreshers] || (b.postedAt ?? '').localeCompare(a.postedAt ?? ''))
   const seen = new Set<string>()
-  return spread(
-    out.filter((j) => {
-      const k = `${j.company}|${j.title}|${j.location}`.toLowerCase()
-      if (seen.has(k)) return false
-      seen.add(k)
-      return true
-    }),
-  )
-}
-
-/** Keeps the status and fresher-fit groups in order, but deals each group out one company at a time,
- *  newest first within a company, so one employer cannot fill the first page. */
-export function spread(jobs: Job[]): Job[] {
-  const groups = new Map<string, Map<string, Job[]>>()
-  for (const j of jobs) {
-    const group = groups.get(`${j.status}|${j.forFreshers}`) ?? new Map<string, Job[]>()
-    groups.set(`${j.status}|${j.forFreshers}`, group.set(j.company, [...(group.get(j.company) ?? []), j]))
-  }
-  const out: Job[] = []
-  for (const companies of groups.values()) {
-    while (companies.size) {
-      for (const [company, queue] of companies) {
-        out.push(queue.shift()!)
-        if (!queue.length) companies.delete(company)
-      }
-    }
-  }
-  return out
+  return out.filter((j) => {
+    const k = `${j.company}|${j.title}|${j.location}`.toLowerCase()
+    if (seen.has(k)) return false
+    seen.add(k)
+    return true
+  })
 }
