@@ -295,13 +295,17 @@ async function careerSite({ wanted, known }: FetchArgs, listed: string[], slug: 
     if (!p) continue // the page no longer carries a posting: the job has closed
     const a = [p.jobLocation].flat()[0]?.address
     const country = typeof a?.addressCountry === 'object' ? a.addressCountry.name : a?.addressCountry
-    // Office codes such as "INZIU06 - Airoli" are internal; keep the place name.
-    const parts = [a?.addressLocality, country].join(',').split(',').map((x) => x.trim().replace(/^[A-Z]{2,}\d+\s*-\s*/, ''))
+    // Office codes such as "INZIU06 - Airoli" or "BDC9A" are internal; keep the place names.
+    const parts = [a?.addressLocality, country]
+      .join(',')
+      .split(',')
+      .map((x) => decode(x.trim()).replace(/^[A-Z]{2,}\d+\s*-\s*/, ''))
+      .filter((x) => !/^[A-Z]{2,}\d+[A-Z]*$/.test(x))
     const type = [p.employmentType].flat()[0]
     const pay = p.baseSalary?.value
     out.push({
       sourceId: p.identifier?.value ?? url,
-      title: p.title.trim(),
+      title: decode(p.title).trim(), // some sites escape "&" as "&amp;" inside the JSON
       location: [...new Set(parts.filter(Boolean))].join(', ') || null,
       description: text(p.description),
       experience: null,
