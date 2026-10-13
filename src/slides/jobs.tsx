@@ -45,7 +45,6 @@ function useJobs() {
 /* ------------------------------------------------------------------ formatting (dates in IST) */
 
 const IST = 'Asia/Kolkata'
-const stampFormat = new Intl.DateTimeFormat('en-IN', { timeZone: IST, day: 'numeric', month: 'short', year: 'numeric', hour: 'numeric', minute: '2-digit' })
 const dayFormat = new Intl.DateTimeFormat('en-IN', { timeZone: IST, day: 'numeric', month: 'short' })
 const dayYearFormat = new Intl.DateTimeFormat('en-IN', { timeZone: IST, day: 'numeric', month: 'short', year: 'numeric' })
 const isoDay = new Intl.DateTimeFormat('en-CA', { timeZone: IST }) // YYYY-MM-DD
@@ -155,6 +154,10 @@ export function JobsBoard() {
   const hidden = inCategory.length - shown.length
   const pages = Math.max(1, Math.ceil(shown.length / PAGE))
   const cards = shown.slice(page * PAGE, (page + 1) * PAGE)
+  // Career sites behind the roles on show, busiest first.
+  const bySite = new Map<string, number>()
+  for (const j of shown) bySite.set(j.company, (bySite.get(j.company) ?? 0) + 1)
+  const sites = [...bySite].sort((a, b) => b[1] - a[1]).map(([company, count]) => ({ company, count, run: data?.sources.find((s) => s.company === company) }))
 
   const pick = (c: JobCategory | null) => {
     setCategory(c)
@@ -167,21 +170,8 @@ export function JobsBoard() {
 
   return (
     <div className="stage">
-      <div className="absolute left-[5.5rem] right-[5.5rem] top-[7rem] flex items-end justify-between gap-[3rem]">
-        <SceneHead eyebrow="Collected every morning from employer career sites" title="Retail analyst jobs in India" size="title" />
-        <Reveal delay={0.35} y={8} className="shrink-0 pb-[0.35rem] text-right text-[1rem] leading-[1.45] text-fg-3">
-          {data ? (
-            <>
-              Checked {stampFormat.format(new Date(data.generatedAt))} IST
-              <br />
-              across {data.sources.length} employer career {data.sources.length === 1 ? 'site' : 'sites'}
-            </>
-          ) : failed ? (
-            'The job list could not be loaded.'
-          ) : (
-            'Loading listings…'
-          )}
-        </Reveal>
+      <div className="absolute left-[5.5rem] right-[5.5rem] top-[7rem]">
+        <SceneHead title="Retail analyst jobs in India" size="title" />
       </div>
 
       <Reveal delay={0.45} y={8} className="absolute left-[5.5rem] right-[5.5rem] top-[14.25rem] flex items-center justify-between gap-[1rem]">
@@ -193,9 +183,6 @@ export function JobsBoard() {
           ))}
         </div>
         <div className="flex shrink-0 items-center gap-[1rem]">
-          <span className="tnum text-[0.9375rem] text-fg-3">
-            {shown.length} {shown.length === 1 ? 'role' : 'roles'}
-          </span>
           <button type="button" className="chip h-[2.25rem] px-[0.8rem] text-[0.875rem]" data-on={fresherOnly} aria-pressed={fresherOnly} onClick={() => showFreshersOnly(!fresherOnly)}>
             Freshers only (0–1 yrs)
           </button>
@@ -220,7 +207,7 @@ export function JobsBoard() {
       </Reveal>
 
       {cards.length > 0 ? (
-        <div key={`${category}-${fresherOnly}-${page}`} className="absolute left-[5.5rem] right-[5.5rem] top-[17.75rem] grid grid-cols-3 gap-[1.25rem]">
+        <div key={`${category}-${fresherOnly}-${page}`} className="absolute left-[5.5rem] right-[24rem] top-[17.75rem] grid grid-cols-3 gap-[1.25rem]">
           {cards.map((j, i) => (
             <JobCard key={j.id} job={j} index={i} />
           ))}
@@ -254,6 +241,32 @@ export function JobsBoard() {
               </span>
             </EmptyNote>
           )}
+        </Reveal>
+      )}
+
+      {sites.length > 0 && (
+        <Reveal delay={0.55} y={8} className="absolute right-[5.5rem] top-[17.75rem] w-[16.5rem]">
+          <div className="border-b border-line-2 pb-[0.6rem]">
+            <span className="tnum block text-[1.75rem] font-[650] leading-none tracking-[-0.025em] text-fg">
+              {shown.length} {shown.length === 1 ? 'role' : 'roles'}
+            </span>
+            <span className="mt-[0.35rem] block text-[0.9375rem] text-fg-3">
+              from {sites.length} career {sites.length === 1 ? 'site' : 'sites'}
+            </span>
+          </div>
+          <ul>
+            {sites.map(({ company, count, run }) => (
+              <li key={company}>
+                <a href={run?.url} target="_blank" rel="noreferrer" className="group flex items-baseline justify-between gap-[0.75rem] border-b border-line py-[0.45rem]">
+                  <span className="min-w-0 truncate">
+                    <span className="text-[1.0625rem] font-[580] text-fg transition-colors group-hover:text-accent-ink">{company}</span>
+                    {run && <span className="ml-[0.4rem] text-[0.8125rem] text-fg-3">{run.platform}</span>}
+                  </span>
+                  <span className="tnum shrink-0 text-[1rem] font-[600] text-fg-2">{count}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </Reveal>
       )}
     </div>
@@ -318,9 +331,6 @@ export function JobsSites() {
     <div className="stage">
       <div className="absolute left-[5.5rem] top-[7rem] w-[62rem]">
         <SceneHead eyebrow="Job sites" title="Where else to look" size="title" />
-        <Reveal delay={0.35} y={8} className="mt-[0.9rem] text-[1.125rem] leading-[1.45] text-fg-2">
-          Each link opens a search for retail analyst roles in India open to freshers; the filter it applies is listed under the name. None of these sites offers a public jobs API we can use, so we link to them instead of copying their listings.
-        </Reveal>
       </div>
       <div className="absolute left-[5.5rem] right-[5.5rem] top-[18rem] grid grid-cols-3 gap-x-[2.5rem]">
         {SITE_GROUPS.map((g, gi) => (
