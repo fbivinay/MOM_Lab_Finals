@@ -1,5 +1,9 @@
 # Retail Analytics: From Data to Decisions
 
+**Live:** https://mom-lab-finals.vercel.app (laptop or desktop only)
+
+![The cover scene of the presentation](docs/screenshot.png)
+
 An animated, full-screen presentation website for an MSc Big Data Analytics talk. It behaves like a slide deck: one scene fills the screen, Next moves to the next build or scene, and every section flows into the next.
 
 Six sections, 33 scenes, all in a light theme:
