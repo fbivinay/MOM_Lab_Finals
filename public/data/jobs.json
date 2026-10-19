@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T04:50:01.818Z",
+  "generatedAt": "2026-10-19T04:58:28.556Z",
   "sources": [
     {
       "company": "Target",
@@ -97,7 +97,7 @@
       "platform": "Workday",
       "url": "https://mdlz.wd3.myworkdayjobs.com/External",
       "ok": true,
-      "jobs": 1
+      "jobs": 0
     },
     {
       "company": "Unilever",
@@ -146,7 +146,7 @@
       "platform": "Workday",
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers",
       "ok": true,
-      "jobs": 70
+      "jobs": 67
     },
     {
       "company": "Fractal (campus hiring)",
@@ -182,13 +182,13 @@
       "forFreshers": "yes",
       "employmentType": "Full-time",
       "salary": null,
-      "postedAt": "2026-10-15",
+      "postedAt": "2026-10-19",
       "deadline": null,
       "location": "Bengaluru, India",
       "url": "https://talent.lowes.com/in/en/job/JR-02652504/Analyst-Customer-Insights",
       "source": "Phenom",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -208,7 +208,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02660681/Store-Planner",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -228,7 +228,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02651205/Analyst-Merch-Ops-Analytics",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -248,7 +248,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02641587/IND-Analyst-BA-Digital-Category-Experience",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -268,7 +268,7 @@
       "url": "https://diageo.wd3.myworkdayjobs.com/Diageo_Careers/job/Bangalore-India/Executive---Replenishment-Planner_JR1127760",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -288,7 +288,7 @@
       "url": "https://jobs.smartrecruiters.com/HMGroup/744000155906254-senior-data-analyst",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -308,7 +308,7 @@
       "url": "https://jobs.smartrecruiters.com/HMGroup/744000155905899-data-analyst",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -328,27 +328,7 @@
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Sr-Analyst-Performance---Insights_R0000476917",
       "source": "Workday",
       "collectedAt": "2026-10-17T04:44:16.575Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
-      "status": "active"
-    },
-    {
-      "id": "workday:https://mdlz.wd3.myworkdayjobs.com/External:R-174668",
-      "company": "Mondelez",
-      "logo": "/brands/mondelez.png",
-      "title": "Demand Planner",
-      "category": "Demand Forecasting Analyst",
-      "description": "Job Description Are You Ready to Make It Happen at Mondelēz International? Join our Mission to Lead the Future of Snacking. Make It Possible How you will contribute Key Responsibilities Lead the monthly demand planning cycle for the Chocolates category, generating a robust, data‑driven forecast across SKUs, channels, customers, and regions. Use advanced statistical models and analytical tools to build, maintain, and continuously improve short‑, medium‑, and long‑term forecasts. Own and drive improvements in forecast quality (accuracy, bias, fidelity, forecast value add), directly impacting service level, working capital, ageing, and cost‑to‑serve. Lead the demand stream of the S&OP/IBP…",
-      "experience": "8–10 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-10-16",
-      "deadline": "2026-10-19",
-      "location": "Plant and Business Unit Head Office - Mumbai, India",
-      "url": "https://mdlz.wd3.myworkdayjobs.com/External/job/Mumbai-India/Demand-Planner_R-174668",
-      "source": "Workday",
-      "collectedAt": "2026-10-17T04:44:16.575Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -368,7 +348,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000155707709-analytics-and-activation-sales-specialist",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -388,7 +368,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02659717/Analyst-Enterprise-Fulfillment-SQL",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -408,7 +388,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Mumbai/Supply-Chain-Operations-Senior-Analyst_AIOC-S01670645-1",
       "source": "Workday",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -428,7 +408,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Navi-Mumbai/Procurement-Operations-Analyst_AIOC-S01670724-1",
       "source": "Workday",
       "collectedAt": "2026-10-17T04:44:16.575Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -448,7 +428,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Bengaluru/Sourcing---Cat-Enablement-Senior-Analyst_AIOC-S01670330-1",
       "source": "Workday",
       "collectedAt": "2026-10-14T05:07:19.674Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -468,7 +448,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02672638/IND-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -488,7 +468,7 @@
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Analyst-PIM-Ops_R0000473632",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -508,7 +488,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02661342/IND-Demand-Planner",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -528,7 +508,7 @@
       "url": "https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals/job/Chennai-Regional-Office/Supply-Planner-Specialist_R-1189194-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -548,7 +528,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Bengaluru/Procurement-Practice-Senior-Analyst_AIOC-S01669812-1",
       "source": "Workday",
       "collectedAt": "2026-10-17T04:44:16.575Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -568,7 +548,7 @@
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Pricing-Analyst-4_R0000475691",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -588,7 +568,7 @@
       "url": "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers/job/IN---Navi-Mumbai/Sr-Analyst--Supply-Chain-Development_R182972",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -608,7 +588,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Bengaluru/S-C-Global-Network---AI---Supply-Chain--Analyst_R00315549",
       "source": "Workday",
       "collectedAt": "2026-10-15T04:55:45.497Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -628,7 +608,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Mumbai/Supply-Chain-Operations-Analyst_AIOC-S01667627-1",
       "source": "Workday",
       "collectedAt": "2026-10-18T04:50:01.818Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -648,7 +628,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02651171/Senior-Analyst-Merch-Ops-Analytics",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -668,7 +648,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Navi-Mumbai/Supply-Chain-Operations-Analyst_AIOC-S01664967-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -688,7 +668,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02614343/IND-Analyst-Cost-Insights-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -708,7 +688,7 @@
       "url": "https://pvh.wd1.myworkdayjobs.com/PVH_Careers/job/Office-India/End-to-End-Product-Data-Analyst_R61687",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -728,7 +708,7 @@
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Analyst-Marketplace-Partner-Performance_R0000441183-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -748,7 +728,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Navi-Mumbai/Supply-Chain-Operations-Senior-Analyst_AIOC-S01653062-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -768,7 +748,7 @@
       "url": "https://www.coupang.jobs/en/jobs/?gh_jid=8143295",
       "source": "Greenhouse",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -788,7 +768,7 @@
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Associate-Planner_R0000448598-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -808,7 +788,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Gurugram/Sourcing---Cat-Enablement-Senior-Analyst_AIOC-S01656149-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -828,7 +808,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Gurugram/Procurement-Practice-Senior-Analyst_AIOC-S01656043-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -848,7 +828,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Gurugram/Procurement-Practice-Analyst_AIOC-S01656044-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -868,7 +848,7 @@
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Analyst-Pricing-Ops-Target-Plus_R0000433861-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -888,7 +868,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Navi-Mumbai/Supply-Chain-Operations-Senior-Analyst_AIOC-S01653045-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -908,7 +888,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Navi-Mumbai/Supply-Chain-Plan-Analyt-Analyst_AIOC-S01651003-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -928,7 +908,7 @@
       "url": "https://pvh.wd1.myworkdayjobs.com/PVH_Careers/job/Office-India/Supply-Planning-Analyst_R57639",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -948,7 +928,7 @@
       "url": "https://pvh.wd1.myworkdayjobs.com/PVH_Careers/job/Office-India/Senior-Data-Analyst_R42645",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-18T04:50:01.818Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "active"
     },
     {
@@ -969,6 +949,26 @@
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
       "checkedAt": "2026-10-17T04:44:16.575Z",
+      "status": "expired"
+    },
+    {
+      "id": "workday:https://mdlz.wd3.myworkdayjobs.com/External:R-174668",
+      "company": "Mondelez",
+      "logo": "/brands/mondelez.png",
+      "title": "Demand Planner",
+      "category": "Demand Forecasting Analyst",
+      "description": "Job Description Are You Ready to Make It Happen at Mondelēz International? Join our Mission to Lead the Future of Snacking. Make It Possible How you will contribute Key Responsibilities Lead the monthly demand planning cycle for the Chocolates category, generating a robust, data‑driven forecast across SKUs, channels, customers, and regions. Use advanced statistical models and analytical tools to build, maintain, and continuously improve short‑, medium‑, and long‑term forecasts. Own and drive improvements in forecast quality (accuracy, bias, fidelity, forecast value add), directly impacting service level, working capital, ageing, and cost‑to‑serve. Lead the demand stream of the S&OP/IBP…",
+      "experience": "8–10 years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-10-16",
+      "deadline": "2026-10-19",
+      "location": "Plant and Business Unit Head Office - Mumbai, India",
+      "url": "https://mdlz.wd3.myworkdayjobs.com/External/job/Mumbai-India/Demand-Planner_R-174668",
+      "source": "Workday",
+      "collectedAt": "2026-10-17T04:44:16.575Z",
+      "checkedAt": "2026-10-18T04:50:01.818Z",
       "status": "expired"
     },
     {
