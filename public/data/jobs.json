@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-19T04:58:28.556Z",
+  "generatedAt": "2026-10-20T05:03:22.729Z",
   "sources": [
     {
       "company": "Target",
       "platform": "Workday",
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers",
       "ok": true,
-      "jobs": 6
+      "jobs": 8
     },
     {
       "company": "Lowe's",
@@ -146,7 +146,7 @@
       "platform": "Workday",
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers",
       "ok": true,
-      "jobs": 67
+      "jobs": 13
     },
     {
       "company": "Fractal (campus hiring)",
@@ -182,13 +182,13 @@
       "forFreshers": "yes",
       "employmentType": "Full-time",
       "salary": null,
-      "postedAt": "2026-10-19",
+      "postedAt": "2026-10-20",
       "deadline": null,
       "location": "Bengaluru, India",
       "url": "https://talent.lowes.com/in/en/job/JR-02652504/Analyst-Customer-Insights",
       "source": "Phenom",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -208,7 +208,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02660681/Store-Planner",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -228,7 +228,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02651205/Analyst-Merch-Ops-Analytics",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -248,7 +248,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02641587/IND-Analyst-BA-Digital-Category-Experience",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -268,7 +268,67 @@
       "url": "https://diageo.wd3.myworkdayjobs.com/Diageo_Careers/job/Bangalore-India/Executive---Replenishment-Planner_JR1127760",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
+      "status": "active"
+    },
+    {
+      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000440436",
+      "company": "Target",
+      "logo": "/brands/target.svg",
+      "title": "Lead Data Analyst",
+      "category": "Retail Data Analyst",
+      "description": "About the Role Join the Data Analytics (DA) team at TII across domains such as Marketing and Digital, Merchandising, Supply Chain and Logistics, Store Operations, Finance and more. Here you'll collaborate with business leaders to turn data into insights that drive strategic decisions. You’ll be part of a fast-moving, high-impact environment focused on leveraging business intelligence and advanced analytics to solve real-world problems. This role combines technical expertise with business understanding to uncover and communicate actionable insights using cutting-edge statistical and analytical techniques. Behind one of the world’s best loved brands is a uniquely capable and brilliant team of…",
+      "experience": null,
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-10-19",
+      "deadline": "2026-10-22",
+      "location": "Bangalore, India",
+      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Lead-Data-Analyst_R0000440436-1",
+      "source": "Workday",
+      "collectedAt": "2026-10-16T04:45:50.889Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
+      "status": "active"
+    },
+    {
+      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000430856",
+      "company": "Target",
+      "logo": "/brands/target.svg",
+      "title": "Sr Data Analyst",
+      "category": "Retail Data Analyst",
+      "description": "About the Role Join the Data Analytics (DA) team at TII across domains such as Marketing and Digital, Merchandising, Supply Chain and Logistics, Store Operations, Finance and more. Here you'll collaborate with business leaders to turn data into insights that drive strategic decisions. You’ll be part of a fast-moving, high-impact environment focused on leveraging business intelligence and advanced analytics to solve real-world problems. This role combines technical expertise with business understanding to uncover and communicate actionable insights using cutting-edge statistical and analytical techniques. Behind one of the world’s best loved brands is a uniquely capable and brilliant team of…",
+      "experience": "5–8 years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-10-19",
+      "deadline": "2026-10-22",
+      "location": "Bangalore, India",
+      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Sr-Data-Analyst_R0000430856",
+      "source": "Workday",
+      "collectedAt": "2026-10-20T05:03:22.729Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
+      "status": "active"
+    },
+    {
+      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000431066",
+      "company": "Target",
+      "logo": "/brands/target.svg",
+      "title": "Data Analyst",
+      "category": "Retail Data Analyst",
+      "description": "About the Role Join the Data Analytics (DA) team at TII across domains such as Marketing and Digital, Merchandising, Supply Chain and Logistics, Store Operations, Finance and more. Here you'll collaborate with business leaders to turn data into insights that drive strategic decisions. You’ll be part of a fast-moving, high-impact environment focused on leveraging business intelligence and advanced analytics to solve real-world problems. This role combines technical expertise with business understanding to uncover and communicate actionable insights using cutting-edge statistical and analytical techniques. Behind one of the world’s best loved brands is a uniquely capable and brilliant team of…",
+      "experience": "2–6 years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-10-19",
+      "deadline": "2026-10-22",
+      "location": "Bangalore, India",
+      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Data-Analyst_R0000431066",
+      "source": "Workday",
+      "collectedAt": "2026-10-16T04:45:50.889Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -288,7 +348,7 @@
       "url": "https://jobs.smartrecruiters.com/HMGroup/744000155906254-senior-data-analyst",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -308,7 +368,7 @@
       "url": "https://jobs.smartrecruiters.com/HMGroup/744000155905899-data-analyst",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -328,7 +388,7 @@
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Sr-Analyst-Performance---Insights_R0000476917",
       "source": "Workday",
       "collectedAt": "2026-10-17T04:44:16.575Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -348,7 +408,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000155707709-analytics-and-activation-sales-specialist",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -368,7 +428,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02659717/Analyst-Enterprise-Fulfillment-SQL",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -388,7 +448,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Mumbai/Supply-Chain-Operations-Senior-Analyst_AIOC-S01670645-1",
       "source": "Workday",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -408,7 +468,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Navi-Mumbai/Procurement-Operations-Analyst_AIOC-S01670724-1",
       "source": "Workday",
       "collectedAt": "2026-10-17T04:44:16.575Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -428,7 +488,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Bengaluru/Sourcing---Cat-Enablement-Senior-Analyst_AIOC-S01670330-1",
       "source": "Workday",
       "collectedAt": "2026-10-14T05:07:19.674Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -448,7 +508,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02672638/IND-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -468,7 +528,7 @@
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Analyst-PIM-Ops_R0000473632",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -488,7 +548,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02661342/IND-Demand-Planner",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -508,7 +568,7 @@
       "url": "https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals/job/Chennai-Regional-Office/Supply-Planner-Specialist_R-1189194-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -528,7 +588,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Bengaluru/Procurement-Practice-Senior-Analyst_AIOC-S01669812-1",
       "source": "Workday",
       "collectedAt": "2026-10-17T04:44:16.575Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -548,7 +608,7 @@
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Pricing-Analyst-4_R0000475691",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -568,7 +628,7 @@
       "url": "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers/job/IN---Navi-Mumbai/Sr-Analyst--Supply-Chain-Development_R182972",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -588,7 +648,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Bengaluru/S-C-Global-Network---AI---Supply-Chain--Analyst_R00315549",
       "source": "Workday",
       "collectedAt": "2026-10-15T04:55:45.497Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -608,7 +668,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Mumbai/Supply-Chain-Operations-Analyst_AIOC-S01667627-1",
       "source": "Workday",
       "collectedAt": "2026-10-18T04:50:01.818Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -628,7 +688,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02651171/Senior-Analyst-Merch-Ops-Analytics",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -648,7 +708,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Navi-Mumbai/Supply-Chain-Operations-Analyst_AIOC-S01664967-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -668,7 +728,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02614343/IND-Analyst-Cost-Insights-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -688,27 +748,7 @@
       "url": "https://pvh.wd1.myworkdayjobs.com/PVH_Careers/job/Office-India/End-to-End-Product-Data-Analyst_R61687",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
-      "status": "active"
-    },
-    {
-      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000441183",
-      "company": "Target",
-      "logo": "/brands/target.svg",
-      "title": "Analyst Marketplace Partner Performance",
-      "category": "Retail Analyst",
-      "description": "Role Overview: Marketplace Partner Performance Analyst will play a critical role in driving seller success on the platform by defining key performance metrics and delivering actionable insights and recommendations This role sits at the intersection of analytics, strategy, and partner growth, enabling data-driven conversations with sellers to improve performance, profitability, and long-term growth. You will empower Partner Growth teams with insights, tools, and recommendations to drive meaningful engagement with partners and improve overall marketplace performance. The responsibilities will include, but will not be limited to: Partner Performance Analytics & Insights • Define and track key…",
-      "experience": "5–6+ years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-09-01",
-      "deadline": null,
-      "location": "Bangalore, India",
-      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Analyst-Marketplace-Partner-Performance_R0000441183-1",
-      "source": "Workday",
-      "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -728,7 +768,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Navi-Mumbai/Supply-Chain-Operations-Senior-Analyst_AIOC-S01653062-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -748,7 +788,7 @@
       "url": "https://www.coupang.jobs/en/jobs/?gh_jid=8143295",
       "source": "Greenhouse",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -768,7 +808,7 @@
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Associate-Planner_R0000448598-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -788,7 +828,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Gurugram/Sourcing---Cat-Enablement-Senior-Analyst_AIOC-S01656149-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -808,7 +848,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Gurugram/Procurement-Practice-Senior-Analyst_AIOC-S01656043-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -828,7 +868,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Gurugram/Procurement-Practice-Analyst_AIOC-S01656044-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -848,7 +888,7 @@
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Analyst-Pricing-Ops-Target-Plus_R0000433861-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -868,7 +908,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Navi-Mumbai/Supply-Chain-Operations-Senior-Analyst_AIOC-S01653045-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -888,7 +928,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Navi-Mumbai/Supply-Chain-Plan-Analyt-Analyst_AIOC-S01651003-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -908,7 +948,7 @@
       "url": "https://pvh.wd1.myworkdayjobs.com/PVH_Careers/job/Office-India/Supply-Planning-Analyst_R57639",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -928,7 +968,7 @@
       "url": "https://pvh.wd1.myworkdayjobs.com/PVH_Careers/job/Office-India/Senior-Data-Analyst_R42645",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-19T04:58:28.556Z",
+      "checkedAt": "2026-10-20T05:03:22.729Z",
       "status": "active"
     },
     {
@@ -969,46 +1009,6 @@
       "source": "Workday",
       "collectedAt": "2026-10-17T04:44:16.575Z",
       "checkedAt": "2026-10-18T04:50:01.818Z",
-      "status": "expired"
-    },
-    {
-      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000440436",
-      "company": "Target",
-      "logo": "/brands/target.svg",
-      "title": "Lead Data Analyst",
-      "category": "Retail Data Analyst",
-      "description": "About the Role Join the Data Analytics (DA) team at TII across domains such as Marketing and Digital, Merchandising, Supply Chain and Logistics, Store Operations, Finance and more. Here you'll collaborate with business leaders to turn data into insights that drive strategic decisions. You’ll be part of a fast-moving, high-impact environment focused on leveraging business intelligence and advanced analytics to solve real-world problems. This role combines technical expertise with business understanding to uncover and communicate actionable insights using cutting-edge statistical and analytical techniques. Behind one of the world’s best loved brands is a uniquely capable and brilliant team of…",
-      "experience": null,
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-10-16",
-      "deadline": "2026-10-17",
-      "location": "Bangalore, India",
-      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Lead-Data-Analyst_R0000440436-1",
-      "source": "Workday",
-      "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-16T04:45:50.889Z",
-      "status": "expired"
-    },
-    {
-      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000431066",
-      "company": "Target",
-      "logo": "/brands/target.svg",
-      "title": "Data Analyst",
-      "category": "Retail Data Analyst",
-      "description": "About the Role Join the Data Analytics (DA) team at TII across domains such as Marketing and Digital, Merchandising, Supply Chain and Logistics, Store Operations, Finance and more. Here you'll collaborate with business leaders to turn data into insights that drive strategic decisions. You’ll be part of a fast-moving, high-impact environment focused on leveraging business intelligence and advanced analytics to solve real-world problems. This role combines technical expertise with business understanding to uncover and communicate actionable insights using cutting-edge statistical and analytical techniques. Behind one of the world’s best loved brands is a uniquely capable and brilliant team of…",
-      "experience": "2–6 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-10-15",
-      "deadline": "2026-10-17",
-      "location": "Bangalore, India",
-      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Data-Analyst_R0000431066",
-      "source": "Workday",
-      "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-16T04:45:50.889Z",
       "status": "expired"
     },
     {
@@ -1109,6 +1109,26 @@
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-12T20:05:45.545Z",
       "checkedAt": "2026-10-14T05:07:19.674Z",
+      "status": "expired"
+    },
+    {
+      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000441183",
+      "company": "Target",
+      "logo": "/brands/target.svg",
+      "title": "Analyst Marketplace Partner Performance",
+      "category": "Retail Analyst",
+      "description": "Role Overview: Marketplace Partner Performance Analyst will play a critical role in driving seller success on the platform by defining key performance metrics and delivering actionable insights and recommendations This role sits at the intersection of analytics, strategy, and partner growth, enabling data-driven conversations with sellers to improve performance, profitability, and long-term growth. You will empower Partner Growth teams with insights, tools, and recommendations to drive meaningful engagement with partners and improve overall marketplace performance. The responsibilities will include, but will not be limited to: Partner Performance Analytics & Insights • Define and track key…",
+      "experience": "5–6+ years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-09-01",
+      "deadline": null,
+      "location": "Bangalore, India",
+      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Analyst-Marketplace-Partner-Performance_R0000441183-1",
+      "source": "Workday",
+      "collectedAt": "2026-10-12T20:54:24.791Z",
+      "checkedAt": "2026-10-19T04:58:28.556Z",
       "status": "expired"
     },
     {
