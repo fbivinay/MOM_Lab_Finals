@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-21T05:04:27.648Z",
+  "generatedAt": "2026-10-22T05:06:11.012Z",
   "sources": [
     {
       "company": "Target",
       "platform": "Workday",
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers",
       "ok": true,
-      "jobs": 8
+      "jobs": 5
     },
     {
       "company": "Lowe's",
@@ -62,14 +62,14 @@
       "platform": "Greenhouse",
       "url": "https://job-boards.greenhouse.io/coupang",
       "ok": true,
-      "jobs": 1
+      "jobs": 2
     },
     {
       "company": "NielsenIQ",
       "platform": "SmartRecruiters",
       "url": "https://careers.smartrecruiters.com/NielsenIQ",
       "ok": true,
-      "jobs": 2
+      "jobs": 3
     },
     {
       "company": "dunnhumby",
@@ -188,7 +188,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02652504/Analyst-Customer-Insights",
       "source": "Phenom",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -208,7 +208,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02674614/IND-Associate-Analyst-Supply-Chain",
       "source": "Phenom",
       "collectedAt": "2026-10-21T05:04:27.648Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -228,7 +228,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02660681/Store-Planner",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -248,7 +248,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02651205/Analyst-Merch-Ops-Analytics",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -268,7 +268,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02641587/IND-Analyst-BA-Digital-Category-Experience",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -288,7 +288,47 @@
       "url": "https://diageo.wd3.myworkdayjobs.com/Diageo_Careers/job/Bangalore-India/Executive---Replenishment-Planner_JR1127760",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
+      "status": "active"
+    },
+    {
+      "id": "smartrecruiters:NielsenIQ:744000156753110",
+      "company": "NielsenIQ",
+      "logo": "/brands/nielseniq.png",
+      "title": "Senior Data Operations Analyst - Stat Ops",
+      "category": "Retail Data Analyst",
+      "description": "Responsibilities\nProduction & Quality Execution:\n· Execute assigned production and reporting processes accurately and within defined timelines.\n· Ensure high-quality data delivery through adherence to standard operating procedures and quality controls.\n· Perform validation checks, investigate data discrepancies, and support timely resolution of production issues.\n· Monitor production milestones and proactively escalate risks that may impact quality or delivery timelines.\n· Contribute to achieving operational KPIs related to timeliness, quality, and productivity.\n· Support recurring production cycles while identifying opportunities to improve efficiency and reduce manual effort.\nProcess…",
+      "experience": "2+ years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-10-21T09:28:14.938Z",
+      "deadline": null,
+      "location": "Gurgaon, HR, India",
+      "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000156753110-senior-data-operations-analyst-stat-ops",
+      "source": "SmartRecruiters",
+      "collectedAt": "2026-10-22T05:06:11.012Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
+      "status": "active"
+    },
+    {
+      "id": "greenhouse:coupang:7975755",
+      "company": "Coupang",
+      "logo": "/brands/coupang.png",
+      "title": "Staff Data Analyst",
+      "category": "Retail Data Analyst",
+      "description": "Role Overview\nAs a Staff Data Analyst within the Fresh SCM Automation team, you will drive strategic decision-making by solving complex supply chain and inventory optimization challenges through advanced analytics. The team is responsible for building scalable analytical frameworks, products, and data science capabilities that improve product availability while optimizing inventory and operational costs. You will work closely with Product, Supply Chain, Forecasting, and Engineering teams to influence key business decisions and develop data-driven solutions that support Coupang's rapidly growing Fresh business.\nAbout the Team\nThe Fresh SCM Automation team develops products and analytical…",
+      "experience": "8+ years",
+      "forFreshers": "no",
+      "employmentType": null,
+      "salary": null,
+      "postedAt": "2026-10-21T05:25:54-04:00",
+      "deadline": null,
+      "location": "Bengaluru",
+      "url": "https://www.coupang.jobs/en/jobs/?gh_jid=7975755",
+      "source": "Greenhouse",
+      "collectedAt": "2026-10-22T05:06:11.012Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -308,67 +348,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000156484969-principal-data-operations-analyst-p4-statistics-analytics-knowledge-required-",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-21T05:04:27.648Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
-      "status": "active"
-    },
-    {
-      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000440436",
-      "company": "Target",
-      "logo": "/brands/target.svg",
-      "title": "Lead Data Analyst",
-      "category": "Retail Data Analyst",
-      "description": "About the Role Join the Data Analytics (DA) team at TII across domains such as Marketing and Digital, Merchandising, Supply Chain and Logistics, Store Operations, Finance and more. Here you'll collaborate with business leaders to turn data into insights that drive strategic decisions. You’ll be part of a fast-moving, high-impact environment focused on leveraging business intelligence and advanced analytics to solve real-world problems. This role combines technical expertise with business understanding to uncover and communicate actionable insights using cutting-edge statistical and analytical techniques. Behind one of the world’s best loved brands is a uniquely capable and brilliant team of…",
-      "experience": null,
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-10-19",
-      "deadline": "2026-10-22",
-      "location": "Bangalore, India",
-      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Lead-Data-Analyst_R0000440436-1",
-      "source": "Workday",
-      "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
-      "status": "active"
-    },
-    {
-      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000430856",
-      "company": "Target",
-      "logo": "/brands/target.svg",
-      "title": "Sr Data Analyst",
-      "category": "Retail Data Analyst",
-      "description": "About the Role Join the Data Analytics (DA) team at TII across domains such as Marketing and Digital, Merchandising, Supply Chain and Logistics, Store Operations, Finance and more. Here you'll collaborate with business leaders to turn data into insights that drive strategic decisions. You’ll be part of a fast-moving, high-impact environment focused on leveraging business intelligence and advanced analytics to solve real-world problems. This role combines technical expertise with business understanding to uncover and communicate actionable insights using cutting-edge statistical and analytical techniques. Behind one of the world’s best loved brands is a uniquely capable and brilliant team of…",
-      "experience": "5–8 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-10-19",
-      "deadline": "2026-10-22",
-      "location": "Bangalore, India",
-      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Sr-Data-Analyst_R0000430856",
-      "source": "Workday",
-      "collectedAt": "2026-10-20T05:03:22.729Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
-      "status": "active"
-    },
-    {
-      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000431066",
-      "company": "Target",
-      "logo": "/brands/target.svg",
-      "title": "Data Analyst",
-      "category": "Retail Data Analyst",
-      "description": "About the Role Join the Data Analytics (DA) team at TII across domains such as Marketing and Digital, Merchandising, Supply Chain and Logistics, Store Operations, Finance and more. Here you'll collaborate with business leaders to turn data into insights that drive strategic decisions. You’ll be part of a fast-moving, high-impact environment focused on leveraging business intelligence and advanced analytics to solve real-world problems. This role combines technical expertise with business understanding to uncover and communicate actionable insights using cutting-edge statistical and analytical techniques. Behind one of the world’s best loved brands is a uniquely capable and brilliant team of…",
-      "experience": "2–6 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-10-19",
-      "deadline": "2026-10-22",
-      "location": "Bangalore, India",
-      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Data-Analyst_R0000431066",
-      "source": "Workday",
-      "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -388,7 +368,7 @@
       "url": "https://jobs.smartrecruiters.com/HMGroup/744000155906254-senior-data-analyst",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -408,7 +388,7 @@
       "url": "https://jobs.smartrecruiters.com/HMGroup/744000155905899-data-analyst",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -428,7 +408,7 @@
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Sr-Analyst-Performance---Insights_R0000476917",
       "source": "Workday",
       "collectedAt": "2026-10-17T04:44:16.575Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -448,7 +428,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000155707709-analytics-and-activation-sales-specialist",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -468,7 +448,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02659717/Analyst-Enterprise-Fulfillment-SQL",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -548,7 +528,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02672638/IND-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -568,7 +548,7 @@
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Analyst-PIM-Ops_R0000473632",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -588,7 +568,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02661342/IND-Demand-Planner",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -608,7 +588,7 @@
       "url": "https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals/job/Chennai-Regional-Office/Supply-Planner-Specialist_R-1189194-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -648,7 +628,7 @@
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Pricing-Analyst-4_R0000475691",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -668,7 +648,7 @@
       "url": "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers/job/IN---Navi-Mumbai/Sr-Analyst--Supply-Chain-Development_R182972",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -728,7 +708,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02651171/Senior-Analyst-Merch-Ops-Analytics",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -768,7 +748,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02614343/IND-Analyst-Cost-Insights-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -788,7 +768,7 @@
       "url": "https://pvh.wd1.myworkdayjobs.com/PVH_Careers/job/Office-India/End-to-End-Product-Data-Analyst_R61687",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -812,26 +792,6 @@
       "status": "active"
     },
     {
-      "id": "greenhouse:coupang:8143295",
-      "company": "Coupang",
-      "logo": "/brands/coupang.png",
-      "title": "Staff Data Analyst",
-      "category": "Retail Data Analyst",
-      "description": "Role Overview\nRetail and Selection is the engine behind Coupang’s massive product catalog, ensuring we offer the right products at the right price with the best availability. As we scale, the complexity of managing millions of SKUs and thousands of vendor relationships grows exponentially.\nWe are looking for a Staff Data Analyst to join the Retail and Selection team. In this role, you will be the technical architect of our data strategy, transforming raw market signals and internal metrics into a competitive advantage. You will work on projects that define the quality, availability, and depth of data needed to optimize our selection, pricing, and inventory health. You will use your deep…",
-      "experience": "8+ years",
-      "forFreshers": "no",
-      "employmentType": null,
-      "salary": null,
-      "postedAt": "2026-08-20T05:29:25-04:00",
-      "deadline": null,
-      "location": "Bengaluru",
-      "url": "https://www.coupang.jobs/en/jobs/?gh_jid=8143295",
-      "source": "Greenhouse",
-      "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
-      "status": "active"
-    },
-    {
       "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000448598",
       "company": "Target",
       "logo": "/brands/target.svg",
@@ -848,7 +808,7 @@
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Associate-Planner_R0000448598-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -928,7 +888,7 @@
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Analyst-Pricing-Ops-Target-Plus_R0000433861-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -988,7 +948,7 @@
       "url": "https://pvh.wd1.myworkdayjobs.com/PVH_Careers/job/Office-India/Supply-Planning-Analyst_R57639",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -1008,7 +968,7 @@
       "url": "https://pvh.wd1.myworkdayjobs.com/PVH_Careers/job/Office-India/Senior-Data-Analyst_R42645",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "checkedAt": "2026-10-22T05:06:11.012Z",
       "status": "active"
     },
     {
@@ -1029,6 +989,66 @@
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
       "checkedAt": "2026-10-17T04:44:16.575Z",
+      "status": "expired"
+    },
+    {
+      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000440436",
+      "company": "Target",
+      "logo": "/brands/target.svg",
+      "title": "Lead Data Analyst",
+      "category": "Retail Data Analyst",
+      "description": "About the Role Join the Data Analytics (DA) team at TII across domains such as Marketing and Digital, Merchandising, Supply Chain and Logistics, Store Operations, Finance and more. Here you'll collaborate with business leaders to turn data into insights that drive strategic decisions. You’ll be part of a fast-moving, high-impact environment focused on leveraging business intelligence and advanced analytics to solve real-world problems. This role combines technical expertise with business understanding to uncover and communicate actionable insights using cutting-edge statistical and analytical techniques. Behind one of the world’s best loved brands is a uniquely capable and brilliant team of…",
+      "experience": null,
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-10-19",
+      "deadline": "2026-10-22",
+      "location": "Bangalore, India",
+      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Lead-Data-Analyst_R0000440436-1",
+      "source": "Workday",
+      "collectedAt": "2026-10-16T04:45:50.889Z",
+      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "status": "expired"
+    },
+    {
+      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000430856",
+      "company": "Target",
+      "logo": "/brands/target.svg",
+      "title": "Sr Data Analyst",
+      "category": "Retail Data Analyst",
+      "description": "About the Role Join the Data Analytics (DA) team at TII across domains such as Marketing and Digital, Merchandising, Supply Chain and Logistics, Store Operations, Finance and more. Here you'll collaborate with business leaders to turn data into insights that drive strategic decisions. You’ll be part of a fast-moving, high-impact environment focused on leveraging business intelligence and advanced analytics to solve real-world problems. This role combines technical expertise with business understanding to uncover and communicate actionable insights using cutting-edge statistical and analytical techniques. Behind one of the world’s best loved brands is a uniquely capable and brilliant team of…",
+      "experience": "5–8 years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-10-19",
+      "deadline": "2026-10-22",
+      "location": "Bangalore, India",
+      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Sr-Data-Analyst_R0000430856",
+      "source": "Workday",
+      "collectedAt": "2026-10-20T05:03:22.729Z",
+      "checkedAt": "2026-10-21T05:04:27.648Z",
+      "status": "expired"
+    },
+    {
+      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000431066",
+      "company": "Target",
+      "logo": "/brands/target.svg",
+      "title": "Data Analyst",
+      "category": "Retail Data Analyst",
+      "description": "About the Role Join the Data Analytics (DA) team at TII across domains such as Marketing and Digital, Merchandising, Supply Chain and Logistics, Store Operations, Finance and more. Here you'll collaborate with business leaders to turn data into insights that drive strategic decisions. You’ll be part of a fast-moving, high-impact environment focused on leveraging business intelligence and advanced analytics to solve real-world problems. This role combines technical expertise with business understanding to uncover and communicate actionable insights using cutting-edge statistical and analytical techniques. Behind one of the world’s best loved brands is a uniquely capable and brilliant team of…",
+      "experience": "2–6 years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-10-19",
+      "deadline": "2026-10-22",
+      "location": "Bangalore, India",
+      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Data-Analyst_R0000431066",
+      "source": "Workday",
+      "collectedAt": "2026-10-16T04:45:50.889Z",
+      "checkedAt": "2026-10-21T05:04:27.648Z",
       "status": "expired"
     },
     {
