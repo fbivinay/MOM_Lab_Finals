@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-13T06:59:21.313Z",
+  "generatedAt": "2026-11-14T06:48:01.316Z",
   "sources": [
     {
       "company": "Target",
       "platform": "Workday",
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers",
-      "ok": true,
-      "jobs": 3
+      "ok": false,
+      "jobs": 0
     },
     {
       "company": "Lowe's",
@@ -26,7 +26,7 @@
       "company": "Dollar Tree",
       "platform": "Workday",
       "url": "https://dollartree.wd5.myworkdayjobs.com/dollartreeus",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -34,7 +34,7 @@
       "platform": "Workday",
       "url": "https://pvh.wd1.myworkdayjobs.com/PVH_Careers",
       "ok": true,
-      "jobs": 2
+      "jobs": 0
     },
     {
       "company": "H&M Group",
@@ -69,7 +69,7 @@
       "platform": "SmartRecruiters",
       "url": "https://careers.smartrecruiters.com/NielsenIQ",
       "ok": true,
-      "jobs": 6
+      "jobs": 5
     },
     {
       "company": "dunnhumby",
@@ -82,7 +82,7 @@
       "company": "P&G",
       "platform": "Workday",
       "url": "https://pg.wd5.myworkdayjobs.com/1000",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -117,7 +117,7 @@
       "company": "AB InBev",
       "platform": "Workday",
       "url": "https://abinbev.wd1.myworkdayjobs.com/IND",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -132,7 +132,7 @@
       "platform": "Workday",
       "url": "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers",
       "ok": true,
-      "jobs": 2
+      "jobs": 1
     },
     {
       "company": "C.H. Robinson",
@@ -146,7 +146,7 @@
       "platform": "Workday",
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers",
       "ok": true,
-      "jobs": 68
+      "jobs": 67
     },
     {
       "company": "Fractal (campus hiring)",
@@ -182,13 +182,13 @@
       "forFreshers": "yes",
       "employmentType": "Full-time",
       "salary": null,
-      "postedAt": "2026-11-06",
+      "postedAt": "2026-11-14",
       "deadline": null,
       "location": "Bengaluru, India",
       "url": "https://talent.lowes.com/in/en/job/JR-02686515/IND-Associate-Analyst-Supply-Chain",
       "source": "Phenom",
       "collectedAt": "2026-10-31T06:00:21.737Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -208,7 +208,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02652504/Analyst-Customer-Insights",
       "source": "Phenom",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -228,7 +228,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02685794/IND-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-11-04T06:45:32.734Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -248,27 +248,27 @@
       "url": "https://diageo.wd3.myworkdayjobs.com/Diageo_Careers/job/Bangalore-India/Executive---Replenishment-Planner_JR1127760",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
-      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02685101",
+      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02703400",
       "company": "Lowe's",
       "logo": "/brands/lowes.png",
-      "title": "IND_Analyst-Marketplace Seller Support",
+      "title": "Senior Analyst, Pricing Analytics",
       "category": "Retail Analyst",
-      "description": "Responsibilities:</b></p><br /><ul><li>Handle routine seller support tickets using established SOPs, templates, and documented guidance.</li></ul><br /><ul><li>Provide timely responses and maintain consistent follow-up on assigned open cases. Accurately document case details, actions taken, and next steps in Salesforce.</li></ul><br /><ul><li>Escalate non-standard, ambiguous, or complex issues to Analysts or Senior Analysts. Follow defined workflows, quality standards, and documentation expectations. Maintain queue discipline and support productivity and backlog goals.</li></ul><br /><ul><li>Flag recurring questions or knowledge gaps encountered during case handling.</li></ul><br…",
-      "experience": "2–4 Years",
+      "description": "Responsibilities</u></b></p><p><b><u>Core Responsibilities</u></b></p><ul><li>Translate pricing strategy and business objectives into analytics requirements. </li><li>Develop and implement processes for collecting, exploring, structuring, enhancing, and cleaning large datasets from both internal and external sources.</li><li>Conduct data validation, detect outliers, and perform root cause analysis to prepare data for statistical and machine learning models.</li><li>Research, design, and implement relevant statistical and machine learning models to solve specific business problems.</li><li>Ensure the accuracy of data science and machine learning model results and build trust in their…",
+      "experience": "3–6 years",
       "forFreshers": "no",
       "employmentType": "Full-time",
       "salary": null,
       "postedAt": "2026-11-13",
       "deadline": null,
       "location": "Bengaluru, India",
-      "url": "https://talent.lowes.com/in/en/job/JR-02685101/IND-Analyst-Marketplace-Seller-Support",
+      "url": "https://talent.lowes.com/in/en/job/JR-02703400/Senior-Analyst-Pricing-Analytics",
       "source": "Phenom",
-      "collectedAt": "2026-10-31T06:00:21.737Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "collectedAt": "2026-11-14T06:48:01.316Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -292,26 +292,6 @@
       "status": "active"
     },
     {
-      "id": "workday:https://maersk.wd3.myworkdayjobs.com/Maersk_Careers:R202145",
-      "company": "Maersk",
-      "logo": "/brands/maersk.png",
-      "title": "Intern - Lead Logistics Customer Experience and Operations- FinOps",
-      "category": "Supply Chain Analyst",
-      "description": "General Administration comprises general office administration & secretarial support roles, such as : dedicated secretarial/administrative assistant support (i.e. to senior leaders); general office administration and clerical support (i.e. to teams or functions); reception/telephone/switchboard; mailroom & filing support. May be accountable for office event planning and/or supporting Facilities Management with office space planning. Administrative stream includes those who primarily support others by performing skilled technical, administrative or operational tasks. Jobs may range from highly supervised entry-level workers, technicians, and administrative staff to experienced individual…",
-      "experience": null,
-      "forFreshers": "no",
-      "employmentType": "Part-time",
-      "salary": null,
-      "postedAt": "2026-11-12",
-      "deadline": "2026-11-14",
-      "location": "Chennai - RMZ One Paramount, India",
-      "url": "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers/job/India-Chennai-600116/Intern---Lead-Logistics-Customer-Experience-and-Operations--FinOps_R202145",
-      "source": "Workday",
-      "collectedAt": "2026-11-13T06:59:21.313Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
-      "status": "active"
-    },
-    {
       "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02651153",
       "company": "Lowe's",
       "logo": "/brands/lowes.png",
@@ -328,7 +308,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02651153/Analyst-Supply-Chain",
       "source": "Phenom",
       "collectedAt": "2026-10-30T06:06:39.215Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -348,7 +328,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02661342/IND-Demand-Planner",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -368,7 +348,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Bengaluru/Sourcing---Cat-Enablement-Senior-Analyst_AIOC-S01670330-1",
       "source": "Workday",
       "collectedAt": "2026-11-12T07:28:11.077Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -388,7 +368,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Navi-Mumbai-MDC5C/Supply-Chain-Operations-Analyst_AIOC-S01674307-1",
       "source": "Workday",
       "collectedAt": "2026-11-12T07:28:11.077Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -408,27 +388,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Mumbai/Supply-Chain-Operations-Analyst_AIOC-S01674142-1",
       "source": "Workday",
       "collectedAt": "2026-11-11T06:51:01.813Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
-      "status": "active"
-    },
-    {
-      "id": "smartrecruiters:NielsenIQ:744000160791875",
-      "company": "NielsenIQ",
-      "logo": "/brands/nielseniq.png",
-      "title": "Principal Data Operations Analyst",
-      "category": "Retail Data Analyst",
-      "description": "Job Title: eData Governance\nReports to: Regional EDD ---> Regional Input Ops\nBusiness Unit: Data Operations\nLocation: In Country/Region - Initial | Hybrid - Future\nVision of the Role\nBackend, Ops Bridge, Technical\nHigh Level Tasks\nSecuring BAU\nData Analysis and Testing\nMSDs\nData Assessments\nDQI Execution\nBridge Ops and Suppliers\nJob Purpose\nThis role covers the activities post inputs are received from the source - retailers/vendors. Primary focus is to be the bridge between the Supplier Engagement team and other Ops pillars. System change surveys, BAU query resolution, MSD tickets tracking and closure, KPIs reporting, productivity initiatives, RCAs are the key areas of work for this…",
-      "experience": "3+ years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-10T05:00:02.716Z",
-      "deadline": null,
-      "location": "Gurgaon, HR, India",
-      "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160791875-principal-data-operations-analyst",
-      "source": "SmartRecruiters",
-      "collectedAt": "2026-11-10T07:33:22.024Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -448,7 +408,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02671852/Analyst-BA-Pro-and-Services-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-31T06:00:21.737Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -468,7 +428,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02685805/IND-Senior-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -488,7 +448,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02614343/IND-Analyst-Cost-Insights-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -508,7 +468,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160271737-ai-analyst-bi",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -528,7 +488,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160161649-senior-data-operations-analyst-niq-one-platform",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -548,7 +508,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160161419-principal-data-operations-analyst-niq-one-platform",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -568,7 +528,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02597328/Sourcing-Analyst",
       "source": "Phenom",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -588,7 +548,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Mumbai/Supply-Chain-Operations-Senior-Analyst_AIOC-S01673814-1",
       "source": "Workday",
       "collectedAt": "2026-11-05T07:06:21.056Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -608,27 +568,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Mumbai/Supply-Chain-Operations-Analyst_AIOC-S01657661-1",
       "source": "Workday",
       "collectedAt": "2026-11-12T07:28:11.077Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
-      "status": "active"
-    },
-    {
-      "id": "workday:https://accenture.wd103.myworkdayjobs.com/AccentureCareers:AIOC-S01673580",
-      "company": "Accenture",
-      "logo": "/brands/accenture.png",
-      "title": "Procurement Operations Analyst",
-      "category": "Supply Chain Analyst",
-      "description": "Responsibilities: • In this role you are required to do analysis and solving of lower-complexity problems. • Your day to day interaction is with peers within Accenture before updating supervisors. • In this role you may have limited exposure with clients and or Accenture management. • You will be given moderate level instruction on daily work tasks and detailed instructions on new assignments. • The decisions you make impact your own work and may impact the work of others. • You will be an individual contributor as a part of a team, with a focused scope of work. • Please note that this role may require you to work in rotational shifts Any Graduation About Accenture Accenture is a leading…",
-      "experience": "3–5 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-04",
-      "deadline": null,
-      "location": "Gurugram, India",
-      "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Gurugram/Procurement-Operations-Analyst_AIOC-S01673580-1",
-      "source": "Workday",
-      "collectedAt": "2026-11-05T07:06:21.056Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -648,7 +588,7 @@
       "url": "https://jobs.smartrecruiters.com/HMGroup/744000159342220-data-analyst",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-04T06:45:32.734Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -668,7 +608,7 @@
       "url": "https://jobs.smartrecruiters.com/HMGroup/744000159343279-senior-data-analyst",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-04T06:45:32.734Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -688,7 +628,7 @@
       "url": "https://diageo.wd3.myworkdayjobs.com/Diageo_Careers/job/Bangalore-India/Distribution-Planner-Lead_JR1131660",
       "source": "Workday",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -708,7 +648,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000158334524-senior-data-operations-analyst-iv",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-29T06:05:12.302Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -728,7 +668,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Gurugram/Procurement-Practice-Senior-Analyst_AIOC-S01656043-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -748,7 +688,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Gurugram/Procurement-Practice-Analyst_AIOC-S01656044-1",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -768,7 +708,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Navi-Mumbai/Supply-Chain-Plan-Analyt-Analyst_AIOC-S01651003-1",
       "source": "Workday",
       "collectedAt": "2026-11-06T07:05:34.987Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -788,7 +728,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Noida/Supply-Chain-Plan-Analyt-Analyst_AIOC-S01671355-1",
       "source": "Workday",
       "collectedAt": "2026-10-24T04:50:28.526Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -808,7 +748,7 @@
       "url": "https://www.coupang.jobs/en/jobs/?gh_jid=7975755",
       "source": "Greenhouse",
       "collectedAt": "2026-10-22T05:06:11.012Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -828,7 +768,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Gurugram/Sourcing---Cat-Enablement-Analyst_AIOC-S01670925-1",
       "source": "Workday",
       "collectedAt": "2026-10-24T04:50:28.526Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -868,7 +808,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000155707709-analytics-and-activation-sales-specialist",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -888,7 +828,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Navi-Mumbai/Procurement-Operations-Analyst_AIOC-S01670724-1",
       "source": "Workday",
       "collectedAt": "2026-10-17T04:44:16.575Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -908,7 +848,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Bengaluru-BDC9A/Sourcing---Cat-Enablement-Senior-Analyst_AIOC-S01669829-1",
       "source": "Workday",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -928,7 +868,7 @@
       "url": "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers/job/IN---Navi-Mumbai/Sr-Analyst--Supply-Chain-Development_R182972",
       "source": "Workday",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -948,7 +888,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Bengaluru/S-C-Global-Network---AI---Supply-Chain--Analyst_R00316210",
       "source": "Workday",
       "collectedAt": "2026-10-30T06:06:39.215Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -968,7 +908,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Bengaluru/S-C-Global-Network---AI---Supply-Chain--Analyst_R00315562",
       "source": "Workday",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -988,7 +928,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Mumbai-MDC2B/S-C-Global-Network---AI---Supply-Chain--Analyst_R00315557",
       "source": "Workday",
       "collectedAt": "2026-10-27T05:19:26.163Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -1008,7 +948,7 @@
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Bengaluru/Procurement-Practice-Senior-Analyst_AIOC-S01663129-1",
       "source": "Workday",
       "collectedAt": "2026-10-25T05:00:05.763Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "active"
     },
     {
@@ -1032,46 +972,6 @@
       "status": "active"
     },
     {
-      "id": "workday:https://pvh.wd1.myworkdayjobs.com/PVH_Careers:R57639",
-      "company": "PVH",
-      "logo": "/brands/pvh.png",
-      "title": "Supply Planning Analyst",
-      "category": "Supply Chain Analyst",
-      "description": "job description helps the above-mentioned PVH related parties meet their operating and strategic needs. Supply Planner is accountable for achieving operational excellence by negotiating with vendors to achieve a high On Time Availability in DC during the planning phase, whilst optimizing vendors capacity utilization, monitoring work in progress and effective exception management. The incumbent will support Supply Planning to achieve each PVH’s regional market’s demand needs through timely communication of supply projections to vendors, managing vendor capacity and SMV’s in planning systems, understanding & building visibility for forecast vs offered capacity based on vendors…",
-      "experience": "3–5 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-04-28",
-      "deadline": null,
-      "location": "Office India, India",
-      "url": "https://pvh.wd1.myworkdayjobs.com/PVH_Careers/job/Office-India/Supply-Planning-Analyst_R57639",
-      "source": "Workday",
-      "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
-      "status": "active"
-    },
-    {
-      "id": "workday:https://pvh.wd1.myworkdayjobs.com/PVH_Careers:R42645",
-      "company": "PVH",
-      "logo": "/brands/pvh.png",
-      "title": "Senior Data Analyst",
-      "category": "Retail Data Analyst",
-      "description": "RESPONSIBILITIES/ACCOUNTABILITIES OF THE JOB: - Analyze & report internal and external data sets relevant to PVH Supply Chain. - Use statistical methods to analyze and derive trends from the data. - Create quantitative insights using intuitive & effective visualizations, with emphasis on great user experience, for use by leadership as well as the broader supply chain organization. - Understand evolving Internal Supply chain systems landscape and architecture. - Analyze data from multiple supply chain source systems to build harmonized global metrics and insights. - Collaborate with a wide variety of stakeholders including SDA peers, Vendor Management Team, Brands and Business teams,…",
-      "experience": "4–6 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2024-06-12",
-      "deadline": null,
-      "location": "Office India, India",
-      "url": "https://pvh.wd1.myworkdayjobs.com/PVH_Careers/job/Office-India/Senior-Data-Analyst_R42645",
-      "source": "Workday",
-      "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-11-13T06:59:21.313Z",
-      "status": "active"
-    },
-    {
       "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02651205",
       "company": "Lowe's",
       "logo": "/brands/lowes.png",
@@ -1089,6 +989,46 @@
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
       "checkedAt": "2026-11-05T07:06:21.056Z",
+      "status": "expired"
+    },
+    {
+      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02685101",
+      "company": "Lowe's",
+      "logo": "/brands/lowes.png",
+      "title": "IND_Analyst-Marketplace Seller Support",
+      "category": "Retail Analyst",
+      "description": "Responsibilities:</b></p><br /><ul><li>Handle routine seller support tickets using established SOPs, templates, and documented guidance.</li></ul><br /><ul><li>Provide timely responses and maintain consistent follow-up on assigned open cases. Accurately document case details, actions taken, and next steps in Salesforce.</li></ul><br /><ul><li>Escalate non-standard, ambiguous, or complex issues to Analysts or Senior Analysts. Follow defined workflows, quality standards, and documentation expectations. Maintain queue discipline and support productivity and backlog goals.</li></ul><br /><ul><li>Flag recurring questions or knowledge gaps encountered during case handling.</li></ul><br…",
+      "experience": "2–4 Years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-11-13",
+      "deadline": null,
+      "location": "Bengaluru, India",
+      "url": "https://talent.lowes.com/in/en/job/JR-02685101/IND-Analyst-Marketplace-Seller-Support",
+      "source": "Phenom",
+      "collectedAt": "2026-10-31T06:00:21.737Z",
+      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "status": "expired"
+    },
+    {
+      "id": "workday:https://maersk.wd3.myworkdayjobs.com/Maersk_Careers:R202145",
+      "company": "Maersk",
+      "logo": "/brands/maersk.png",
+      "title": "Intern - Lead Logistics Customer Experience and Operations- FinOps",
+      "category": "Supply Chain Analyst",
+      "description": "General Administration comprises general office administration & secretarial support roles, such as : dedicated secretarial/administrative assistant support (i.e. to senior leaders); general office administration and clerical support (i.e. to teams or functions); reception/telephone/switchboard; mailroom & filing support. May be accountable for office event planning and/or supporting Facilities Management with office space planning. Administrative stream includes those who primarily support others by performing skilled technical, administrative or operational tasks. Jobs may range from highly supervised entry-level workers, technicians, and administrative staff to experienced individual…",
+      "experience": null,
+      "forFreshers": "no",
+      "employmentType": "Part-time",
+      "salary": null,
+      "postedAt": "2026-11-12",
+      "deadline": "2026-11-14",
+      "location": "Chennai - RMZ One Paramount, India",
+      "url": "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers/job/India-Chennai-600116/Intern---Lead-Logistics-Customer-Experience-and-Operations--FinOps_R202145",
+      "source": "Workday",
+      "collectedAt": "2026-11-13T06:59:21.313Z",
+      "checkedAt": "2026-11-13T06:59:21.313Z",
       "status": "expired"
     },
     {
@@ -1129,6 +1069,26 @@
       "source": "Workday",
       "collectedAt": "2026-10-20T05:03:22.729Z",
       "checkedAt": "2026-11-11T06:51:01.813Z",
+      "status": "expired"
+    },
+    {
+      "id": "smartrecruiters:NielsenIQ:744000160791875",
+      "company": "NielsenIQ",
+      "logo": "/brands/nielseniq.png",
+      "title": "Principal Data Operations Analyst",
+      "category": "Retail Data Analyst",
+      "description": "Job Title: eData Governance\nReports to: Regional EDD ---> Regional Input Ops\nBusiness Unit: Data Operations\nLocation: In Country/Region - Initial | Hybrid - Future\nVision of the Role\nBackend, Ops Bridge, Technical\nHigh Level Tasks\nSecuring BAU\nData Analysis and Testing\nMSDs\nData Assessments\nDQI Execution\nBridge Ops and Suppliers\nJob Purpose\nThis role covers the activities post inputs are received from the source - retailers/vendors. Primary focus is to be the bridge between the Supplier Engagement team and other Ops pillars. System change surveys, BAU query resolution, MSD tickets tracking and closure, KPIs reporting, productivity initiatives, RCAs are the key areas of work for this…",
+      "experience": "3+ years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-11-10T05:00:02.716Z",
+      "deadline": null,
+      "location": "Gurgaon, HR, India",
+      "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160791875-principal-data-operations-analyst",
+      "source": "SmartRecruiters",
+      "collectedAt": "2026-11-10T07:33:22.024Z",
+      "checkedAt": "2026-11-13T06:59:21.313Z",
       "status": "expired"
     },
     {
@@ -1209,6 +1169,26 @@
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-05T07:06:21.056Z",
       "checkedAt": "2026-11-05T07:06:21.056Z",
+      "status": "expired"
+    },
+    {
+      "id": "workday:https://accenture.wd103.myworkdayjobs.com/AccentureCareers:AIOC-S01673580",
+      "company": "Accenture",
+      "logo": "/brands/accenture.png",
+      "title": "Procurement Operations Analyst",
+      "category": "Supply Chain Analyst",
+      "description": "Responsibilities: • In this role you are required to do analysis and solving of lower-complexity problems. • Your day to day interaction is with peers within Accenture before updating supervisors. • In this role you may have limited exposure with clients and or Accenture management. • You will be given moderate level instruction on daily work tasks and detailed instructions on new assignments. • The decisions you make impact your own work and may impact the work of others. • You will be an individual contributor as a part of a team, with a focused scope of work. • Please note that this role may require you to work in rotational shifts Any Graduation About Accenture Accenture is a leading…",
+      "experience": "3–5 years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-11-04",
+      "deadline": null,
+      "location": "Gurugram, India",
+      "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Gurugram/Procurement-Operations-Analyst_AIOC-S01673580-1",
+      "source": "Workday",
+      "collectedAt": "2026-11-05T07:06:21.056Z",
+      "checkedAt": "2026-11-13T06:59:21.313Z",
       "status": "expired"
     },
     {
@@ -1469,6 +1449,46 @@
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
       "checkedAt": "2026-11-08T06:24:14.609Z",
+      "status": "expired"
+    },
+    {
+      "id": "workday:https://pvh.wd1.myworkdayjobs.com/PVH_Careers:R57639",
+      "company": "PVH",
+      "logo": "/brands/pvh.png",
+      "title": "Supply Planning Analyst",
+      "category": "Supply Chain Analyst",
+      "description": "job description helps the above-mentioned PVH related parties meet their operating and strategic needs. Supply Planner is accountable for achieving operational excellence by negotiating with vendors to achieve a high On Time Availability in DC during the planning phase, whilst optimizing vendors capacity utilization, monitoring work in progress and effective exception management. The incumbent will support Supply Planning to achieve each PVH’s regional market’s demand needs through timely communication of supply projections to vendors, managing vendor capacity and SMV’s in planning systems, understanding & building visibility for forecast vs offered capacity based on vendors…",
+      "experience": "3–5 years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-04-28",
+      "deadline": null,
+      "location": "Office India, India",
+      "url": "https://pvh.wd1.myworkdayjobs.com/PVH_Careers/job/Office-India/Supply-Planning-Analyst_R57639",
+      "source": "Workday",
+      "collectedAt": "2026-10-12T20:54:24.791Z",
+      "checkedAt": "2026-11-13T06:59:21.313Z",
+      "status": "expired"
+    },
+    {
+      "id": "workday:https://pvh.wd1.myworkdayjobs.com/PVH_Careers:R42645",
+      "company": "PVH",
+      "logo": "/brands/pvh.png",
+      "title": "Senior Data Analyst",
+      "category": "Retail Data Analyst",
+      "description": "RESPONSIBILITIES/ACCOUNTABILITIES OF THE JOB: - Analyze & report internal and external data sets relevant to PVH Supply Chain. - Use statistical methods to analyze and derive trends from the data. - Create quantitative insights using intuitive & effective visualizations, with emphasis on great user experience, for use by leadership as well as the broader supply chain organization. - Understand evolving Internal Supply chain systems landscape and architecture. - Analyze data from multiple supply chain source systems to build harmonized global metrics and insights. - Collaborate with a wide variety of stakeholders including SDA peers, Vendor Management Team, Brands and Business teams,…",
+      "experience": "4–6 years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2024-06-12",
+      "deadline": null,
+      "location": "Office India, India",
+      "url": "https://pvh.wd1.myworkdayjobs.com/PVH_Careers/job/Office-India/Senior-Data-Analyst_R42645",
+      "source": "Workday",
+      "collectedAt": "2026-10-12T20:54:24.791Z",
+      "checkedAt": "2026-11-13T06:59:21.313Z",
       "status": "expired"
     }
   ]
