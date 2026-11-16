@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-15T06:53:12.878Z",
+  "generatedAt": "2026-11-16T06:54:47.489Z",
   "sources": [
     {
       "company": "Target",
       "platform": "Workday",
       "url": "https://target.wd5.myworkdayjobs.com/targetcareers",
-      "ok": true,
-      "jobs": 3
+      "ok": false,
+      "jobs": 0
     },
     {
       "company": "Lowe's",
@@ -33,8 +33,8 @@
       "company": "PVH",
       "platform": "Workday",
       "url": "https://pvh.wd1.myworkdayjobs.com/PVH_Careers",
-      "ok": true,
-      "jobs": 2
+      "ok": false,
+      "jobs": 0
     },
     {
       "company": "H&M Group",
@@ -69,7 +69,7 @@
       "platform": "SmartRecruiters",
       "url": "https://careers.smartrecruiters.com/NielsenIQ",
       "ok": true,
-      "jobs": 5
+      "jobs": 4
     },
     {
       "company": "dunnhumby",
@@ -89,8 +89,8 @@
       "company": "Diageo",
       "platform": "Workday",
       "url": "https://diageo.wd3.myworkdayjobs.com/Diageo_Careers",
-      "ok": true,
-      "jobs": 2
+      "ok": false,
+      "jobs": 0
     },
     {
       "company": "Mondelez",
@@ -131,8 +131,8 @@
       "company": "Maersk",
       "platform": "Workday",
       "url": "https://maersk.wd3.myworkdayjobs.com/Maersk_Careers",
-      "ok": true,
-      "jobs": 1
+      "ok": false,
+      "jobs": 0
     },
     {
       "company": "C.H. Robinson",
@@ -145,8 +145,8 @@
       "company": "Accenture",
       "platform": "Workday",
       "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers",
-      "ok": true,
-      "jobs": 61
+      "ok": false,
+      "jobs": 0
     },
     {
       "company": "Fractal (campus hiring)",
@@ -188,7 +188,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02686515/IND-Associate-Analyst-Supply-Chain",
       "source": "Phenom",
       "collectedAt": "2026-10-31T06:00:21.737Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -208,7 +208,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02652504/Analyst-Customer-Insights",
       "source": "Phenom",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -228,7 +228,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02685794/IND-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-11-04T06:45:32.734Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -268,7 +268,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02703400/Senior-Analyst-Pricing-Analytics",
       "source": "Phenom",
       "collectedAt": "2026-11-14T06:48:01.316Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -308,7 +308,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02651153/Analyst-Supply-Chain",
       "source": "Phenom",
       "collectedAt": "2026-10-30T06:06:39.215Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -328,7 +328,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02661342/IND-Demand-Planner",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -408,7 +408,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02671852/Analyst-BA-Pro-and-Services-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-31T06:00:21.737Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -428,7 +428,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02685805/IND-Senior-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -448,27 +448,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02614343/IND-Analyst-Cost-Insights-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
-      "status": "active"
-    },
-    {
-      "id": "smartrecruiters:NielsenIQ:744000160271737",
-      "company": "NielsenIQ",
-      "logo": "/brands/nielseniq.png",
-      "title": "AI Analyst, BI",
-      "category": "Retail Data Analyst",
-      "description": "Responsibilities\n1. AI and BI Automation Solution Ownership\nOwn the technical design, enhancement and ongoing evolution of AI-enabled BI automation capabilities.\nDevelop scalable solutions for report onboarding, scheduling, refresh, monitoring, quality validation and delivery.\nConvert manual BI processes into reusable and configurable automation workflows.\nDefine and maintain the technical roadmap with BI, Technology and business stakeholders.\nEvaluate AI and automation opportunities based on business value, feasibility, scalability and adoption potential.\nEnsure solutions can support multiple regions, clients, report types and BI hubs.\n2. Python and Application Engineering\nDesign and…",
-      "experience": "6–8 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-06T18:10:49.753Z",
-      "deadline": null,
-      "location": "Pune, MH, India",
-      "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160271737-ai-analyst-bi",
-      "source": "SmartRecruiters",
-      "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -488,7 +468,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160161649-senior-data-operations-analyst-niq-one-platform",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -508,7 +488,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160161419-principal-data-operations-analyst-niq-one-platform",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -528,7 +508,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02597328/Sourcing-Analyst",
       "source": "Phenom",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -588,7 +568,7 @@
       "url": "https://jobs.smartrecruiters.com/HMGroup/744000159342220-data-analyst",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-04T06:45:32.734Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -608,7 +588,7 @@
       "url": "https://jobs.smartrecruiters.com/HMGroup/744000159343279-senior-data-analyst",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-04T06:45:32.734Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -648,7 +628,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000158334524-senior-data-operations-analyst-iv",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-29T06:05:12.302Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -708,7 +688,7 @@
       "url": "https://www.coupang.jobs/en/jobs/?gh_jid=7975755",
       "source": "Greenhouse",
       "collectedAt": "2026-10-22T05:06:11.012Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -768,7 +748,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000155707709-analytics-and-activation-sales-specialist",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "checkedAt": "2026-11-16T06:54:47.489Z",
       "status": "active"
     },
     {
@@ -1152,6 +1132,26 @@
       "status": "expired"
     },
     {
+      "id": "smartrecruiters:NielsenIQ:744000160271737",
+      "company": "NielsenIQ",
+      "logo": "/brands/nielseniq.png",
+      "title": "AI Analyst, BI",
+      "category": "Retail Data Analyst",
+      "description": "Responsibilities\n1. AI and BI Automation Solution Ownership\nOwn the technical design, enhancement and ongoing evolution of AI-enabled BI automation capabilities.\nDevelop scalable solutions for report onboarding, scheduling, refresh, monitoring, quality validation and delivery.\nConvert manual BI processes into reusable and configurable automation workflows.\nDefine and maintain the technical roadmap with BI, Technology and business stakeholders.\nEvaluate AI and automation opportunities based on business value, feasibility, scalability and adoption potential.\nEnsure solutions can support multiple regions, clients, report types and BI hubs.\n2. Python and Application Engineering\nDesign and…",
+      "experience": "6–8 years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-11-06T18:10:49.753Z",
+      "deadline": null,
+      "location": "Pune, MH, India",
+      "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160271737-ai-analyst-bi",
+      "source": "SmartRecruiters",
+      "collectedAt": "2026-11-07T06:18:11.278Z",
+      "checkedAt": "2026-11-15T06:53:12.878Z",
+      "status": "expired"
+    },
+    {
       "id": "smartrecruiters:NielsenIQ:744000159787869",
       "company": "NielsenIQ",
       "logo": "/brands/nielseniq.png",
@@ -1252,46 +1252,6 @@
       "status": "expired"
     },
     {
-      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02674127",
-      "company": "Lowe's",
-      "logo": "/brands/lowes.png",
-      "title": "IND_Analyst-Pricing & Promotions",
-      "category": "Retail Analyst",
-      "description": "Responsibilities</b></span></h2><br /><h3 style=\"color:!important\"><span style=\"color:#1a1a1a\"><b>Core Responsibilities</b></span></h3><br /><ul><li><span style=\"color:#1a1a1a\">Manage and analyze Pricing & Promotions support cases, ensuring accurate triage, resolution, documentation, and timely stakeholder communication.</span></li><li><span style=\"color:#1a1a1a\">Review incoming cases to identify pricing, promotion, signage, item, and system-related issues; capture relevant data required for resolution and downstream analysis.</span></li><li><span style=\"color:#1a1a1a\">Analyze case and operational data to identify recurring issues, volume trends, store and item patterns, promotion-related…",
-      "experience": "2+ years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-10-30",
-      "deadline": null,
-      "location": "Bengaluru, India",
-      "url": "https://talent.lowes.com/in/en/job/JR-02674127/IND-Analyst-Pricing-Promotions",
-      "source": "Phenom",
-      "collectedAt": "2026-10-24T04:50:28.526Z",
-      "checkedAt": "2026-11-02T06:30:57.105Z",
-      "status": "expired"
-    },
-    {
-      "id": "smartrecruiters:NielsenIQ:744000158224310",
-      "company": "NielsenIQ",
-      "logo": "/brands/nielseniq.png",
-      "title": "Principal Data Operations Analyst - (Analytics)",
-      "category": "Retail Data Analyst",
-      "description": "Job Description\nRole purpose\nReporting to: Head of Analytics\nNIQ On-Premise Analytics provides insight and consultancy to help clients make informed commercial decisions. The Principal Data Operations Analyst plays a leading role in turning diverse data sources into robust analysis, practical tools and actionable insight that support Client Services, Global Core Products and the wider business.\nThe role combines advanced analytical delivery with methodological expertise, project leadership and the development of other analysts. It is responsible for improving analytical approaches, making data easier to access and use, and ensuring outputs are accurate, relevant and commercially…",
-      "experience": "Mid-Senior Level",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-10-28T08:11:10.844Z",
-      "deadline": null,
-      "location": "Chennai, TN, India",
-      "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000158224310-principal-data-operations-analyst-analytics-",
-      "source": "SmartRecruiters",
-      "collectedAt": "2026-10-29T06:05:12.302Z",
-      "checkedAt": "2026-11-02T06:30:57.105Z",
-      "status": "expired"
-    },
-    {
       "id": "workday:https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals:R-1190422",
       "company": "Unilever",
       "logo": "/brands/unilever.png",
@@ -1389,26 +1349,6 @@
       "source": "Workday",
       "collectedAt": "2026-10-12T20:05:45.545Z",
       "checkedAt": "2026-11-04T06:45:32.734Z",
-      "status": "expired"
-    },
-    {
-      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02659717",
-      "company": "Lowe's",
-      "logo": "/brands/lowes.png",
-      "title": "Analyst, Enterprise Fulfillment (SQL)",
-      "category": "Supply Chain Analyst",
-      "description": "Responsibilities:</b> </span></p><p style=\"color:!important\"><span style=\"color:#000000\"><b>Core Responsibilities:</b> </span></p><ul><li><span style=\"color:#000000\">Analyze fulfillment data across all channels, including Gig, Lowe’s Delivery, PUIS, BOPIS (Buy Online Pickup In-Store) to track performance and identify bottlenecks. </span></li></ul><ul><li><span style=\"color:#000000\">Use SQL queries to extract and manipulate large volumes of order fulfillment and logistics data. </span></li></ul><ul><li><span style=\"color:#000000\">Use Python to automate data processing tasks and apply statistical or machine learning techniques to forecast demand, simulate outcomes, or predict risks (e.g.,…",
-      "experience": "2+ years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-10-15",
-      "deadline": null,
-      "location": "Bengaluru, India",
-      "url": "https://talent.lowes.com/in/en/job/JR-02659717/Analyst-Enterprise-Fulfillment-SQL",
-      "source": "Phenom",
-      "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-02T06:30:57.105Z",
       "status": "expired"
     },
     {
