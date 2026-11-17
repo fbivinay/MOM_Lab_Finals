@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T06:54:47.489Z",
+  "generatedAt": "2026-11-17T08:12:40.899Z",
   "sources": [
     {
       "company": "Target",
@@ -19,14 +19,14 @@
       "company": "TJX",
       "platform": "Workday",
       "url": "https://tjx.wd1.myworkdayjobs.com/TJX_EXTERNAL",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
       "company": "Dollar Tree",
       "platform": "Workday",
       "url": "https://dollartree.wd5.myworkdayjobs.com/dollartreeus",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -69,7 +69,7 @@
       "platform": "SmartRecruiters",
       "url": "https://careers.smartrecruiters.com/NielsenIQ",
       "ok": true,
-      "jobs": 4
+      "jobs": 5
     },
     {
       "company": "dunnhumby",
@@ -82,7 +82,7 @@
       "company": "P&G",
       "platform": "Workday",
       "url": "https://pg.wd5.myworkdayjobs.com/1000",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -96,21 +96,21 @@
       "company": "Mondelez",
       "platform": "Workday",
       "url": "https://mdlz.wd3.myworkdayjobs.com/External",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
       "company": "Unilever",
       "platform": "Workday",
       "url": "https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
       "company": "Unilever (early careers)",
       "platform": "Workday",
       "url": "https://unilever.wd3.myworkdayjobs.com/Unilever_Early_Careers",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -124,7 +124,7 @@
       "company": "Kimberly-Clark",
       "platform": "Workday",
       "url": "https://kimberlyclark.wd1.myworkdayjobs.com/GLOBAL",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -138,7 +138,7 @@
       "company": "C.H. Robinson",
       "platform": "Workday",
       "url": "https://chrobinson.wd5.myworkdayjobs.com/CHRobinson",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -152,14 +152,14 @@
       "company": "Fractal (campus hiring)",
       "platform": "Workday",
       "url": "https://fractal.wd1.myworkdayjobs.com/campuscareersite",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
       "company": "Fractal",
       "platform": "Workday",
       "url": "https://fractal.wd1.myworkdayjobs.com/Careers",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -188,7 +188,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02686515/IND-Associate-Analyst-Supply-Chain",
       "source": "Phenom",
       "collectedAt": "2026-10-31T06:00:21.737Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -208,7 +208,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02652504/Analyst-Customer-Insights",
       "source": "Phenom",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -228,7 +228,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02685794/IND-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-11-04T06:45:32.734Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -252,6 +252,26 @@
       "status": "active"
     },
     {
+      "id": "smartrecruiters:NielsenIQ:744000162005159",
+      "company": "NielsenIQ",
+      "logo": "/brands/nielseniq.png",
+      "title": "Principal Data Operations Analyst (Python and Cloud Platforms)",
+      "category": "Retail Data Analyst",
+      "description": "Job Title: eData Governance\nReports to: Regional EDD ---> Regional Input Ops\nBusiness Unit: Data Operations\nLocation: In Country/Region - Initial | Hybrid - Future\nVision of the Role\nBackend, Ops Bridge, Technical\nHigh Level Tasks\nSecuring BAU\nData Analysis and Testing\nMSDs\nData Assessments\nDQI Execution\nBridge Ops and Suppliers\nJob Purpose\nThis role covers the activities post inputs are received from the source - retailers/vendors. Primary focus is to be the bridge between the Supplier Engagement team and other Ops pillars. System change surveys, BAU query resolution, MSD tickets tracking and closure, KPIs reporting, productivity initiatives, RCAs are the key areas of work for this…",
+      "experience": "3+ years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-11-17T07:08:27.106Z",
+      "deadline": null,
+      "location": "Gurgaon, HR, India",
+      "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000162005159-principal-data-operations-analyst-python-and-cloud-platforms-",
+      "source": "SmartRecruiters",
+      "collectedAt": "2026-11-17T08:12:40.899Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
+      "status": "active"
+    },
+    {
       "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02703400",
       "company": "Lowe's",
       "logo": "/brands/lowes.png",
@@ -268,7 +288,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02703400/Senior-Analyst-Pricing-Analytics",
       "source": "Phenom",
       "collectedAt": "2026-11-14T06:48:01.316Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -308,7 +328,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02651153/Analyst-Supply-Chain",
       "source": "Phenom",
       "collectedAt": "2026-10-30T06:06:39.215Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -328,7 +348,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02661342/IND-Demand-Planner",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -408,7 +428,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02671852/Analyst-BA-Pro-and-Services-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-31T06:00:21.737Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -428,7 +448,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02685805/IND-Senior-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -448,7 +468,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02614343/IND-Analyst-Cost-Insights-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -468,7 +488,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160161649-senior-data-operations-analyst-niq-one-platform",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -488,7 +508,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160161419-principal-data-operations-analyst-niq-one-platform",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -508,7 +528,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02597328/Sourcing-Analyst",
       "source": "Phenom",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -568,7 +588,7 @@
       "url": "https://jobs.smartrecruiters.com/HMGroup/744000159342220-data-analyst",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-04T06:45:32.734Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -588,7 +608,7 @@
       "url": "https://jobs.smartrecruiters.com/HMGroup/744000159343279-senior-data-analyst",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-04T06:45:32.734Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -628,7 +648,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000158334524-senior-data-operations-analyst-iv",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-29T06:05:12.302Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -688,7 +708,7 @@
       "url": "https://www.coupang.jobs/en/jobs/?gh_jid=7975755",
       "source": "Greenhouse",
       "collectedAt": "2026-10-22T05:06:11.012Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -748,7 +768,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000155707709-analytics-and-activation-sales-specialist",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-11-16T06:54:47.489Z",
+      "checkedAt": "2026-11-17T08:12:40.899Z",
       "status": "active"
     },
     {
@@ -1212,26 +1232,6 @@
       "status": "expired"
     },
     {
-      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000444272",
-      "company": "Target",
-      "logo": "/brands/target.svg",
-      "title": "Associate Planner PIM",
-      "category": "Inventory Analyst",
-      "description": "responsibilities are described below. Job duties may change at any time due to business needs. Demand Forecasting: Leverage our in-house machine learning tool and market intelligence to evaluate and approve short term and long-term demand forecasts. Consensus Forecasting: Collaborate with Merch Planning to gather insights and incorporate relevant information into the forecasting process. Integrated Business Planning: Participate in IBP meetings to present demand forecasts and discuss supply chain issues and align with Inventory teams on inventory planning and positioning. Demand Sensing: Utilize advanced analytics and real-time data to sense changes in guest demand; Tune ML hyperparameters…",
-      "experience": "2–5 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-03",
-      "deadline": "2026-11-04",
-      "location": "Bangalore, India",
-      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Associate-Planner-PIM_R0000444272",
-      "source": "Workday",
-      "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-11-03T07:02:13.718Z",
-      "status": "expired"
-    },
-    {
       "id": "workday:https://accenture.wd103.myworkdayjobs.com/AccentureCareers:AIOC-S01653045",
       "company": "Accenture",
       "logo": "/brands/accenture.png",
@@ -1249,26 +1249,6 @@
       "source": "Workday",
       "collectedAt": "2026-11-01T06:30:34.384Z",
       "checkedAt": "2026-11-09T06:56:34.732Z",
-      "status": "expired"
-    },
-    {
-      "id": "workday:https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals:R-1190422",
-      "company": "Unilever",
-      "logo": "/brands/unilever.png",
-      "title": "Senior Supply Planner",
-      "category": "Supply Chain Analyst",
-      "description": "Job Description – The Supply Planning Executive optimizes inventory, service and cost while managing volatility. As a supply chain representative for the category, this role works closely with Customer Marketing, Planning and Sales, and partners with Planning Excellence, Demand Planning and Distribution Planning to implement new technologies in planning and customer service. The role leads supply chain strategy to build an agile, efficient, collaborative and aligned end-to-end network, coordinates across all branches, and serves as the supply chain point of contact for the category and other supply chain teams. Roles & Responsibilities - • Develop production plans based on 19 week rolling…",
-      "experience": null,
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-10-28",
-      "deadline": "2026-11-04",
-      "location": "Mumbai HO, India",
-      "url": "https://unilever.wd3.myworkdayjobs.com/Unilever_Experienced_Professionals/job/Mumbai-HO/Senior-Supply-Planner_R-1190422",
-      "source": "Workday",
-      "collectedAt": "2026-10-29T06:05:12.302Z",
-      "checkedAt": "2026-11-03T07:02:13.718Z",
       "status": "expired"
     },
     {
