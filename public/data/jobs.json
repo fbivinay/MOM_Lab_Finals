@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T07:41:50.767Z",
+  "generatedAt": "2026-11-20T07:33:22.575Z",
   "sources": [
     {
       "company": "Target",
@@ -13,7 +13,7 @@
       "platform": "Phenom",
       "url": "https://talent.lowes.com/in/en",
       "ok": true,
-      "jobs": 13
+      "jobs": 12
     },
     {
       "company": "TJX",
@@ -62,14 +62,14 @@
       "platform": "Greenhouse",
       "url": "https://job-boards.greenhouse.io/coupang",
       "ok": true,
-      "jobs": 1
+      "jobs": 0
     },
     {
       "company": "NielsenIQ",
       "platform": "SmartRecruiters",
       "url": "https://careers.smartrecruiters.com/NielsenIQ",
       "ok": true,
-      "jobs": 4
+      "jobs": 5
     },
     {
       "company": "dunnhumby",
@@ -82,7 +82,7 @@
       "company": "P&G",
       "platform": "Workday",
       "url": "https://pg.wd5.myworkdayjobs.com/1000",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -110,14 +110,14 @@
       "company": "Unilever (early careers)",
       "platform": "Workday",
       "url": "https://unilever.wd3.myworkdayjobs.com/Unilever_Early_Careers",
-      "ok": false,
+      "ok": true,
       "jobs": 0
     },
     {
       "company": "AB InBev",
       "platform": "Workday",
       "url": "https://abinbev.wd1.myworkdayjobs.com/IND",
-      "ok": false,
+      "ok": true,
       "jobs": 0
     },
     {
@@ -172,26 +172,6 @@
   ],
   "jobs": [
     {
-      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02686515",
-      "company": "Lowe's",
-      "logo": "/brands/lowes.png",
-      "title": "IND-Associate Analyst Supply Chain",
-      "category": "Supply Chain Analyst",
-      "description": "Responsibilities:</u></b><u> </u></p><p><b><u>Core Responsibilities:</u></b></p><ul><li>Supports regular execution of inventory flow processes and operational reports to manage and maintain Inventory KPIs</li><li>Executes Inventory Replenishment and Planning strategies to aid more value to business</li><li>Executes and supports Inventory and Replenishment priorities like inventory troubleshooting and root cause analysis, purchase order management, trend analysis, key performance metrics monitoring to help manage inventory flows within capacity constraints</li><li>Extract data, reporting and analysis to generate business insights</li><li>Help and support Sr Analyst with data and information…",
-      "experience": "1+ years",
-      "forFreshers": "yes",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-14",
-      "deadline": null,
-      "location": "Bengaluru, India",
-      "url": "https://talent.lowes.com/in/en/job/JR-02686515/IND-Associate-Analyst-Supply-Chain",
-      "source": "Phenom",
-      "collectedAt": "2026-10-31T06:00:21.737Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
-      "status": "active"
-    },
-    {
       "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02652504",
       "company": "Lowe's",
       "logo": "/brands/lowes.png",
@@ -208,7 +188,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02652504/Analyst-Customer-Insights",
       "source": "Phenom",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
+      "checkedAt": "2026-11-20T07:33:22.575Z",
       "status": "active"
     },
     {
@@ -228,7 +208,27 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02685794/IND-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-11-04T06:45:32.734Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
+      "checkedAt": "2026-11-20T07:33:22.575Z",
+      "status": "active"
+    },
+    {
+      "id": "smartrecruiters:NielsenIQ:744000162481749",
+      "company": "NielsenIQ",
+      "logo": "/brands/nielseniq.png",
+      "title": "AI Analyst, BI",
+      "category": "Retail Data Analyst",
+      "description": "Responsibilities\n1. AI and BI Automation Solution Ownership\nOwn the technical design, enhancement and ongoing evolution of AI-enabled BI automation capabilities.\nDevelop scalable solutions for report onboarding, scheduling, refresh, monitoring, quality validation and delivery.\nConvert manual BI processes into reusable and configurable automation workflows.\nDefine and maintain the technical roadmap with BI, Technology and business stakeholders.\nEvaluate AI and automation opportunities based on business value, feasibility, scalability and adoption potential.\nEnsure solutions can support multiple regions, clients, report types and BI hubs.\n2. Python and Application Engineering\nDesign and…",
+      "experience": "6–8 years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-11-19T10:23:25.357Z",
+      "deadline": null,
+      "location": "Pune, MH, India",
+      "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000162481749-ai-analyst-bi",
+      "source": "SmartRecruiters",
+      "collectedAt": "2026-11-20T07:33:22.575Z",
+      "checkedAt": "2026-11-20T07:33:22.575Z",
       "status": "active"
     },
     {
@@ -248,7 +248,27 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02641482/IND-Analyst-Supply-Chain",
       "source": "Phenom",
       "collectedAt": "2026-11-19T07:41:50.767Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
+      "checkedAt": "2026-11-20T07:33:22.575Z",
+      "status": "active"
+    },
+    {
+      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02614343",
+      "company": "Lowe's",
+      "logo": "/brands/lowes.png",
+      "title": "IND_Analyst Cost Insights & Reporting",
+      "category": "Retail Data Analyst",
+      "description": "Responsibilities:</b></p><p>Core Responsibilities: Partner with domain leaders to understand the requirements Research and document the requirements in collaboration with IT Finance Develop wireframes and seek feedback from end users Propose and present solution/analysis/recommendations to end users Create solutions addressing the specific challenge using various tools Create and maintain documentation of processes Act as a consultant to end users for recommendation on tools and technical feasibility</p><p></p><p><b>III. Years of Experience:</b></p><p>2-5 years of experience in the domain of Reporting & Analytics / Power BI Development Education Qualification & Certifications…",
+      "experience": "2–5 years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-11-19",
+      "deadline": null,
+      "location": "Bengaluru, India",
+      "url": "https://talent.lowes.com/in/en/job/JR-02614343/IND-Analyst-Cost-Insights-Reporting",
+      "source": "Phenom",
+      "collectedAt": "2026-10-12T20:05:45.545Z",
+      "checkedAt": "2026-11-20T07:33:22.575Z",
       "status": "active"
     },
     {
@@ -268,7 +288,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02671852/Analyst-BA-Pro-and-Services-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-31T06:00:21.737Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
+      "checkedAt": "2026-11-20T07:33:22.575Z",
       "status": "active"
     },
     {
@@ -288,7 +308,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02681421/Senior-Data-Analyst-Analytics-Data-Insights",
       "source": "Phenom",
       "collectedAt": "2026-11-18T07:45:58.529Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
+      "checkedAt": "2026-11-20T07:33:22.575Z",
       "status": "active"
     },
     {
@@ -308,7 +328,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000162037589-principal-data-operations-analyst-",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-18T07:45:58.529Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
+      "checkedAt": "2026-11-20T07:33:22.575Z",
       "status": "active"
     },
     {
@@ -328,7 +348,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02703400/Senior-Analyst-Pricing-Analytics",
       "source": "Phenom",
       "collectedAt": "2026-11-14T06:48:01.316Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
+      "checkedAt": "2026-11-20T07:33:22.575Z",
       "status": "active"
     },
     {
@@ -348,7 +368,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02651153/Analyst-Supply-Chain",
       "source": "Phenom",
       "collectedAt": "2026-10-30T06:06:39.215Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
+      "checkedAt": "2026-11-20T07:33:22.575Z",
       "status": "active"
     },
     {
@@ -368,7 +388,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02661342/IND-Demand-Planner",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
+      "checkedAt": "2026-11-20T07:33:22.575Z",
       "status": "active"
     },
     {
@@ -388,27 +408,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02685805/IND-Senior-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
-      "status": "active"
-    },
-    {
-      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02614343",
-      "company": "Lowe's",
-      "logo": "/brands/lowes.png",
-      "title": "IND_Analyst Cost Insights & Reporting",
-      "category": "Retail Data Analyst",
-      "description": "Responsibilities:</b></p><p>Core Responsibilities: Partner with domain leaders to understand the requirements Research and document the requirements in collaboration with IT Finance Develop wireframes and seek feedback from end users Propose and present solution/analysis/recommendations to end users Create solutions addressing the specific challenge using various tools Create and maintain documentation of processes Act as a consultant to end users for recommendation on tools and technical feasibility</p><p></p><p><b>III. Years of Experience:</b></p><p>2-5 years of experience in the domain of Reporting & Analytics / Power BI Development Education Qualification & Certifications…",
-      "experience": "2–5 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-07",
-      "deadline": null,
-      "location": "Bengaluru, India",
-      "url": "https://talent.lowes.com/in/en/job/JR-02614343/IND-Analyst-Cost-Insights-Reporting",
-      "source": "Phenom",
-      "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
+      "checkedAt": "2026-11-20T07:33:22.575Z",
       "status": "active"
     },
     {
@@ -428,7 +428,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160161649-senior-data-operations-analyst-niq-one-platform",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
+      "checkedAt": "2026-11-20T07:33:22.575Z",
       "status": "active"
     },
     {
@@ -448,7 +448,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160161419-principal-data-operations-analyst-niq-one-platform",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
+      "checkedAt": "2026-11-20T07:33:22.575Z",
       "status": "active"
     },
     {
@@ -468,27 +468,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02597328/Sourcing-Analyst",
       "source": "Phenom",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
-      "status": "active"
-    },
-    {
-      "id": "greenhouse:coupang:7975755",
-      "company": "Coupang",
-      "logo": "/brands/coupang.png",
-      "title": "Staff Data Analyst",
-      "category": "Retail Data Analyst",
-      "description": "Role Overview\nAs a Staff Data Analyst within the Fresh SCM Automation team, you will drive strategic decision-making by solving complex supply chain and inventory optimization challenges through advanced analytics. The team is responsible for building scalable analytical frameworks, products, and data science capabilities that improve product availability while optimizing inventory and operational costs. You will work closely with Product, Supply Chain, Forecasting, and Engineering teams to influence key business decisions and develop data-driven solutions that support Coupang's rapidly growing Fresh business.\nAbout the Team\nThe Fresh SCM Automation team develops products and analytical…",
-      "experience": "8+ years",
-      "forFreshers": "no",
-      "employmentType": null,
-      "salary": null,
-      "postedAt": "2026-10-21T05:25:54-04:00",
-      "deadline": null,
-      "location": "Bengaluru",
-      "url": "https://www.coupang.jobs/en/jobs/?gh_jid=7975755",
-      "source": "Greenhouse",
-      "collectedAt": "2026-10-22T05:06:11.012Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
+      "checkedAt": "2026-11-20T07:33:22.575Z",
       "status": "active"
     },
     {
@@ -508,7 +488,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000155707709-analytics-and-activation-sales-specialist",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-11-19T07:41:50.767Z",
+      "checkedAt": "2026-11-20T07:33:22.575Z",
       "status": "active"
     },
     {
@@ -952,6 +932,26 @@
       "status": "unverified"
     },
     {
+      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02686515",
+      "company": "Lowe's",
+      "logo": "/brands/lowes.png",
+      "title": "IND-Associate Analyst Supply Chain",
+      "category": "Supply Chain Analyst",
+      "description": "Responsibilities:</u></b><u> </u></p><p><b><u>Core Responsibilities:</u></b></p><ul><li>Supports regular execution of inventory flow processes and operational reports to manage and maintain Inventory KPIs</li><li>Executes Inventory Replenishment and Planning strategies to aid more value to business</li><li>Executes and supports Inventory and Replenishment priorities like inventory troubleshooting and root cause analysis, purchase order management, trend analysis, key performance metrics monitoring to help manage inventory flows within capacity constraints</li><li>Extract data, reporting and analysis to generate business insights</li><li>Help and support Sr Analyst with data and information…",
+      "experience": "1+ years",
+      "forFreshers": "yes",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-11-14",
+      "deadline": null,
+      "location": "Bengaluru, India",
+      "url": "https://talent.lowes.com/in/en/job/JR-02686515/IND-Associate-Analyst-Supply-Chain",
+      "source": "Phenom",
+      "collectedAt": "2026-10-31T06:00:21.737Z",
+      "checkedAt": "2026-11-19T07:41:50.767Z",
+      "status": "expired"
+    },
+    {
       "id": "smartrecruiters:NielsenIQ:744000162005159",
       "company": "NielsenIQ",
       "logo": "/brands/nielseniq.png",
@@ -1109,26 +1109,6 @@
       "source": "Workday",
       "collectedAt": "2026-10-14T05:07:19.674Z",
       "checkedAt": "2026-11-09T06:56:34.732Z",
-      "status": "expired"
-    },
-    {
-      "id": "smartrecruiters:NielsenIQ:744000160271737",
-      "company": "NielsenIQ",
-      "logo": "/brands/nielseniq.png",
-      "title": "AI Analyst, BI",
-      "category": "Retail Data Analyst",
-      "description": "Responsibilities\n1. AI and BI Automation Solution Ownership\nOwn the technical design, enhancement and ongoing evolution of AI-enabled BI automation capabilities.\nDevelop scalable solutions for report onboarding, scheduling, refresh, monitoring, quality validation and delivery.\nConvert manual BI processes into reusable and configurable automation workflows.\nDefine and maintain the technical roadmap with BI, Technology and business stakeholders.\nEvaluate AI and automation opportunities based on business value, feasibility, scalability and adoption potential.\nEnsure solutions can support multiple regions, clients, report types and BI hubs.\n2. Python and Application Engineering\nDesign and…",
-      "experience": "6–8 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-06T18:10:49.753Z",
-      "deadline": null,
-      "location": "Pune, MH, India",
-      "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160271737-ai-analyst-bi",
-      "source": "SmartRecruiters",
-      "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-15T06:53:12.878Z",
       "status": "expired"
     },
     {
@@ -1292,23 +1272,23 @@
       "status": "expired"
     },
     {
-      "id": "workday:https://accenture.wd103.myworkdayjobs.com/AccentureCareers:AIOC-S01656149",
-      "company": "Accenture",
-      "logo": "/brands/accenture.png",
-      "title": "Sourcing & Cat Enablement Senior Analyst",
-      "category": "Supply Chain Analyst",
-      "description": "Responsibilities: •The key aspects and responsibilities of your role will be: Draft and negotiate contracts based on client templates, in a timely manner with appropriate legal support to ensure compliance with client standards; Past experience with drafting agreements in following areas: IT, Marketing, Professional Services, Facilities, MRO. Specific experience within the Pharma industry highly desirable; Coordinate and perform contract analysis, including redlines and negotiations with client legal and other stakeholders, as well as suppliers to: Negotiate business terms and collaborate, coordinate, and be able to explain risks and implications of contract terms to the business and other…",
-      "experience": "5–8 years",
+      "id": "greenhouse:coupang:7975755",
+      "company": "Coupang",
+      "logo": "/brands/coupang.png",
+      "title": "Staff Data Analyst",
+      "category": "Retail Data Analyst",
+      "description": "Role Overview\nAs a Staff Data Analyst within the Fresh SCM Automation team, you will drive strategic decision-making by solving complex supply chain and inventory optimization challenges through advanced analytics. The team is responsible for building scalable analytical frameworks, products, and data science capabilities that improve product availability while optimizing inventory and operational costs. You will work closely with Product, Supply Chain, Forecasting, and Engineering teams to influence key business decisions and develop data-driven solutions that support Coupang's rapidly growing Fresh business.\nAbout the Team\nThe Fresh SCM Automation team develops products and analytical…",
+      "experience": "8+ years",
       "forFreshers": "no",
-      "employmentType": "Full-time",
+      "employmentType": null,
       "salary": null,
-      "postedAt": "2026-10-27",
+      "postedAt": "2026-10-21T05:25:54-04:00",
       "deadline": null,
-      "location": "Gurugram, India",
-      "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Gurugram/Sourcing---Cat-Enablement-Senior-Analyst_AIOC-S01656149-1",
-      "source": "Workday",
-      "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-11-06T07:05:34.987Z",
+      "location": "Bengaluru",
+      "url": "https://www.coupang.jobs/en/jobs/?gh_jid=7975755",
+      "source": "Greenhouse",
+      "collectedAt": "2026-10-22T05:06:11.012Z",
+      "checkedAt": "2026-11-19T07:41:50.767Z",
       "status": "expired"
     },
     {
