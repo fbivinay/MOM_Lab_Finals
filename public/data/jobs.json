@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T07:10:07.431Z",
+  "generatedAt": "2026-11-23T07:56:24.935Z",
   "sources": [
     {
       "company": "Target",
@@ -69,7 +69,7 @@
       "platform": "SmartRecruiters",
       "url": "https://careers.smartrecruiters.com/NielsenIQ",
       "ok": true,
-      "jobs": 5
+      "jobs": 6
     },
     {
       "company": "dunnhumby",
@@ -82,7 +82,7 @@
       "company": "P&G",
       "platform": "Workday",
       "url": "https://pg.wd5.myworkdayjobs.com/1000",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -188,7 +188,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02652504/Analyst-Customer-Insights",
       "source": "Phenom",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
       "status": "active"
     },
     {
@@ -208,7 +208,27 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02685794/IND-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-11-04T06:45:32.734Z",
-      "checkedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "status": "active"
+    },
+    {
+      "id": "smartrecruiters:NielsenIQ:744000163148569",
+      "company": "NielsenIQ",
+      "logo": "/brands/nielseniq.png",
+      "title": "Sales & Commission Data Governance Analyst",
+      "category": "Retail Data Analyst",
+      "description": "Responsibilities\n1. CRM Opportunity & Deal Validation (Core Accountability)\n• Review and validate all commissionable sales opportunities in CRM to ensure alignment with approved SIP rules and plan mechanics.\n• Validate contract attributes including:\nDeal value and revenue amount\nContract type and duration\nBooking and recognition logic (as defined for SIP)\nEligibility and timing for incentive credit\nEnsure accurate identification and attribution of all participants involved in a deal (e.g., primary seller, overlays, specialists).\n2. SIP Eligibility & Crediting Governance\n• Apply SIP policies consistently to determine whether opportunities meet eligibility requirements for commission credit.\n•…",
+      "experience": "2–4 years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-11-23T07:10:36.357Z",
+      "deadline": null,
+      "location": "Pune, MH, India",
+      "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000163148569-sales-commission-data-governance-analyst",
+      "source": "SmartRecruiters",
+      "collectedAt": "2026-11-23T07:56:24.935Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
       "status": "active"
     },
     {
@@ -228,7 +248,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000162481749-ai-analyst-bi",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-20T07:33:22.575Z",
-      "checkedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
       "status": "active"
     },
     {
@@ -248,7 +268,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02641482/IND-Analyst-Supply-Chain",
       "source": "Phenom",
       "collectedAt": "2026-11-19T07:41:50.767Z",
-      "checkedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
       "status": "active"
     },
     {
@@ -268,7 +288,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02614343/IND-Analyst-Cost-Insights-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
       "status": "active"
     },
     {
@@ -288,7 +308,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02681421/Senior-Data-Analyst-Analytics-Data-Insights",
       "source": "Phenom",
       "collectedAt": "2026-11-18T07:45:58.529Z",
-      "checkedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
       "status": "active"
     },
     {
@@ -308,7 +328,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02671852/Analyst-BA-Pro-and-Services-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-31T06:00:21.737Z",
-      "checkedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
       "status": "active"
     },
     {
@@ -328,7 +348,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000162037589-principal-data-operations-analyst-",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-18T07:45:58.529Z",
-      "checkedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
       "status": "active"
     },
     {
@@ -348,7 +368,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02703400/Senior-Analyst-Pricing-Analytics",
       "source": "Phenom",
       "collectedAt": "2026-11-14T06:48:01.316Z",
-      "checkedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
       "status": "active"
     },
     {
@@ -368,7 +388,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02661342/IND-Demand-Planner",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
       "status": "active"
     },
     {
@@ -388,7 +408,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02559072/Analyst-Pricing-Analytics",
       "source": "Phenom",
       "collectedAt": "2026-11-22T07:10:07.431Z",
-      "checkedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
       "status": "active"
     },
     {
@@ -408,7 +428,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02685805/IND-Senior-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
       "status": "active"
     },
     {
@@ -428,7 +448,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160161649-senior-data-operations-analyst-niq-one-platform",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
       "status": "active"
     },
     {
@@ -448,7 +468,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160161419-principal-data-operations-analyst-niq-one-platform",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
       "status": "active"
     },
     {
@@ -468,7 +488,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02597328/Sourcing-Analyst",
       "source": "Phenom",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
       "status": "active"
     },
     {
@@ -488,7 +508,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000155707709-analytics-and-activation-sales-specialist",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
       "status": "active"
     },
     {
@@ -1112,26 +1132,6 @@
       "status": "expired"
     },
     {
-      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000475835",
-      "company": "Target",
-      "logo": "/brands/target.svg",
-      "title": "Sr HR Data Ops Analyst - Data Operations",
-      "category": "Retail Data Analyst",
-      "description": "About the Role As a Senior HR Data Operations Analyst, you will build, maintain and optimize reliable data pipelines across internal and external sources to support People Analytics & Insights. You will partner with analytics and engineering teams to deliver scalable data solutions that enable informed HR and business decision-making while working in an agile environment. Key Responsibilities · Develop, deploy and maintain scalable, reliable data pipelines and workflows. · Partner with People Analytics teams to translate business data requirements into effective data solutions. · Build and optimize ETL processes across internal and external data sources. · Troubleshoot data infrastructure,…",
-      "experience": "5+ years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-09",
-      "deadline": "2026-11-10",
-      "location": "L4, Manyata Embassy Business Park, Racenahali & Nagawara Villages. Outer Ring Rd, Bangalore 540065, India",
-      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/L4-Manyata-Embassy-Business-Park-Racenahali--Nagawara-Villages-Outer-Ring-Rd-Bangalore-540065/Sr-HR-Data-Ops-Analyst---Data-Operations_R0000475835-1",
-      "source": "Workday",
-      "collectedAt": "2026-10-14T05:07:19.674Z",
-      "checkedAt": "2026-11-09T06:56:34.732Z",
-      "status": "expired"
-    },
-    {
       "id": "workday:https://accenture.wd103.myworkdayjobs.com/AccentureCareers:AIOC-S01673580",
       "company": "Accenture",
       "logo": "/brands/accenture.png",
@@ -1189,26 +1189,6 @@
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-04T06:45:32.734Z",
       "checkedAt": "2026-11-18T07:45:58.529Z",
-      "status": "expired"
-    },
-    {
-      "id": "workday:https://accenture.wd103.myworkdayjobs.com/AccentureCareers:AIOC-S01653045",
-      "company": "Accenture",
-      "logo": "/brands/accenture.png",
-      "title": "Supply Chain Operations Senior Analyst",
-      "category": "Supply Chain Analyst",
-      "description": "Responsibilities: •Operational: • At least 2-3 years of work experience in a demand planning role. • Provide accurate and timely volume performance analysis to facilitate demand forecasting. • Ensure accurate and timely reporting as per the regional guidelines. • Manage forecasting process and improve forecasting accuracy. • Coordinate local forecasting process, co build short and mid-term demand plan with Sales & Marketing team • Propose demand plan based on statistical analysis (considering market trends, customers vision, expected exceptional guidelines issued from previous S&OP cycles) • Co-operate with the Product and Marketing teams to understand the product availability and coming…",
-      "experience": "5–8 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-01",
-      "deadline": null,
-      "location": "Navi Mumbai, India",
-      "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Navi-Mumbai/Supply-Chain-Operations-Senior-Analyst_AIOC-S01653045-1",
-      "source": "Workday",
-      "collectedAt": "2026-11-01T06:30:34.384Z",
-      "checkedAt": "2026-11-09T06:56:34.732Z",
       "status": "expired"
     },
     {
@@ -1329,26 +1309,6 @@
       "source": "Workday",
       "collectedAt": "2026-10-12T20:54:24.791Z",
       "checkedAt": "2026-11-11T06:51:01.813Z",
-      "status": "expired"
-    },
-    {
-      "id": "workday:https://accenture.wd103.myworkdayjobs.com/AccentureCareers:AIOC-S01653062",
-      "company": "Accenture",
-      "logo": "/brands/accenture.png",
-      "title": "Supply Chain Operation Analyst",
-      "category": "Supply Chain Analyst",
-      "description": "Responsibilities: •Operational:• At least 2-3 years of work experience in a demand planning role.• Provide accurate and timely volume performance analysis to facilitate demand forecasting.• Ensure accurate and timely reporting as per the regional guidelines.• Manage forecasting process and improve forecasting accuracy.• Coordinate local forecasting process, co build short and mid-term demand plan with Sales & Marketing team• Propose demand plan based on statistical analysis (considering market trends, customers vision, expected exceptional guidelines issued from previous S&OP cycles)• Co-operate with the Product and Marketing teams to understand the product availability and coming Marketing…",
-      "experience": "3–5 Years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-08-26",
-      "deadline": null,
-      "location": "Navi Mumbai, India",
-      "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Navi-Mumbai/Supply-Chain-Operations-Senior-Analyst_AIOC-S01653062-1",
-      "source": "Workday",
-      "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-11-09T06:56:34.732Z",
       "status": "expired"
     }
   ]
