@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T07:56:24.935Z",
+  "generatedAt": "2026-11-24T10:10:28.316Z",
   "sources": [
     {
       "company": "Target",
@@ -13,7 +13,7 @@
       "platform": "Phenom",
       "url": "https://talent.lowes.com/in/en",
       "ok": true,
-      "jobs": 12
+      "jobs": 11
     },
     {
       "company": "TJX",
@@ -26,7 +26,7 @@
       "company": "Dollar Tree",
       "platform": "Workday",
       "url": "https://dollartree.wd5.myworkdayjobs.com/dollartreeus",
-      "ok": false,
+      "ok": true,
       "jobs": 0
     },
     {
@@ -82,7 +82,7 @@
       "company": "P&G",
       "platform": "Workday",
       "url": "https://pg.wd5.myworkdayjobs.com/1000",
-      "ok": false,
+      "ok": true,
       "jobs": 0
     },
     {
@@ -96,7 +96,7 @@
       "company": "Mondelez",
       "platform": "Workday",
       "url": "https://mdlz.wd3.myworkdayjobs.com/External",
-      "ok": false,
+      "ok": true,
       "jobs": 0
     },
     {
@@ -117,14 +117,14 @@
       "company": "AB InBev",
       "platform": "Workday",
       "url": "https://abinbev.wd1.myworkdayjobs.com/IND",
-      "ok": false,
+      "ok": true,
       "jobs": 0
     },
     {
       "company": "Kimberly-Clark",
       "platform": "Workday",
       "url": "https://kimberlyclark.wd1.myworkdayjobs.com/GLOBAL",
-      "ok": false,
+      "ok": true,
       "jobs": 0
     },
     {
@@ -138,7 +138,7 @@
       "company": "C.H. Robinson",
       "platform": "Workday",
       "url": "https://chrobinson.wd5.myworkdayjobs.com/CHRobinson",
-      "ok": false,
+      "ok": true,
       "jobs": 0
     },
     {
@@ -152,14 +152,14 @@
       "company": "Fractal (campus hiring)",
       "platform": "Workday",
       "url": "https://fractal.wd1.myworkdayjobs.com/campuscareersite",
-      "ok": false,
+      "ok": true,
       "jobs": 0
     },
     {
       "company": "Fractal",
       "platform": "Workday",
       "url": "https://fractal.wd1.myworkdayjobs.com/Careers",
-      "ok": false,
+      "ok": true,
       "jobs": 0
     },
     {
@@ -188,7 +188,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02652504/Analyst-Customer-Insights",
       "source": "Phenom",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "checkedAt": "2026-11-24T10:10:28.316Z",
       "status": "active"
     },
     {
@@ -208,7 +208,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02685794/IND-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-11-04T06:45:32.734Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "checkedAt": "2026-11-24T10:10:28.316Z",
       "status": "active"
     },
     {
@@ -228,7 +228,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000163148569-sales-commission-data-governance-analyst",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-23T07:56:24.935Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "checkedAt": "2026-11-24T10:10:28.316Z",
       "status": "active"
     },
     {
@@ -248,7 +248,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000162481749-ai-analyst-bi",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-20T07:33:22.575Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "checkedAt": "2026-11-24T10:10:28.316Z",
       "status": "active"
     },
     {
@@ -268,7 +268,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02641482/IND-Analyst-Supply-Chain",
       "source": "Phenom",
       "collectedAt": "2026-11-19T07:41:50.767Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "checkedAt": "2026-11-24T10:10:28.316Z",
       "status": "active"
     },
     {
@@ -288,27 +288,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02614343/IND-Analyst-Cost-Insights-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
-      "status": "active"
-    },
-    {
-      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02681421",
-      "company": "Lowe's",
-      "logo": "/brands/lowes.png",
-      "title": "Senior Data Analyst_Analytics_Data Insights",
-      "category": "Retail Data Analyst",
-      "description": "Responsibilities</u></b></p><ul><li>Contribute to or build project plans, ensuring clear understanding of project requirements and timelines; translate complex business problems into smaller and easier analytical problems, provide guidance to more junior level analysts.</li><li>Communicate project timelines, scope and expectations to stakeholders.</li><li>Provide high quality and timely delivery with insights and recommendations.</li><li>Communicate analyses and insights to leaders by summarizing conclusions and solutions; translate analytics and statistics into clear, understandable themes for business leaders; identify specific analytic results that drive actionable…",
-      "experience": "5+ years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-18",
-      "deadline": null,
-      "location": "Bengaluru, India",
-      "url": "https://talent.lowes.com/in/en/job/JR-02681421/Senior-Data-Analyst-Analytics-Data-Insights",
-      "source": "Phenom",
-      "collectedAt": "2026-11-18T07:45:58.529Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "checkedAt": "2026-11-24T10:10:28.316Z",
       "status": "active"
     },
     {
@@ -328,7 +308,27 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02671852/Analyst-BA-Pro-and-Services-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-31T06:00:21.737Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "checkedAt": "2026-11-24T10:10:28.316Z",
+      "status": "active"
+    },
+    {
+      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02681421",
+      "company": "Lowe's",
+      "logo": "/brands/lowes.png",
+      "title": "Senior Data Analyst_Analytics_Data Insights",
+      "category": "Retail Data Analyst",
+      "description": "Responsibilities</u></b></p><ul><li>Contribute to or build project plans, ensuring clear understanding of project requirements and timelines; translate complex business problems into smaller and easier analytical problems, provide guidance to more junior level analysts.</li><li>Communicate project timelines, scope and expectations to stakeholders.</li><li>Provide high quality and timely delivery with insights and recommendations.</li><li>Communicate analyses and insights to leaders by summarizing conclusions and solutions; translate analytics and statistics into clear, understandable themes for business leaders; identify specific analytic results that drive actionable…",
+      "experience": "5+ years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-11-18",
+      "deadline": null,
+      "location": "Bengaluru, India",
+      "url": "https://talent.lowes.com/in/en/job/JR-02681421/Senior-Data-Analyst-Analytics-Data-Insights",
+      "source": "Phenom",
+      "collectedAt": "2026-11-18T07:45:58.529Z",
+      "checkedAt": "2026-11-24T10:10:28.316Z",
       "status": "active"
     },
     {
@@ -348,7 +348,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000162037589-principal-data-operations-analyst-",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-18T07:45:58.529Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "checkedAt": "2026-11-24T10:10:28.316Z",
       "status": "active"
     },
     {
@@ -368,7 +368,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02703400/Senior-Analyst-Pricing-Analytics",
       "source": "Phenom",
       "collectedAt": "2026-11-14T06:48:01.316Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "checkedAt": "2026-11-24T10:10:28.316Z",
       "status": "active"
     },
     {
@@ -388,27 +388,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02661342/IND-Demand-Planner",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
-      "status": "active"
-    },
-    {
-      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02559072",
-      "company": "Lowe's",
-      "logo": "/brands/lowes.png",
-      "title": "Analyst, Pricing Analytics",
-      "category": "Retail Analyst",
-      "description": "Responsibilities:</b></p><p></p><p><b>Core Responsibilities:</b></p><ul><li><span>Translate pricing strategy and business objectives into analytics requirements.</span></li><li>Deliver rapid business insights and develop reports on price change analysis based on merchant requests</li><li>Execute ad hoc analyses on price, brand, and market performance to inform strategies that strengthen competitive positioning and profitability.</li><li><span>Assist in designing and executing A/B tests, multivariate experiments, and randomized controlled trials (RCTs) to evaluate the effects of price changes.</span></li><li><span>Evaluate the effectiveness of pricing changes through price tests to inform…",
-      "experience": "3 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-11",
-      "deadline": null,
-      "location": "Bengaluru, India",
-      "url": "https://talent.lowes.com/in/en/job/JR-02559072/Analyst-Pricing-Analytics",
-      "source": "Phenom",
-      "collectedAt": "2026-11-22T07:10:07.431Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "checkedAt": "2026-11-24T10:10:28.316Z",
       "status": "active"
     },
     {
@@ -428,7 +408,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02685805/IND-Senior-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "checkedAt": "2026-11-24T10:10:28.316Z",
       "status": "active"
     },
     {
@@ -448,7 +428,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160161649-senior-data-operations-analyst-niq-one-platform",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "checkedAt": "2026-11-24T10:10:28.316Z",
       "status": "active"
     },
     {
@@ -468,7 +448,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160161419-principal-data-operations-analyst-niq-one-platform",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "checkedAt": "2026-11-24T10:10:28.316Z",
       "status": "active"
     },
     {
@@ -488,7 +468,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02597328/Sourcing-Analyst",
       "source": "Phenom",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "checkedAt": "2026-11-24T10:10:28.316Z",
       "status": "active"
     },
     {
@@ -508,7 +488,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000155707709-analytics-and-activation-sales-specialist",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "checkedAt": "2026-11-24T10:10:28.316Z",
       "status": "active"
     },
     {
@@ -1032,6 +1012,26 @@
       "status": "expired"
     },
     {
+      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02559072",
+      "company": "Lowe's",
+      "logo": "/brands/lowes.png",
+      "title": "Analyst, Pricing Analytics",
+      "category": "Retail Analyst",
+      "description": "Responsibilities:</b></p><p></p><p><b>Core Responsibilities:</b></p><ul><li><span>Translate pricing strategy and business objectives into analytics requirements.</span></li><li>Deliver rapid business insights and develop reports on price change analysis based on merchant requests</li><li>Execute ad hoc analyses on price, brand, and market performance to inform strategies that strengthen competitive positioning and profitability.</li><li><span>Assist in designing and executing A/B tests, multivariate experiments, and randomized controlled trials (RCTs) to evaluate the effects of price changes.</span></li><li><span>Evaluate the effectiveness of pricing changes through price tests to inform…",
+      "experience": "3 years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-11-11",
+      "deadline": null,
+      "location": "Bengaluru, India",
+      "url": "https://talent.lowes.com/in/en/job/JR-02559072/Analyst-Pricing-Analytics",
+      "source": "Phenom",
+      "collectedAt": "2026-11-22T07:10:07.431Z",
+      "checkedAt": "2026-11-23T07:56:24.935Z",
+      "status": "expired"
+    },
+    {
       "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02651153",
       "company": "Lowe's",
       "logo": "/brands/lowes.png",
@@ -1109,26 +1109,6 @@
       "source": "Workday",
       "collectedAt": "2026-11-10T07:33:22.024Z",
       "checkedAt": "2026-11-11T06:51:01.813Z",
-      "status": "expired"
-    },
-    {
-      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000444688",
-      "company": "Target",
-      "logo": "/brands/target.svg",
-      "title": "Sr Data Analyst",
-      "category": "Retail Data Analyst",
-      "description": "Responsibilities: Translate business problems into well-defined analytical questions and structured approaches Support scenario, decision, and action modelling to evaluate business trade-offs and inform recommended actions Partner with Target business stakeholders to understand priorities and roadmaps, validate analytical requirements, and present insights and recommendations with clarity and impact Develop and deliver analytical and AI-driven solutions (including GenAI, Agent, and Agentic approaches) that enable decision support, forecasting, optimization, and automation Apply advanced analytics techniques, including causal, predictive, and prescriptive analytics, to drive deeper…",
-      "experience": "5–8 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-09",
-      "deadline": "2026-11-11",
-      "location": "L4, Manyata Embassy Business Park, Racenahali & Nagawara Villages. Outer Ring Rd, Bangalore 540065, India",
-      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/L4-Manyata-Embassy-Business-Park-Racenahali--Nagawara-Villages-Outer-Ring-Rd-Bangalore-540065/Sr-Data-Analyst_R0000444688-1",
-      "source": "Workday",
-      "collectedAt": "2026-11-10T07:33:22.024Z",
-      "checkedAt": "2026-11-10T07:33:22.024Z",
       "status": "expired"
     },
     {
