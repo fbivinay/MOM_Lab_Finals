@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T10:10:28.316Z",
+  "generatedAt": "2026-11-25T08:55:25.892Z",
   "sources": [
     {
       "company": "Target",
@@ -13,7 +13,7 @@
       "platform": "Phenom",
       "url": "https://talent.lowes.com/in/en",
       "ok": true,
-      "jobs": 11
+      "jobs": 12
     },
     {
       "company": "TJX",
@@ -82,7 +82,7 @@
       "company": "P&G",
       "platform": "Workday",
       "url": "https://pg.wd5.myworkdayjobs.com/1000",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -96,7 +96,7 @@
       "company": "Mondelez",
       "platform": "Workday",
       "url": "https://mdlz.wd3.myworkdayjobs.com/External",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -117,14 +117,14 @@
       "company": "AB InBev",
       "platform": "Workday",
       "url": "https://abinbev.wd1.myworkdayjobs.com/IND",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
       "company": "Kimberly-Clark",
       "platform": "Workday",
       "url": "https://kimberlyclark.wd1.myworkdayjobs.com/GLOBAL",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -138,7 +138,7 @@
       "company": "C.H. Robinson",
       "platform": "Workday",
       "url": "https://chrobinson.wd5.myworkdayjobs.com/CHRobinson",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -152,14 +152,14 @@
       "company": "Fractal (campus hiring)",
       "platform": "Workday",
       "url": "https://fractal.wd1.myworkdayjobs.com/campuscareersite",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
       "company": "Fractal",
       "platform": "Workday",
       "url": "https://fractal.wd1.myworkdayjobs.com/Careers",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -188,7 +188,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02652504/Analyst-Customer-Insights",
       "source": "Phenom",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-11-24T10:10:28.316Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
       "status": "active"
     },
     {
@@ -208,7 +208,67 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02685794/IND-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-11-04T06:45:32.734Z",
-      "checkedAt": "2026-11-24T10:10:28.316Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
+      "status": "active"
+    },
+    {
+      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02706728",
+      "company": "Lowe's",
+      "logo": "/brands/lowes.png",
+      "title": "Analyst Merchandising Reporting",
+      "category": "Retail Analyst",
+      "description": "responsibilities include, drafting and circulating the pre-execution communication to the execution teams, supervising the execution of strategy remotely and providing near real time support, tracking and placings orders for missing NRI and sending reports of execution and gaps if any with recommendations to the management.</p><p> </p><p>The team also provides support with respect to Steel for New Stores, forecasting the right amount of steel, placing order and raising relevant POs, tracking against the delivery time, managing change requests in terms of quantity or pricing, identifying missing and damaged NRI and re-ordering are some of the tasks owned by the team. </p><p> </p><p><b>Job…",
+      "experience": "2–4 Years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-11-25",
+      "deadline": null,
+      "location": "Bengaluru, India",
+      "url": "https://talent.lowes.com/in/en/job/JR-02706728/Analyst-Merchandising-Reporting",
+      "source": "Phenom",
+      "collectedAt": "2026-11-25T08:55:25.892Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
+      "status": "active"
+    },
+    {
+      "id": "smartrecruiters:NielsenIQ:744000163468859",
+      "company": "NielsenIQ",
+      "logo": "/brands/nielseniq.png",
+      "title": "Principal Data Operations Analyst",
+      "category": "Retail Data Analyst",
+      "description": "Job Title: eData Governance\nReports to: Regional EDD ---> Regional Input Ops\nBusiness Unit: Data Operations\nLocation: In Country/Region - Initial | Hybrid - Future\nVision of the Role\nBackend, Ops Bridge, Technical\nHigh Level Tasks\nSecuring BAU\nData Analysis and Testing\nMSDs\nData Assessments\nDQI Execution\nBridge Ops and Suppliers\nJob Purpose\nThis role covers the activities post inputs are received from the source - retailers/vendors. Primary focus is to be the bridge between the Supplier Engagement team and other Ops pillars. System change surveys, BAU query resolution, MSD tickets tracking and closure, KPIs reporting, productivity initiatives, RCAs are the key areas of work for this…",
+      "experience": "3+ years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-11-24T14:14:40.674Z",
+      "deadline": null,
+      "location": "Gurgaon, HR, India",
+      "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000163468859-principal-data-operations-analyst-",
+      "source": "SmartRecruiters",
+      "collectedAt": "2026-11-25T08:55:25.892Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
+      "status": "active"
+    },
+    {
+      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02661342",
+      "company": "Lowe's",
+      "logo": "/brands/lowes.png",
+      "title": "IND_Demand Planner",
+      "category": "Demand Forecasting Analyst",
+      "description": "Responsibilities:</b></p><ul><li>Responsible for maintaining the highest degree of forecast at item and stores level based on industry trends and demand patterns.</li><li>Conduct forecast review and analysis to assess demand trends, measure forecast accuracy and recommend data-driven adjustments.</li><li>Collaborate with cross-functional teams to support product lifecycle milestones, ensuring accurate demand planning for new items.</li><li>Propose and implement forecasting improvements to enhance demand accuracy and efficiency.</li><li>Partner with SSCM (US stakeholders) to review KPIs, gather market insights, and translating market insights into actionable forecast…",
+      "experience": "2–4 years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-11-24",
+      "deadline": null,
+      "location": "Bengaluru, India",
+      "url": "https://talent.lowes.com/in/en/job/JR-02661342/IND-Demand-Planner",
+      "source": "Phenom",
+      "collectedAt": "2026-10-12T20:05:45.545Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
       "status": "active"
     },
     {
@@ -228,7 +288,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000163148569-sales-commission-data-governance-analyst",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-23T07:56:24.935Z",
-      "checkedAt": "2026-11-24T10:10:28.316Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
       "status": "active"
     },
     {
@@ -248,7 +308,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000162481749-ai-analyst-bi",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-20T07:33:22.575Z",
-      "checkedAt": "2026-11-24T10:10:28.316Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
       "status": "active"
     },
     {
@@ -268,7 +328,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02641482/IND-Analyst-Supply-Chain",
       "source": "Phenom",
       "collectedAt": "2026-11-19T07:41:50.767Z",
-      "checkedAt": "2026-11-24T10:10:28.316Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
       "status": "active"
     },
     {
@@ -288,27 +348,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02614343/IND-Analyst-Cost-Insights-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-24T10:10:28.316Z",
-      "status": "active"
-    },
-    {
-      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02671852",
-      "company": "Lowe's",
-      "logo": "/brands/lowes.png",
-      "title": "Analyst BA - Pro and Services – Reporting",
-      "category": "Retail Data Analyst",
-      "description": "About the Role</b></p><p>The Analyst is responsible for understanding pro & services, and business processes to deliver actionable insights through data. The role involves collaborating with cross-functional stakeholders to design, develop, and maintain scalable reporting and analytics solutions. </p><br /><p><b>Job Summary: </b></p><p>The Analyst is responsible for developing a deep understanding of Pro & Services business processes and leveraging data to deliver actionable insights that support strategic and operational decision-making. This role partners with cross functional stakeholders to design, develop, and maintain scalable reporting, analytics, and automation solutions. Utilizing…",
-      "experience": "3–4 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-18",
-      "deadline": null,
-      "location": "Bengaluru, India",
-      "url": "https://talent.lowes.com/in/en/job/JR-02671852/Analyst-BA-Pro-and-Services-Reporting",
-      "source": "Phenom",
-      "collectedAt": "2026-10-31T06:00:21.737Z",
-      "checkedAt": "2026-11-24T10:10:28.316Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
       "status": "active"
     },
     {
@@ -328,27 +368,27 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02681421/Senior-Data-Analyst-Analytics-Data-Insights",
       "source": "Phenom",
       "collectedAt": "2026-11-18T07:45:58.529Z",
-      "checkedAt": "2026-11-24T10:10:28.316Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
       "status": "active"
     },
     {
-      "id": "smartrecruiters:NielsenIQ:744000162037589",
-      "company": "NielsenIQ",
-      "logo": "/brands/nielseniq.png",
-      "title": "Principal Data Operations Analyst",
+      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02671852",
+      "company": "Lowe's",
+      "logo": "/brands/lowes.png",
+      "title": "Analyst BA - Pro and Services – Reporting",
       "category": "Retail Data Analyst",
-      "description": "Job Title: eData Governance\nReports to: Regional EDD ---> Regional Input Ops\nBusiness Unit: Data Operations\nLocation: In Country/Region - Initial | Hybrid - Future\nVision of the Role\nBackend, Ops Bridge, Technical\nHigh Level Tasks\nSecuring BAU\nData Analysis and Testing\nMSDs\nData Assessments\nDQI Execution\nBridge Ops and Suppliers\nJob Purpose\nThis role covers the activities post inputs are received from the source - retailers/vendors. Primary focus is to be the bridge between the Supplier Engagement team and other Ops pillars. System change surveys, BAU query resolution, MSD tickets tracking and closure, KPIs reporting, productivity initiatives, RCAs are the key areas of work for this…",
-      "experience": "3+ years",
+      "description": "About the Role</b></p><p>The Analyst is responsible for understanding pro & services, and business processes to deliver actionable insights through data. The role involves collaborating with cross-functional stakeholders to design, develop, and maintain scalable reporting and analytics solutions. </p><br /><p><b>Job Summary: </b></p><p>The Analyst is responsible for developing a deep understanding of Pro & Services business processes and leveraging data to deliver actionable insights that support strategic and operational decision-making. This role partners with cross functional stakeholders to design, develop, and maintain scalable reporting, analytics, and automation solutions. Utilizing…",
+      "experience": "3–4 years",
       "forFreshers": "no",
       "employmentType": "Full-time",
       "salary": null,
-      "postedAt": "2026-11-17T10:01:19.235Z",
+      "postedAt": "2026-11-18",
       "deadline": null,
-      "location": "Gurgaon, HR, India",
-      "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000162037589-principal-data-operations-analyst-",
-      "source": "SmartRecruiters",
-      "collectedAt": "2026-11-18T07:45:58.529Z",
-      "checkedAt": "2026-11-24T10:10:28.316Z",
+      "location": "Bengaluru, India",
+      "url": "https://talent.lowes.com/in/en/job/JR-02671852/Analyst-BA-Pro-and-Services-Reporting",
+      "source": "Phenom",
+      "collectedAt": "2026-10-31T06:00:21.737Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
       "status": "active"
     },
     {
@@ -368,27 +408,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02703400/Senior-Analyst-Pricing-Analytics",
       "source": "Phenom",
       "collectedAt": "2026-11-14T06:48:01.316Z",
-      "checkedAt": "2026-11-24T10:10:28.316Z",
-      "status": "active"
-    },
-    {
-      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02661342",
-      "company": "Lowe's",
-      "logo": "/brands/lowes.png",
-      "title": "IND_Demand Planner",
-      "category": "Demand Forecasting Analyst",
-      "description": "Responsibilities:</b></p><ul><li>Responsible for maintaining the highest degree of forecast at item and stores level based on industry trends and demand patterns.</li><li>Conduct forecast review and analysis to assess demand trends, measure forecast accuracy and recommend data-driven adjustments.</li><li>Collaborate with cross-functional teams to support product lifecycle milestones, ensuring accurate demand planning for new items.</li><li>Propose and implement forecasting improvements to enhance demand accuracy and efficiency.</li><li>Partner with SSCM (US stakeholders) to review KPIs, gather market insights, and translating market insights into actionable forecast…",
-      "experience": "2–4 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-11",
-      "deadline": null,
-      "location": "Bengaluru, India",
-      "url": "https://talent.lowes.com/in/en/job/JR-02661342/IND-Demand-Planner",
-      "source": "Phenom",
-      "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-24T10:10:28.316Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
       "status": "active"
     },
     {
@@ -408,7 +428,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02685805/IND-Senior-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-24T10:10:28.316Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
       "status": "active"
     },
     {
@@ -428,7 +448,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160161649-senior-data-operations-analyst-niq-one-platform",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-24T10:10:28.316Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
       "status": "active"
     },
     {
@@ -448,7 +468,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160161419-principal-data-operations-analyst-niq-one-platform",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-24T10:10:28.316Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
       "status": "active"
     },
     {
@@ -468,7 +488,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02597328/Sourcing-Analyst",
       "source": "Phenom",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-24T10:10:28.316Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
       "status": "active"
     },
     {
@@ -488,7 +508,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000155707709-analytics-and-activation-sales-specialist",
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-11-24T10:10:28.316Z",
+      "checkedAt": "2026-11-25T08:55:25.892Z",
       "status": "active"
     },
     {
@@ -1072,46 +1092,6 @@
       "status": "expired"
     },
     {
-      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000430856",
-      "company": "Target",
-      "logo": "/brands/target.svg",
-      "title": "Sr Data Analyst",
-      "category": "Retail Data Analyst",
-      "description": "About the Role Join the Data Analytics (DA) team at TII across domains such as Marketing and Digital, Merchandising, Supply Chain and Logistics, Store Operations, Finance and more. Here you'll collaborate with business leaders to turn data into insights that drive strategic decisions. You’ll be part of a fast-moving, high-impact environment focused on leveraging business intelligence and advanced analytics to solve real-world problems. This role combines technical expertise with business understanding to uncover and communicate actionable insights using cutting-edge statistical and analytical techniques. Behind one of the world’s best loved brands is a uniquely capable and brilliant team of…",
-      "experience": "5–8 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-11",
-      "deadline": "2026-11-12",
-      "location": "Bangalore, India",
-      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Sr-Data-Analyst_R0000430856",
-      "source": "Workday",
-      "collectedAt": "2026-10-20T05:03:22.729Z",
-      "checkedAt": "2026-11-11T06:51:01.813Z",
-      "status": "expired"
-    },
-    {
-      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000452886",
-      "company": "Target",
-      "logo": "/brands/target.svg",
-      "title": "Lead Data Analyst",
-      "category": "Retail Data Analyst",
-      "description": "About us: Working at Target means helping all families discover the joy of everyday life. About Target As a Fortune 50 company with more than 400,000 team members worldwide, Target is an iconic brand and one of America's leading retailers. Joining Target means promoting a culture of mutual care and respect and striving to make the most meaningful and positive impact. At Target, we have a timeless purpose and a proven strategy. Some of the best minds from different backgrounds come together to redefine retail in an inclusive learning environment that values people and delivers world-class outcomes. Target in India operates as a fully integrated part of Target's global team and supports the…",
-      "experience": "8–12 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-09",
-      "deadline": "2026-11-12",
-      "location": "Bangalore, India",
-      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Lead-Data-Analyst_R0000452886",
-      "source": "Workday",
-      "collectedAt": "2026-11-10T07:33:22.024Z",
-      "checkedAt": "2026-11-11T06:51:01.813Z",
-      "status": "expired"
-    },
-    {
       "id": "workday:https://accenture.wd103.myworkdayjobs.com/AccentureCareers:AIOC-S01673580",
       "company": "Accenture",
       "logo": "/brands/accenture.png",
@@ -1249,46 +1229,6 @@
       "source": "Greenhouse",
       "collectedAt": "2026-10-22T05:06:11.012Z",
       "checkedAt": "2026-11-19T07:41:50.767Z",
-      "status": "expired"
-    },
-    {
-      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000473632",
-      "company": "Target",
-      "logo": "/brands/target.svg",
-      "title": "Analyst PIM Ops",
-      "category": "Inventory Analyst",
-      "description": "Responsibilities Planning and Inventory Management Operations Monitor planning/Inventory system outputs and identify supply-demand imbalances, inventory gaps, and replenishment exceptions. Maintain inventory and planning parameters, replenishment settings, lead times, and inventory policies within upstream and downstream systems. Support forecast reviews, stores and field team activities, seasonal planning and retail strategy activities through data analysis and reporting. Ensure data integrity and compliance with established operational processes. Monitor inventory levels across warehouses, distribution centers, suppliers, and fulfillment locations. Analyze inventory health, stock…",
-      "experience": "3–5 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-10-09",
-      "deadline": null,
-      "location": "Bangalore, India",
-      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Analyst-PIM-Ops_R0000473632",
-      "source": "Workday",
-      "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-11-11T06:51:01.813Z",
-      "status": "expired"
-    },
-    {
-      "id": "workday:https://target.wd5.myworkdayjobs.com/targetcareers:R0000475691",
-      "company": "Target",
-      "logo": "/brands/target.svg",
-      "title": "Pricing Analyst-4",
-      "category": "Retail Analyst",
-      "description": "RESPONSIBILITIES · Be the single point of contact for pricing operations supporting an assigned business (online & stores) and gain expertise on end to end pyramid and strategy context. This includes regular audits and research of pricing at Target and competitors, reviewing outliers in competitive price changes, and new item setups. · Build category context to pair with rigorous data analysis on the drivers of pricing metrics and performance versus enterprise objectives · Drive, lead and deliver new tasks and innovation projects flawlessly with 100 % accuracy and timeliness · Solve defined problems of high complexity and streamline/redefine processes using structured techniques or…",
-      "experience": "2–4 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-10-07",
-      "deadline": null,
-      "location": "Bangalore, India",
-      "url": "https://target.wd5.myworkdayjobs.com/targetcareers/job/BangaloreIndia/Pricing-Analyst-4_R0000475691",
-      "source": "Workday",
-      "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-11-11T06:51:01.813Z",
       "status": "expired"
     }
   ]
