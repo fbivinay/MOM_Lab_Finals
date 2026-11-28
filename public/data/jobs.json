@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T08:51:55.294Z",
+  "generatedAt": "2026-11-28T08:11:54.261Z",
   "sources": [
     {
       "company": "Target",
@@ -19,14 +19,14 @@
       "company": "TJX",
       "platform": "Workday",
       "url": "https://tjx.wd1.myworkdayjobs.com/TJX_EXTERNAL",
-      "ok": false,
+      "ok": true,
       "jobs": 0
     },
     {
       "company": "Dollar Tree",
       "platform": "Workday",
       "url": "https://dollartree.wd5.myworkdayjobs.com/dollartreeus",
-      "ok": true,
+      "ok": false,
       "jobs": 0
     },
     {
@@ -138,7 +138,7 @@
       "company": "C.H. Robinson",
       "platform": "Workday",
       "url": "https://chrobinson.wd5.myworkdayjobs.com/CHRobinson",
-      "ok": false,
+      "ok": true,
       "jobs": 0
     },
     {
@@ -188,7 +188,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02686515/IND-Associate-Analyst-Supply-Chain",
       "source": "Phenom",
       "collectedAt": "2026-10-31T06:00:21.737Z",
-      "checkedAt": "2026-11-27T08:51:55.294Z",
+      "checkedAt": "2026-11-28T08:11:54.261Z",
       "status": "active"
     },
     {
@@ -208,7 +208,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02652504/Analyst-Customer-Insights",
       "source": "Phenom",
       "collectedAt": "2026-10-16T04:45:50.889Z",
-      "checkedAt": "2026-11-27T08:51:55.294Z",
+      "checkedAt": "2026-11-28T08:11:54.261Z",
       "status": "active"
     },
     {
@@ -228,7 +228,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02685794/IND-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-11-04T06:45:32.734Z",
-      "checkedAt": "2026-11-27T08:51:55.294Z",
+      "checkedAt": "2026-11-28T08:11:54.261Z",
       "status": "active"
     },
     {
@@ -242,13 +242,33 @@
       "forFreshers": "no",
       "employmentType": "Full-time",
       "salary": null,
-      "postedAt": "2026-11-26",
+      "postedAt": "2026-11-27",
       "deadline": null,
       "location": "Bengaluru, India",
       "url": "https://talent.lowes.com/in/en/job/JR-02597328/Sourcing-Analyst",
       "source": "Phenom",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-27T08:51:55.294Z",
+      "checkedAt": "2026-11-28T08:11:54.261Z",
+      "status": "active"
+    },
+    {
+      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02685101",
+      "company": "Lowe's",
+      "logo": "/brands/lowes.png",
+      "title": "IND_Analyst-Marketplace Seller Support",
+      "category": "Retail Analyst",
+      "description": "Responsibilities:</b></p><br /><ul><li>Handle routine seller support tickets using established SOPs, templates, and documented guidance.</li></ul><br /><ul><li>Provide timely responses and maintain consistent follow-up on assigned open cases. Accurately document case details, actions taken, and next steps in Salesforce.</li></ul><br /><ul><li>Escalate non-standard, ambiguous, or complex issues to Analysts or Senior Analysts. Follow defined workflows, quality standards, and documentation expectations. Maintain queue discipline and support productivity and backlog goals.</li></ul><br /><ul><li>Flag recurring questions or knowledge gaps encountered during case handling.</li></ul><br…",
+      "experience": "2–4 Years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-11-27",
+      "deadline": null,
+      "location": "Bengaluru, India",
+      "url": "https://talent.lowes.com/in/en/job/JR-02685101/IND-Analyst-Marketplace-Seller-Support",
+      "source": "Phenom",
+      "collectedAt": "2026-10-31T06:00:21.737Z",
+      "checkedAt": "2026-11-28T08:11:54.261Z",
       "status": "active"
     },
     {
@@ -268,27 +288,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02661342/IND-Demand-Planner",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-27T08:51:55.294Z",
-      "status": "active"
-    },
-    {
-      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02685101",
-      "company": "Lowe's",
-      "logo": "/brands/lowes.png",
-      "title": "IND_Analyst-Marketplace Seller Support",
-      "category": "Retail Analyst",
-      "description": "Responsibilities:</b></p><br /><ul><li>Handle routine seller support tickets using established SOPs, templates, and documented guidance.</li></ul><br /><ul><li>Provide timely responses and maintain consistent follow-up on assigned open cases. Accurately document case details, actions taken, and next steps in Salesforce.</li></ul><br /><ul><li>Escalate non-standard, ambiguous, or complex issues to Analysts or Senior Analysts. Follow defined workflows, quality standards, and documentation expectations. Maintain queue discipline and support productivity and backlog goals.</li></ul><br /><ul><li>Flag recurring questions or knowledge gaps encountered during case handling.</li></ul><br…",
-      "experience": "2–4 Years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-26",
-      "deadline": null,
-      "location": "Bengaluru, India",
-      "url": "https://talent.lowes.com/in/en/job/JR-02685101/IND-Analyst-Marketplace-Seller-Support",
-      "source": "Phenom",
-      "collectedAt": "2026-10-31T06:00:21.737Z",
-      "checkedAt": "2026-11-27T08:51:55.294Z",
+      "checkedAt": "2026-11-28T08:11:54.261Z",
       "status": "active"
     },
     {
@@ -308,7 +308,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000163640029-principal-data-operations-analyst-experience-with-python-",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-26T08:40:26.391Z",
-      "checkedAt": "2026-11-27T08:51:55.294Z",
+      "checkedAt": "2026-11-28T08:11:54.261Z",
       "status": "active"
     },
     {
@@ -328,7 +328,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000163148569-sales-commission-data-governance-analyst",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-23T07:56:24.935Z",
-      "checkedAt": "2026-11-27T08:51:55.294Z",
+      "checkedAt": "2026-11-28T08:11:54.261Z",
       "status": "active"
     },
     {
@@ -348,7 +348,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000162481749-ai-analyst-bi",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-20T07:33:22.575Z",
-      "checkedAt": "2026-11-27T08:51:55.294Z",
+      "checkedAt": "2026-11-28T08:11:54.261Z",
       "status": "active"
     },
     {
@@ -368,7 +368,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02641482/IND-Analyst-Supply-Chain",
       "source": "Phenom",
       "collectedAt": "2026-11-19T07:41:50.767Z",
-      "checkedAt": "2026-11-27T08:51:55.294Z",
+      "checkedAt": "2026-11-28T08:11:54.261Z",
       "status": "active"
     },
     {
@@ -388,27 +388,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02614343/IND-Analyst-Cost-Insights-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-12T20:05:45.545Z",
-      "checkedAt": "2026-11-27T08:51:55.294Z",
-      "status": "active"
-    },
-    {
-      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02681421",
-      "company": "Lowe's",
-      "logo": "/brands/lowes.png",
-      "title": "Senior Data Analyst_Analytics_Data Insights",
-      "category": "Retail Data Analyst",
-      "description": "Responsibilities</u></b></p><ul><li>Contribute to or build project plans, ensuring clear understanding of project requirements and timelines; translate complex business problems into smaller and easier analytical problems, provide guidance to more junior level analysts.</li><li>Communicate project timelines, scope and expectations to stakeholders.</li><li>Provide high quality and timely delivery with insights and recommendations.</li><li>Communicate analyses and insights to leaders by summarizing conclusions and solutions; translate analytics and statistics into clear, understandable themes for business leaders; identify specific analytic results that drive actionable…",
-      "experience": "5+ years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-11-18",
-      "deadline": null,
-      "location": "Bengaluru, India",
-      "url": "https://talent.lowes.com/in/en/job/JR-02681421/Senior-Data-Analyst-Analytics-Data-Insights",
-      "source": "Phenom",
-      "collectedAt": "2026-11-18T07:45:58.529Z",
-      "checkedAt": "2026-11-27T08:51:55.294Z",
+      "checkedAt": "2026-11-28T08:11:54.261Z",
       "status": "active"
     },
     {
@@ -428,7 +408,27 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02671852/Analyst-BA-Pro-and-Services-Reporting",
       "source": "Phenom",
       "collectedAt": "2026-10-31T06:00:21.737Z",
-      "checkedAt": "2026-11-27T08:51:55.294Z",
+      "checkedAt": "2026-11-28T08:11:54.261Z",
+      "status": "active"
+    },
+    {
+      "id": "phenom:https://talent.lowes.com/in/en/sitemap.xml:JR-02681421",
+      "company": "Lowe's",
+      "logo": "/brands/lowes.png",
+      "title": "Senior Data Analyst_Analytics_Data Insights",
+      "category": "Retail Data Analyst",
+      "description": "Responsibilities</u></b></p><ul><li>Contribute to or build project plans, ensuring clear understanding of project requirements and timelines; translate complex business problems into smaller and easier analytical problems, provide guidance to more junior level analysts.</li><li>Communicate project timelines, scope and expectations to stakeholders.</li><li>Provide high quality and timely delivery with insights and recommendations.</li><li>Communicate analyses and insights to leaders by summarizing conclusions and solutions; translate analytics and statistics into clear, understandable themes for business leaders; identify specific analytic results that drive actionable…",
+      "experience": "5+ years",
+      "forFreshers": "no",
+      "employmentType": "Full-time",
+      "salary": null,
+      "postedAt": "2026-11-18",
+      "deadline": null,
+      "location": "Bengaluru, India",
+      "url": "https://talent.lowes.com/in/en/job/JR-02681421/Senior-Data-Analyst-Analytics-Data-Insights",
+      "source": "Phenom",
+      "collectedAt": "2026-11-18T07:45:58.529Z",
+      "checkedAt": "2026-11-28T08:11:54.261Z",
       "status": "active"
     },
     {
@@ -448,7 +448,7 @@
       "url": "https://talent.lowes.com/in/en/job/JR-02685805/IND-Senior-Analyst-Marketplace-Management",
       "source": "Phenom",
       "collectedAt": "2026-11-03T07:02:13.718Z",
-      "checkedAt": "2026-11-27T08:51:55.294Z",
+      "checkedAt": "2026-11-28T08:11:54.261Z",
       "status": "active"
     },
     {
@@ -468,7 +468,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160161649-senior-data-operations-analyst-niq-one-platform",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-27T08:51:55.294Z",
+      "checkedAt": "2026-11-28T08:11:54.261Z",
       "status": "active"
     },
     {
@@ -488,7 +488,7 @@
       "url": "https://jobs.smartrecruiters.com/NielsenIQ/744000160161419-principal-data-operations-analyst-niq-one-platform",
       "source": "SmartRecruiters",
       "collectedAt": "2026-11-07T06:18:11.278Z",
-      "checkedAt": "2026-11-27T08:51:55.294Z",
+      "checkedAt": "2026-11-28T08:11:54.261Z",
       "status": "active"
     },
     {
@@ -1109,46 +1109,6 @@
       "source": "SmartRecruiters",
       "collectedAt": "2026-10-29T06:05:12.302Z",
       "checkedAt": "2026-11-17T08:12:40.899Z",
-      "status": "expired"
-    },
-    {
-      "id": "workday:https://accenture.wd103.myworkdayjobs.com/AccentureCareers:AIOC-S01656043",
-      "company": "Accenture",
-      "logo": "/brands/accenture.png",
-      "title": "Procurement Practice Senior Analyst",
-      "category": "Supply Chain Analyst",
-      "description": "Responsibilities: •Draft and negotiate contracts based on client templates, in a timely manner with appropriate legal support to ensure compliance with client standards; Past experience with drafting agreements in following areas: IT, Marketing, Professional Services, Facilities, MRO. Specific experience within the Pharma industry highly desirable; Coordinate and perform contract analysis, including redlines and negotiations with client legal and other stakeholders, as well as suppliers to: Negotiate business terms and collaborate, coordinate, and be able to explain risks and implications of contract terms to the business and other stakeholders.? Complete gap analyses, review, redline, and…",
-      "experience": "5–8 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-10-27",
-      "deadline": null,
-      "location": "Gurugram, India",
-      "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Gurugram/Procurement-Practice-Senior-Analyst_AIOC-S01656043-1",
-      "source": "Workday",
-      "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-11-14T06:48:01.316Z",
-      "status": "expired"
-    },
-    {
-      "id": "workday:https://accenture.wd103.myworkdayjobs.com/AccentureCareers:AIOC-S01656044",
-      "company": "Accenture",
-      "logo": "/brands/accenture.png",
-      "title": "Procurement Practice Analyst",
-      "category": "Supply Chain Analyst",
-      "description": "Responsibilities: •Exhibit a proactive approach to task ownership and client service orientation. Demonstrate strong attention to detail and maintain accurate contract records. Act as a liaison between business units to resolve operational and contract-related queries. Support contract uploads, metadata entry, and maintenance of contract repository hygiene. Track and manage contract milestones, deliverables, amendments, renewals, and expirations. Work with Contract Lifecycle Management tools such as Ariba, Icertis, or SAP. Prepare and review initial document drafts using standard templates, focusing on low-complexity contracts. Review commercial and operational contracts across business…",
-      "experience": "3–5 years",
-      "forFreshers": "no",
-      "employmentType": "Full-time",
-      "salary": null,
-      "postedAt": "2026-10-27",
-      "deadline": null,
-      "location": "Gurugram, India",
-      "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Gurugram/Procurement-Practice-Analyst_AIOC-S01656044-1",
-      "source": "Workday",
-      "collectedAt": "2026-10-12T20:54:24.791Z",
-      "checkedAt": "2026-11-14T06:48:01.316Z",
       "status": "expired"
     },
     {
